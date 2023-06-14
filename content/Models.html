@@ -141,55 +141,21 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Solid Edge << <a href='Solid Edge.html'>Previous</a> <a href='NX.html'>Next</a> >> NX<br /><h1>SE_Tutorial</h1>
-<p><a href="https://solidedge.siemens.com/en/resources/tutorials/">https://solidedge.siemens.com/en/resources/tutorials/</a> </p>
-<p><a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/EVlrCyH8aDFOlJNhRC1DVSQBffjuzI97QCpqJTC_WldKtA?e=TiGTws">Test drive Solid Edge.pdf</a></p>
-<p>在安裝過程利用 regshot 紀錄套件所新增的 .reg, 或可直接將套件放入 USB, 並提供所需的 registry, 就有機會在安裝防寫卡的電腦上直接執行.</p>
-<p>Delete installed registries:</p>
-<p>Powershell commond file: delete_key.ps1</p>
-<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false"># Specify the registry keys and values to delete
-$keysToDelete = @(
-    "HKEY_CURRENT_USER\Path\To\Key1",
-    "HKEY_LOCAL_MACHINE\Path\To\Key2",
-    "HKEY_CURRENT_USER\Path\To\Key3"
-)
-
-# Delete the specified keys and values
-foreach ($key in $keysToDelete) {
-    Write-Host "Deleting key: $key"
-    Remove-Item -Path "Registry::$key" -Recurse -Force
-}
-</pre>
-<p>or read the installed .reg and delete keys by reading .reg file:</p>
-<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false"># Define the path to the .reg file
-$regFilePath = "C:\path\to\your\file.reg"
-
-# Read the content of the .reg file
-$regContent = Get-Content -Path $regFilePath -Raw
-
-# Delete the registry entries
-try {
-    # Disable registry redirection to avoid issues with 32-bit and 64-bit keys
-    if ([Environment]::Is64BitProcess) {
-        Set-ItemProperty -Path "HKLM:\Software\Microsoft\Wow6432Node\Microsoft.PowerShell\Registry::HKCU" -Name "DisableRedirection" -Value 1
-    } else {
-        Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer" -Name "NoChangeStartMenu" -Value 1
-    }
-    
-    # Import the .reg file to delete the registry entries
-    $null = Invoke-Expression -Command $regContent
-}
-finally {
-    # Re-enable registry redirection
-    if ([Environment]::Is64BitProcess) {
-        Remove-ItemProperty -Path "HKLM:\Software\Microsoft\Wow6432Node\Microsoft.PowerShell\Registry::HKCU" -Name "DisableRedirection" -ErrorAction SilentlyContinue
-    } else {
-        Remove-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer" -Name "NoChangeStartMenu" -ErrorAction SilentlyContinue
-    }
-}
-</pre>
-<p><a href="https://sourceforge.net/projects/regshot/">https://sourceforge.net/projects/regshot/</a> </p>
-<p style="padding-left: 30px;">Regshot is an open-source (LGPL) registry compare utility that allows you to quickly take a snapshot of your registry and then compare it with a second one - done after doing system changes or installing a new software product.</p><br />Solid Edge << <a href='Solid Edge.html'>Previous</a> <a href='NX.html'>Next</a> >> NX</div>
+    <div id="tipue_search_content">PICSimLab << <a href='PICSimLab.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython<br /><h1>Models</h1>
+<p><a href="https://github.com/CoppeliaRobotics/models">https://github.com/CoppeliaRobotics/models</a> </p>
+<p><a href="https://github.com/mdecourse/V-REP-demo">https://github.com/mdecourse/V-REP-demo</a></p>
+<p><a href="https://github.com/mdecycu/Active-Perception">https://github.com/mdecycu/Active-Perception</a> </p>
+<p><a href="https://github.com/mdecourse-org/V-Rep">https://github.com/mdecourse-org/V-Rep</a> </p>
+<p><a href="https://github.com/mdecourse-org/vrep-volleyball">https://github.com/mdecourse-org/vrep-volleyball</a> </p>
+<p><a href="https://github.com/mdecourse/Autonomous-car-simulation">https://github.com/mdecourse/Autonomous-car-simulation</a> </p>
+<p><a href="https://github.com/mdecourse/First_Project">https://github.com/mdecourse/First_Project</a> </p>
+<p><a href="https://github.com/mdecourse/Ball-Tracking-Mobile-Robots">https://github.com/mdecourse/Ball-Tracking-Mobile-Robots</a> </p>
+<p><a href="https://github.com/mdecourse/Ball-Balancing-Machine">https://github.com/mdecourse/Ball-Balancing-Machine</a> </p>
+<p><a href="https://github.com/mdecourse/CoppeliaSim-Blender-Tools">https://github.com/mdecourse/CoppeliaSim-Blender-Tools</a> </p>
+<p><a href="https://github.com/mdecourse/Vision_Project_M1">https://github.com/mdecourse/Vision_Project_M1</a> </p>
+<p><a href="https://github.com/mdecourse/self-driving-car-simulation">https://github.com/mdecourse/self-driving-car-simulation</a> </p>
+<p><a href="https://github.com/mdecourse-org/PID_wall_following">https://github.com/mdecourse-org/PID_wall_following</a> </p>
+<p><a href="https://github.com/mdecourse-org/coppelia_gui_robot_control_python">https://github.com/mdecourse-org/coppelia_gui_robot_control_python</a> </p><br />PICSimLab << <a href='PICSimLab.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython</div>
         
     <!-- footer -->
       <div class="container">

@@ -125,7 +125,7 @@ img.add_border {
     <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
                         <li class="active has-children"><a href="index.html">Home</a>
                         <ul class="dropdown">
-                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="sitemap.html">SMap</a></li>
                             <li><a href="./../reveal/index.html">reveal</a></li>
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
@@ -141,12 +141,25 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Solid Edge << <a href='Solid Edge.html'>Previous</a> <a href='NX.html'>Next</a> >> NX<br /><h1>SE_Tutorial</h1>
-<p><a href="https://solidedge.siemens.com/en/resources/tutorials/">https://solidedge.siemens.com/en/resources/tutorials/</a> </p>
-<p><a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/EVlrCyH8aDFOlJNhRC1DVSQBffjuzI97QCpqJTC_WldKtA?e=TiGTws">Test drive Solid Edge.pdf</a></p>
-<p>在安裝過程利用 regshot 紀錄套件所新增的 .reg, 或可直接將套件放入 USB, 並提供所需的 registry, 就有機會在安裝防寫卡的電腦上直接執行.</p>
-<p>Delete installed registries:</p>
-<p>Powershell commond file: delete_key.ps1</p>
+    <div id="tipue_search_content">Solid Edge << <a href='Solid Edge.html'>Previous</a> <a href='NX.html'>Next</a> >> NX<br /><h1>SE_Tutorial</h1><p>
+<a href="https://solidedge.siemens.com/en/resources/tutorials/">
+  https://solidedge.siemens.com/en/resources/tutorials/
+ </a>
+</p>
+<p>
+<a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/EVlrCyH8aDFOlJNhRC1DVSQBffjuzI97QCpqJTC_WldKtA?e=TiGTws">
+  Test drive Solid Edge.pdf
+ </a>
+</p>
+<p>
+ 在安裝過程利用 regshot 紀錄套件所新增的 .reg, 或可直接將套件放入 USB, 並提供所需的 registry, 就有機會在安裝防寫卡的電腦上直接執行.
+</p>
+<p>
+ Delete installed registries:
+</p>
+<p>
+ Powershell commond file: delete_key.ps1
+</p>
 <pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false"># Specify the registry keys and values to delete
 $keysToDelete = @(
     "HKEY_CURRENT_USER\Path\To\Key1",
@@ -160,7 +173,9 @@ foreach ($key in $keysToDelete) {
     Remove-Item -Path "Registry::$key" -Recurse -Force
 }
 </pre>
-<p>or read the installed .reg and delete keys by reading .reg file:</p>
+<p>
+ or read the installed .reg and delete keys by reading .reg file:
+</p>
 <pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false"># Define the path to the .reg file
 $regFilePath = "C:\path\to\your\file.reg"
 
@@ -188,8 +203,14 @@ finally {
     }
 }
 </pre>
-<p><a href="https://sourceforge.net/projects/regshot/">https://sourceforge.net/projects/regshot/</a> </p>
-<p style="padding-left: 30px;">Regshot is an open-source (LGPL) registry compare utility that allows you to quickly take a snapshot of your registry and then compare it with a second one - done after doing system changes or installing a new software product.</p><br />Solid Edge << <a href='Solid Edge.html'>Previous</a> <a href='NX.html'>Next</a> >> NX</div>
+<p>
+<a href="https://sourceforge.net/projects/regshot/">
+  https://sourceforge.net/projects/regshot/
+ </a>
+</p>
+<p style="padding-left: 30px;">
+ Regshot is an open-source (LGPL) registry compare utility that allows you to quickly take a snapshot of your registry and then compare it with a second one - done after doing system changes or installing a new software product.
+</p><br />Solid Edge << <a href='Solid Edge.html'>Previous</a> <a href='NX.html'>Next</a> >> NX</div>
         
     <!-- footer -->
       <div class="container">

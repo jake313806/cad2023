@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2023 Fall 電腦輔助設計與實習</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2023-06-18T11:00:00+08:00</updated><entry><title>教學進度</title><link href="./2023-Fall-CAD-Week1.html" rel="alternate"></link><published>2023-06-18T11:00:00+08:00</published><updated>2023-06-17T23:53:06+08:00</updated><author><name>yen</name></author><id>tag:None,2023-06-18:./2023-Fall-CAD-Week1.html</id><summary type="html">&lt;p&gt;this is a template.&lt;/p&gt;
-</summary><content type="html">&lt;p&gt;this is a template.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2023 Fall 電腦輔助設計與實習</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2023-06-18T11:00:00+08:00</updated><entry><title>利用網誌紀錄教學進度</title><link href="./2023-Fall-CAD-week1-use-blog-to-record-teaching-progress.html" rel="alternate"></link><published>2023-06-18T11:00:00+08:00</published><updated>2023-06-18T01:20:16+08:00</updated><author><name>yen</name></author><id>tag:None,2023-06-18:./2023-Fall-CAD-week1-use-blog-to-record-teaching-progress.html</id><summary type="html">&lt;p&gt;可以直接在線上編輯或新增 Blog markdown 並轉為 blog&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;可以直接在線上編輯或新增 Blog markdown 並轉為 blog&lt;/p&gt;
 
 
 &lt;h2&gt;Solid Edge&lt;/h2&gt;
-&lt;pre class="brush:jscript"&gt;
-test
-&lt;/pre&gt;
-&lt;pre class="brush: python"&gt;
-test
-&lt;/pre&gt;</content><category term="Misc"></category><category term="2023FallCAD"></category></entry><entry><title>2023 Fall CAD 課程</title><link href="./2023-Fall-Intro-to-computer-aided-design.html" rel="alternate"></link><published>2023-06-17T11:00:00+08:00</published><updated>2023-06-17T23:48:38+08:00</updated><author><name>yen</name></author><id>tag:None,2023-06-17:./2023-Fall-Intro-to-computer-aided-design.html</id><summary type="html">&lt;p&gt;2023 Fall 電腦輔助設計與實習.&lt;/p&gt;
+&lt;p&gt;從同步建模了解 Solid Edge, 並學習如何利用 Dynamic  Designer Motion 進行機構設計與分析並利用應力分析進行零件外形最佳化設計.&lt;/p&gt;</content><category term="Misc"></category><category term="2023FallCAD"></category></entry><entry><title>2023 Fall CAD 課程</title><link href="./2023-Fall-Intro-to-computer-aided-design.html" rel="alternate"></link><published>2023-06-17T11:00:00+08:00</published><updated>2023-06-17T23:48:38+08:00</updated><author><name>yen</name></author><id>tag:None,2023-06-17:./2023-Fall-Intro-to-computer-aided-design.html</id><summary type="html">&lt;p&gt;2023 Fall 電腦輔助設計與實習.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2023 Fall 電腦輔助設計與實習.&lt;/p&gt;
 
 

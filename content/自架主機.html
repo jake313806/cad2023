@@ -2,7 +2,7 @@
         <head>
         <title>cad2023</title>
         <meta charset="utf-8">
-<meta property="head" content="H1">
+<meta property="head" content="H3">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -141,221 +141,348 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Projects << <a href='Projects.html'>Previous</a> <a href='SE_Tutorial.html'>Next</a> >> SE_Tutorial<br /><h1>Solid Edge</h1><p>
- 採用動機: 可以在不連網的環境下使用, 具備 Synchronous Technology functions.
+    <div id="tipue_search_content">如何維護網站 << <a href='如何維護網站.html'>Previous</a> <a href='Projects.html'>Next</a> >> Projects<br /><h1>自架主機</h1><p>
+ 利用 Nginx 建立 Ubuntu 帳號下的公開網頁架構, 其 nginx.conf 相關設定:
+</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">location ~ ^/~(.+?)(/.*)?$ {
+alias /home/$1/public_html$2;
+index index.html index.htm;
+autoindex on;
+}</pre>
+<p>
+ 設定 public_html
 </p>
 <p>
-<a href="https://docs.plm.automation.siemens.com/tdoc/se/2020/se_help#uid:xid464417">
-  Solid Edge 上課教材
- </a>
-</p>
-<p>
- 以下為參考資料:
-</p>
-<p style="padding-left: 30px;">
- The following downloads are for @nfu users only.
-</p>
-<p style="padding-left: 30px;">
-<a href="https://link.springer.com/book/10.1007/978-3-319-05921-1">
-  CAD, 3D Modeling, Engineering Analysis, and Prototype Experimentation
- </a>
-</p>
-<p style="padding-left: 30px;">
-<a href="https://assets-global.website-files.com/5b782089dfe0db977c49f302/5e99e25b241a2f23707118f2_Solid%20Edge%20Webinar%20Series%20Internal%20Links.pdf">
-  Solid Edge Webinar
- </a>
-</p>
-<p style="padding-left: 30px;">
-<a href="https://www.themachinedesign.com/category/cad/solid-edge/">
-  https://www.themachinedesign.com/category/cad/solid-edge/
- </a>
-</p>
-<p style="padding-left: 30px;">
-<a href="https://s3.amazonaws.com/s3.mentor.com/plm/solidedge/SolidEdge01-Part_Design-Draft.pdf">
-  https://s3.amazonaws.com/s3.mentor.com/plm/solidedge/SolidEdge01-Part_Design-Draft.pdf
- </a>
-</p>
-<p style="padding-left: 30px;">
-<a href="https://www.themachinedesign.com/solid-edge-tutorial-part-modeling-in-synchronous-mode/">
-  https://www.themachinedesign.com/solid-edge-tutorial-part-modeling-in-synchronous-mode/
- </a>
-</p>
-<p style="padding-left: 30px;">
-<a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/EY8Av9-6sxFMnh7GhY1vegoBttgQH2zRpTI6zlcCTXTKMQ?e=t8p8TL">
-  Solid Edge with synchronous technology Steering a new course in 3D design.pdf
- </a>
-</p>
-<p style="padding-left: 30px;">
-<a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/EamCzpZkMF9Ahd1YTU7yrpkBSXgtvixFZ0KBk7FBysyLfg?e=sGcqYV">
-  What is Synchronous Technology.pdf
- </a>
-</p>
-<p style="padding-left: 30px;">
-<a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/EctazICF3uVLknwMd3BRV_ABUnQoxnYX_9xu3OIau6jdzQ?e=H00H6R">
-  Change your modeling approach for better designs.pdf
- </a>
-</p>
-<p style="padding-left: 30px;">
-<a href="https://solidedge.siemens.com/en/resource/video/design-a-part-using-synchronous-technology/">
-  https://solidedge.siemens.com/en/resource/video/design-a-part-using-synchronous-technology/
- </a>
- (
- <a href="https://www.youtube.com/watch?v=XhoJJzDKFY4">
-  https://www.youtube.com/watch?v=XhoJJzDKFY4
- </a>
- )
-</p>
-<p style="padding-left: 30px;">
-<a href="https://www.solid-edge.com.tw/%E3%80%90%E7%B7%9A%E4%B8%8A%E7%A0%94%E8%A8%8E%E6%9C%83%E3%80%91solid-edge-%E5%90%8C%E6%AD%A5%E5%BB%BA%E6%A8%A1%E6%8A%80%E8%A1%93/">
-  同步建模線上研討會
- </a>
-</p>
-<p style="padding-left: 30px;">
- Synchronous vs Ordered Methods in Solid Edge:
- <a href="https://youtu.be/XD12cfjvXeE">
-  https://youtu.be/XD12cfjvXeE
- </a>
-</p>
-<p style="padding-left: 30px;">
-<a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/Ebu8dDfKDGZGpCir0CIjegEBMgngPvjFDgggem3ERDgGPw?e=9Jp43D">
-  ROI of Solid Edge with Synchronous Technology.pdf
- </a>
-</p>
-<p style="padding-left: 30px;">
-<a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/EXn4Vr1oOD9FnhEnXwCjoPcBLSLuaDYp2cPOcDIuK0UEug?e=LMIHbO">
-  Solid Edge with Synchronous Technology course.pdf
- </a>
-</p>
-<p style="padding-left: 30px;">
-<a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/EaSnCV6hOI1NrLvEkXqarf8B6aKjpADa24Erg4IsWqHNwQ?e=Ld7NqL">
-  Dynamic Designer Motion.pdf
- </a>
-</p>
-<p style="padding-left: 30px;">
-<a href="https://nfuedu-my.sharepoint.com/:f:/g/personal/yen_nfu_edu_tw/EmvQhIXnr7dBk9BuHxmjyJkBIrI8FdFdvTWI6TyI8taX7g?e=SnLCMX">
-  其他 Solid Egde 與 Femap 相關檔案
+<a href="https://www.server-world.info/en/note?os=Ubuntu_20.04&amp;p=nginx&amp;f=4">
+  https://www.server-world.info/en/note?os=Ubuntu_20.04&amp;p=nginx&amp;f=4
  </a>
 </p>
 <p>
- Synchronous Technology, a feature exclusive to Siemens' Solid Edge software, offers several capabilities that enhance the design and editing process. Here are some areas where Synchronous Technology can be applied:
+ r: 4, w: 2, x: 1
+</p>
+<p>
+ 外部 711 - user rwx, group x, other x
+</p>
+<p>
+ public_html 755 - user rwx, group rx, other rx
+</p>
+<hr/>
+<p>
+ stud2 是一台 Ubuntu server, 讓每一個用戶透過兩個 ports 共享 server  中所設置的外部與內部 ports.
+</p>
+<p>
+ 其中以 9 開頭的 port 設定為內部 port,  而 8 開頭的 port 則用於外部連線.
+</p>
+<p>
+ 當某一用戶誤用所分配的內部 port 時, 管理者就可以透過 lsof 指令找出該用戶, 並即時加以糾正.
+</p>
+<p>
+ 又由於 8 開頭的外部 port 統一由管理者以 Stunnel 啟動並加以管控, 因此一般用戶產生誤用的情況只會發生在內部以 9 開頭的 port.
+</p>
+<p>
+ getps:
+</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">#! /bin/bash
+ps axo pid,comm,user | grep "python3"</pre>
+<p>
+ getport:
+</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">lsof -i :$1</pre>
+<p>
+ getdir:
+</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">pwdx $1</pre>
+<p>
+ 列出 Ubuntu 中 port 使用相關資訊: lsof -i :9123
+</p>
+<p>
+ lsof: list open files
+</p>
+<p>
+ -i: selects the listing of files any of whose Internet address matches the address specified in i.  If no address is specified, this option selects the listing of all Internet and x.25 (HP-UX) network files.
+</p>
+<hr/>
+<p>
+ waitress 利用 hupper 自動 reload:
+</p>
+<p>
+ 在 Ubuntu 操作系統安裝 python3-hupper
+</p>
+<p style="padding-left: 30px;">
+ sudo apt install python3-hupper
+</p>
+<p>
+ 進入倉儲目錄後, 利用 hupper3 執行 server.py
+</p>
+<p style="padding-left: 30px;">
+ cd cd2023
+</p>
+<p style="padding-left: 30px;">
+ hupper3 -m server.py
+</p>
+<hr/>
+<p>
+ 假如要以自己架設的伺服器來取代 Replit, 第一步是如何在 Ubuntu 22.04 Server 上建立每位學員的帳號. 使用
+ <a href="https://manpages.ubuntu.com/manpages/xenial/man8/newusers.8.html">
+  newusers
+ </a>
+ 指令, 配合建立一個包含帳號、密碼、uid、gid、comment、home dir 以及 shell (/bin/bash) 資料的 users.txt, 然後使用 sudo newusers users.txt 就可以完成所有學員帳號的建立. 但必須要先取得初始 uid, 也就是列出現有帳號的所屬 uid, 然後才能設定後續代號的 user id.
+</p>
+<p>
+ 列出現有帳號 uid 的指令為: cut -d: -f1,3 /etc/passwd
+</p>
+<p>
+ 表示要從 /etc/passwd 檔案, 以 : 符號分割檔案, 然後只取出第一與第三欄位的資料. 假如傳回:
+</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">root:0
+daemon:1
+bin:2
+sys:3
+sync:4
+games:5
+man:6
+lp:7
+mail:8
+news:9
+uucp:10
+proxy:13
+www-data:33
+backup:34
+list:38
+irc:39
+gnats:41
+nobody:65534
+_apt:100
+systemd-network:101
+systemd-resolve:102
+messagebus:103
+systemd-timesync:104
+pollinate:105
+sshd:106
+syslog:107
+uuidd:108
+tcpdump:109
+tss:110
+landscape:111
+usbmux:112
+tcexam:1000
+lxd:999
+postgres:113
+tcexamdb:1001
+cad2022:1002
+stunnel4:998
+cd1:1002
+cd3:1003</pre>
+<p>
+ 表示新建帳號的 uid 與 gid 就可以從 1004 開始, 然後連續增量後配給新的用戶
+</p>
+<p>
+ IP 位址或埠號分配
+</p>
+<p>
+ 當各學員在一台 Ubuntu 22.04 Server 上擁有帳號 (最理想的情況是用 Email 通知其主機資訊與帳號密碼) 之後, 隨即可以利用 ssh 進行遠端登入.
+</p>
+<p>
+ 進入 Ubuntu 操作系統後, 就能夠利用 git clone 取下課程倉儲, 然後利用 python3 cmsimde/wsgi.py 執行動態網頁, 若各學員能夠從 port 8000 - 9000 之間進行分配區隔, 只要各學員配合修改 init.py 中的 IP 與 port 設定後, 就可以分別以自架主機取代 Replit.
+</p>
+<p>
+ waitress
+</p>
+<p>
+ 直接利用 Python3 執行 wsgi.py 儘管可以讓使用者登入編輯動態網站, 但效率並沒有 wsgi 模式高, 因此若能採用
+ <a href="https://docs.pylonsproject.org/projects/waitress/en/stable/index.html">
+  waitress
+ </a>
+ 的方式啟用動態網頁, 應該是較好的做法. 但 https 對外連線仍需透過 Stunnel 或 Nginx 銜接完成.
+</p>
+<p>
+ 這時, 只要在倉儲根目錄建立 waitress_server.py
+</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">from waitress import serve
+from cmsimde import flaskapp
+ 
+serve(flaskapp.app, listen="127.0.0.1:9443")</pre>
+<p>
+ 然後 stunnel.conf 搭配設定:
+</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">[https]
+accept = stud.cycu.org:443
+connect = 127.0.0.1:9443
+cert = fullchain.pem
+key = privkey.pem
+TIMEOUTclose = 0</pre>
+<p>
+ 就可以在 python3 waitress_server.py 執行下, 讓外部以 https://stud.cycu.org 連結到對應的動態網頁.
+</p>
+<p>
+ 在此的問題是, waitress_server.py 如何以 service 啟動, stunnel 如何搭配執行. 最簡單的情況是 Stunnel 先以 service 執行, 但事先納入所有學員的規劃 port, 其中包括內容 port 以及外部 port, 並且讓學員在需要編輯動態網頁的時候, 自行啟動各自的 waitress_server.py
+</p>
+<p>
+ 利用 Python 取 IPv6 網路位址:
+</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import socket
+ip = socket.getaddrinfo("stud.cycu.org", 0, socket.AF_INET6)[0][4][0]
+print(ip)</pre>
+<p>
+ Virtualbox 虛擬主機
+</p>
+<p>
+ 利用一台 16 核 80 GB 記憶體的虛擬主機, 建立約 250 個用戶後, 看能否透過 Stunnel 與 wsgi 啟動各自的 cmsimde 動態網站.
+</p>
+<p>
+ 為了建立多用戶帳號, 可以利用 newusers 指令, 配合 users.txt 檔案:
+</p>
+<p>
+ users.txt 檔案格式, 分別是: 使用者帳號, 預計使用 cad 加上學號, 或者是 cp 加上學號, 而密碼可以採用亂數產生, 至於 uid 與 gid 則需先使用
+</p>
+<p>
+ cut -d: -f1,3 /etc/passwd
+</p>
+<p>
+ 查詢現有帳號的對應 id 後, 再逐一利用迴圈增量. 至於 comment 欄位, 可以直接採用 cad 或 cp 加上學號, 而 shell 欄位則選用 /bin/bash
+</p>
+<p>
+ user_1:password_2:1002:1002:user_1:/home/user_1:/bin/bash
+</p>
+<p>
+ sudo newusers users.txt
+</p>
+<p>
+ 依照上述流程建立帳號後, 可以保留使用者學號、帳號與對應密碼, 然後利用 Gmail 將此訊息郵寄給各用戶.
+</p>
+<p>
+ 至於透過程式方法必須完成下列事項:
 </p>
 <ol>
 <li>
-  Direct Editing: Synchronous Technology enables direct editing of 3D CAD models, allowing users to modify geometry without relying on feature history. This feature is particularly useful when working with imported or non-native CAD data.
+  建立 users.txt, 然後傳送至虛擬主機
  </li>
 <li>
-  Live Rules: Synchronous Technology utilizes live rules to maintain design intent while making modifications. These rules automatically adjust related features, dimensions, and relationships as changes are made, ensuring the integrity of the design.
+  利用 sudo newuser users.txt 建立各用戶帳號與 home directory
  </li>
 <li>
-  Flexible Design Modifications: Synchronous Technology enables quick and easy design modifications, such as changing dimensions, adding or removing features, and adjusting geometry. These modifications can be made without constraints imposed by the original feature tree.
+  建立 users_account.txt, 包含與 users.txt 各用戶帳號與密碼資訊
  </li>
 <li>
-  Hybrid Modeling: With Synchronous Technology, users can seamlessly switch between traditional parametric modeling and direct editing, allowing for a hybrid modeling approach that combines the benefits of both methods.
- </li>
-<li>
-  Working with Imported Data: Synchronous Technology is particularly effective when working with imported CAD data from other software systems. It enables efficient editing and modification of the imported geometry, even without access to the original feature history.
- </li>
-<li>
-  Fast Conceptual Design: Synchronous Technology allows for rapid conceptual design iterations by providing the flexibility to modify geometry on-the-fly. This helps in exploring multiple design alternatives and making quick design changes based on project requirements.
- </li>
-<li>
-  Sheet Metal Design: Synchronous Technology includes specific tools for sheet metal design, enabling users to easily modify and edit sheet metal parts without the need for extensive feature editing or remodelling.
- </li>
-<li>
-  Editability of History-Based Models: Synchronous Technology can be used to edit and modify traditional, history-based models created using parametric design methodologies. It provides a non-destructive editing workflow for making changes to the feature-based history of the model.
+  利用 Gmail 逐一將 users_account.txt 的帳號與密碼資訊寄給用戶
  </li>
 </ol>
 <p>
- These are some of the areas where Synchronous Technology in Solid Edge provides unique advantages in terms of design flexibility, speed, and ease of use.
+ password generator
 </p>
 <p>
- Solid Edge community edition:
-</p>
-<p style="padding-left: 30px;">
-<a href="https://www.plm.automation.siemens.com/plmapp/education/solid-edge/zh_tw/free-software/community">
-  https://www.plm.automation.siemens.com/plmapp/education/solid-edge/zh_tw/free-software/community
+ Brython 版
+ <a href="https://mde.tw/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/2c6323eff49b496d1bafd210f3ec9707/raw/8864b4178c8ec64f60d30014d3ab743499d51be4/password_generator.py">
+  password generator
  </a>
- (下載約 4GB, 安裝後佔約 8GB, 授權使用時段: 06-jul-2021 至 31-dec-2025)
+ .
 </p>
-<p style="padding-left: 30px;">
- 需要 Windows 10 Enterprise or Professional (64-bit only) version 20H2 or later, Windows 11 Enterprise or Professional version 21H2 or later,
- <a href="https://developer.microsoft.com/en-us/microsoft-edge/webview2/">
-  https://developer.microsoft.com/en-us/microsoft-edge/webview2/
- </a>
- , MS .Net Framework 4.8, MS Visual C++ 2015-2019 redistributable X64
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import random
+import string
+ 
+def password_generator(size=4, chars=string.ascii_lowercase + string.digits):
+ 
+    """Generate random password
+    """
+    return ''.join(random.choice(chars) for _ in range(size))
+ 
+pass_string = "abcdefghkmnpqrstuwxyz123456789"
+for i in range(10):
+    print(password_generator(4, pass_string))</pre>
+<p>
+ 首先要建立各課程對應的 Ubuntu 帳號與密碼檔案:
 </p>
-<p style="padding-left: 30px;">
- 會同時安裝
- <a href="https://www.keyshot.com/">
-  https://www.keyshot.com/
- </a>
- 11 版
-</p>
-<p style="padding-left: 30px;">
- SELicense.lic 位於 Preferences 目錄下
-</p>
-<p style="padding-left: 30px;">
- No Solid Edge Cloud Gateway
-</p>
-<p style="padding-left: 30px;">
- 圖檔同教育版無法與商業版相容
-</p>
-<p style="padding-left: 30px;">
- 所建立的工程圖會有浮水印
-</p>
-<p style="padding-left: 30px;">
-<a href="https://docs.sw.siemens.com/en-US/doc/246738425/PL20211001099989437.user_interface">
-  Solid Edge Documentation
- </a>
-</p>
-<p style="padding-left: 30px;">
-<a href="https://docs.plm.automation.siemens.com/docs/se/2020/api/webframe.html">
-  SE2020 API Documentation
- </a>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 導入亂數模組
+import random
+# 導入字串模組
+import string
+# 利用 def 關鍵字定義函式
+# 函式的輸入變數可以設定初始值
+def password_generator(size=4, chars=string.ascii_lowercase + string.digits):
+    # 函式內以多行註解說明函式功能
+    """Generate random password
+    """
+    # 利用 return 關鍵字將所產生的亂數字串傳回
+    return ''.join(random.choice(chars) for _ in range(size))
+# 建立一個變數與隨後的字串對應
+pass_string = "abcdefghkmnpqrstuwxyz123456789"
+cp_num = ["0747", "0761"]
+cad_num = ["0773", "0786"]
+def gen_acc_pass(course, course_num):
+    stud_list =[]
+    for num in course_num:
+        url = "https://nfu.cycu.org/?semester=1111&amp;courseno=" + num + "&amp;column=True"
+        class_list = open(url).read().split("\n")[:-1]
+        stud_list += class_list
+        #print(stud_list)
+    for stud_num in stud_list:
+        password = password_generator(4, pass_string)
+        #print(password)
+        account = course + stud_num
+        #print(account)
+        print(stud_num + "\t" + account + "\t" + password)
+gen_acc_pass("cp", cp_num)
+gen_acc_pass("cad", cad_num)</pre>
+<p>
+ Windows 與 Ubuntu 格式差異
 </p>
 <p>
- 與 NX, Onshape 比較:
+ create_users_txt.py
 </p>
-<p style="padding-left: 30px;">
- 自帶使用授權, 可在不上網情況下使用
-</p>
-<p style="padding-left: 30px;">
- 安裝版 (下載 3.8GB, 安裝後佔 8GB), 適合在自己的電腦或筆電中安裝執行.
-</p>
-<p style="padding-left: 30px;">
- 可攜版 (下載 4.28GB, 解開後佔 9.4GB), 適合在有防寫卡保護的電腦或虛擬主機中使用.
-</p>
-<p style="padding-left: 30px;">
- 功能與 SolidWorks, Onshape 相當, 屬於中級 MCAD
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">with open("2022_fall_ubuntu_account_pass.txt") as f:
+    data = f.readlines()
+# newusers format:  
+# pw_name:pw_passwd:pw_uid:pw_gid:pw_gecos:pw_dir:pw_shell
+# uid starts from 1002
+uid_starts = 1001
+users = ""
+send = ""
+ 
+for i in data:
+    #stud_num \t account \t password \n
+    stud = i.split("\t")
+    stud_num = stud[0]
+    account = stud[1]
+    password = stud[2].rstrip()
+    uid_starts += 1
+    uid = str(uid_starts)
+    gid = uid
+    gecos = account
+    home_dir = "/home/" + account
+    shell = "/bin/bash"
+    #print(stud_num, account, password)
+    users += account + ":" + password + ":" + uid + ":" + gid + ":" + gecos + ":" + home_dir + ":" + shell + "\n"
+    send += stud_num + ":" + account + ":" + password + "\n"
+ 
+with open("users.txt", "w", encoding="utf-8", newline='\n') as f:
+        f.write(users)
+ 
+with open("send.txt", "w", encoding="utf-8", newline='\n') as f:
+        f.write(send)</pre>
+<p>
+ 假如沒有採用 newline='\n', 在 Windows 寫檔案所使用的跳行符號, 以 sftp 傳到 Ubuntu 時將會因為 shell 並非 /bin/bash 而是加上 ^M$ 的錯誤 shell 資料, 導入用戶無法 login.
 </p>
 <p>
- Solid Edge Hot keys：
+ 若要修正跳行符號錯誤, 可以採用:
 </p>
-<ol>
-<li>
-  Esc鍵：取消現行指令回到選取狀態
- </li>
-<li>
-  Ctrl + F：前視圖 (Front)
- </li>
-<li>
-  F3 鍵：平面鎖定與解除 Toggle
- </li>
-<li>
-  Ctrl + I：等角圖 (Isometric)
- </li>
-<li>
-  N 鍵：切換尺寸標示方向
- </li>
-<li>
-  Ctrl + R：右側視圖 (Right)
- </li>
-<li>
-  Ctrl + T：上視圖 (Top)
- </li>
-</ol>
 <p>
-</p><br />Projects << <a href='Projects.html'>Previous</a> <a href='SE_Tutorial.html'>Next</a> >> SE_Tutorial</div>
+ change_shell.py
+</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import os
+with open("users.txt", "r", encoding="UTF-8") as f:
+    data = f.read().splitlines()
+for i in data:
+    account = i.split(":")[0]
+    print(account)
+    os.system("sudo chsh -s /bin/bash " + account)</pre>
+<p>
+ 當執行上列程式時, 為避免在程式中列出管理者密碼, 可以編輯 /etc/sudoers 並加入:
+</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false"># only require a password once every 60 minutes
+Defaults timestamp_timeout=60</pre>
+<p>
+ 可以讓 sudo python3 change_shell.py 執行時無需輸入管理者密碼.
+</p><br />如何維護網站 << <a href='如何維護網站.html'>Previous</a> <a href='Projects.html'>Next</a> >> Projects</div>
         
     <!-- footer -->
       <div class="container">

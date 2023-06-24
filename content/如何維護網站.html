@@ -130,7 +130,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li><a href='如何維護網站.html'>如何維護網站</a><li><a href='Projects.html'>Projects</a></li></ul><li class='has-children'><a href='Solid Edge.html'>Solid Edge</a><ul class='dropdown'><li><a href='SE_Tutorial.html'>SE_Tutorial</a></li></ul><li><a href='NX.html'>NX</a><li><a href='Onshape.html'>Onshape</a><li class='has-children'><a href='Solvespace.html'>Solvespace</a><ul class='dropdown'><li><a href='SketchFlat.html'>SketchFlat</a></li></ul><li class='has-children'><a href='CoppeliaSim.html'>CoppeliaSim</a><ul class='dropdown'><li><a href='PICSimLab.html'>PICSimLab</a><li><a href='Models.html'>Models</a><li><a href='Research.html'>Research</a></li></ul><li><a href='Brython.html'>Brython</a></li>
+                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li class='has-children'><a href='如何維護網站.html'>如何維護網站</a><ul class='dropdown'><li><a href='自架主機.html'>自架主機</a></li></ul><li><a href='Projects.html'>Projects</a></li></ul><li class='has-children'><a href='Solid Edge.html'>Solid Edge</a><ul class='dropdown'><li><a href='SE_Tutorial.html'>SE_Tutorial</a></li></ul><li><a href='NX.html'>NX</a><li><a href='Onshape.html'>Onshape</a><li class='has-children'><a href='Solvespace.html'>Solvespace</a><ul class='dropdown'><li><a href='SketchFlat.html'>SketchFlat</a></li></ul><li class='has-children'><a href='CoppeliaSim.html'>CoppeliaSim</a><ul class='dropdown'><li><a href='PICSimLab.html'>PICSimLab</a><li><a href='Models.html'>Models</a><li><a href='Research.html'>Research</a></li></ul><li><a href='Brython.html'>Brython</a></li>
                       </ul>
                 </nav>
               </div>
@@ -141,15 +141,38 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">About << <a href='About.html'>Previous</a> <a href='Projects.html'>Next</a> >> Projects<br /><h1>如何維護網站</h1>
-<p>以下的網站以 cmsimde 作為子模組的 Github Pages 網站維護為主:</p>
-<p>cmsimde 是甚麼?</p>
-<p style="padding-left: 30px;">cmsimde 是一套網際內容管理系統, 利用 Python Flask 建立動態網站, 讓管理者登入後透過線上編輯器管理大綱式 (Outline-style) 網頁架構, 且轉為靜態網站時將網站內容關鍵字存為字典, 使用者可在靜態網站中以關鍵字搜詢網頁內容.</p>
-<p style="padding-left: 30px;">cmsimde 還整合網誌與網際簡報, 讓使用者可利用時間流程或專欄記事的方式建立網誌, 並能直接在靜態網站中進行專題簡報.</p>
-<p>有網路連線時:</p>
-<p style="padding-left: 30px;">在 Github 建立帶有 cmsimde 子模組的倉儲, 設定該倉儲的 Github Pages, 以 import 方式指定使用 Python  主題後, 將倉儲輸入 Replit 中, 利用 Shell 指令 git submodule update --init 取下子模組內容後, 再利用 Shell 指令 pip install flask flask_cors bs4 lxml markdown pelican pyopenssl gevent 等模組後, 以 Run 啟動網站後, 更改管理者密碼, 之後只要 main.py 執行便可利用動態網站維護 config/content.htm 中的內容, 完成後再利用 Convert 指令將 content.htm 中的內容轉為 content 目錄中的靜態網站資料.</p>
-<p style="padding-left: 30px;">要將 Replit 上的 cmsimde 網站倉儲內容送回 Github 之前, 必須在 .replit 設定檔案中的 [env] 環境變數區, 設定 GIT_AUTHOR_NAME 與 GIT_AUTHOR_EMAIL 等變數, 才能在利用 Tools 中的 Git 頁面工具進行 git commit -m 指令時綁定使用者身分, 完成改版內容提交後, 可直接在倉儲 .git/config 檔案中置入具有維護 Repo 權限的 Token 後, 在 Git 頁面執行 git push, 或利用 Shell 指令執行 git push, 以便將改版的倉儲內容與 Github 保持同步. 每次改版推送結束後, Github Pages 的設定就會針對改版內容進行轉檔為最新的靜態網站內容.</p>
-<p>無網路連線時:</p><br />About << <a href='About.html'>Previous</a> <a href='Projects.html'>Next</a> >> Projects</div>
+    <div id="tipue_search_content">About << <a href='About.html'>Previous</a> <a href='自架主機.html'>Next</a> >> 自架主機<br /><h1>如何維護網站</h1><p>
+ 以下的網站以 cmsimde 作為子模組的 Github Pages 網站維護為主:
+</p>
+<p>
+ cmsimde 是甚麼?
+</p>
+<p style="padding-left: 30px;">
+ cmsimde 是一套網際內容管理系統, 利用 Python Flask 建立動態網站, 讓管理者登入後透過線上編輯器管理大綱式 (Outline-style) 網頁架構, 且轉為靜態網站時將網站內容關鍵字存為字典, 使用者可在靜態網站中以關鍵字搜詢網頁內容.
+</p>
+<p style="padding-left: 30px;">
+ cmsimde 還整合網誌與網際簡報, 讓使用者可利用時間流程或專欄記事的方式建立網誌, 並能直接在靜態網站中進行專題簡報.
+</p>
+<p>
+ 有網路連線時:
+</p>
+<p style="padding-left: 30px;">
+ 採用 Replit:
+</p>
+<p style="padding-left: 30px;">
+ 在 Github 建立帶有 cmsimde 子模組的倉儲, 設定該倉儲的 Github Pages, 以 import 方式指定使用 Python  主題後, 將倉儲輸入 Replit 中, 利用 Shell 指令 git submodule update --init 取下子模組內容後, 再利用 Shell 指令 pip install flask flask_cors bs4 lxml markdown pelican pyopenssl gevent 等模組後, 以 Run 啟動網站後, 更改管理者密碼, 之後只要 main.py 執行便可利用動態網站維護 config/content.htm 中的內容, 完成後再利用 Convert 指令將 content.htm 中的內容轉為 content 目錄中的靜態網站資料.
+</p>
+<p style="padding-left: 30px;">
+ 要將 Replit 上的 cmsimde 網站倉儲內容送回 Github 之前, 必須在 .replit 設定檔案中的 [env] 環境變數區, 設定 GIT_AUTHOR_NAME 與 GIT_AUTHOR_EMAIL 等變數, 才能在利用 Tools 中的 Git 頁面工具進行 git commit -m 指令時綁定使用者身分, 完成改版內容提交後, 可直接在倉儲 .git/config 檔案中置入具有維護 Repo 權限的 Token 後, 在 Git 頁面執行 git push, 或利用 Shell 指令執行 git push, 以便將改版的倉儲內容與 Github 保持同步. 每次改版推送結束後, Github Pages 的設定就會針對改版內容進行轉檔為最新的靜態網站內容.
+</p>
+<p style="padding-left: 30px;">
+ 採用自架主機:
+</p>
+<p style="padding-left: 30px;">
+</p>
+<p>
+ 無網路連線時:
+</p><br />About << <a href='About.html'>Previous</a> <a href='自架主機.html'>Next</a> >> 自架主機</div>
         
     <!-- footer -->
       <div class="container">

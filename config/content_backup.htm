@@ -1117,10 +1117,28 @@ if __name__ == "__main__":
  Solid Edge 2023 student 版安裝檔案 (for @nfu users only)
 </p>
 <p>
- <a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/Ef9XW25wCPtCspWavfXRQkYBKeFkOnZDfMyA3Q-1DRhDNA?e=DIrKDH">
+ <a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EVZctF66LE1BkQCL4mvFEGgBIyM-u2nARksPz8VhUZI1bQ?e=EkdPfh">
   下載
  </a>
  放入 USB 隨身碟可在電腦輔助設計室中使用的可攜 Solid Edge 2023 學生版 (for @nfu users only)
+</p>
+<p>
+ 為何會製作可攜版本?
+</p>
+<p style="padding-left: 30px;">
+ 因為電腦輔助設計室的電腦安裝防寫卡, 且電腦並未安裝 Solid Edge 2023, 為了在上課時段可以與 Python 可攜程式的使用模式一致, 因此製作了能夠直接放入 USB 隨身碟, 以組態檔案設定與批次檔案啟動的方式執行 Solid Edge.
+</p>
+<p style="padding-left: 30px;">
+ 由於啟動組態檔案採虛擬硬碟的方式置入操作系統, 因此直接利用 USB 隨身碟啟動的 Solid Edge 無法直接從操作系統移除.
+</p>
+<p style="padding-left: 30px;">
+ 若希望在一般電腦使用 USB 隨身碟中的 Solid Edge, 正確的移除程序為: 起動隨身碟中的 Solid Edge, 確定 X: 虛擬硬碟已經啟動, 之後將 Solid Edge student 2023 版本的安裝程式放入 C:\se_install 後, 從控制台中選擇移除 Solid Edge, 此時利用安裝程序修復採隨身碟啟動的組態設定後, 再次選擇從控制台移除"安裝"在 X: 中的 Solid Edge, 移除後重新開機.
+</p>
+<p style="padding-left: 30px;">
+ 之後若要採用正式安裝版, 只要關閉 X: 虛擬硬碟後, 移除 USB 隨身碟中的可攜 Solid Edge (正式移除安裝後 program/edge.exe 將被刪除), 之後再利用安裝套件進行安裝.
+</p>
+<p style="padding-left: 30px;">
+ 若之後仍要採可攜方式啟動 Solid Edge, 則必須重新解開原始的可攜 USB 檔案後, 逐一執行 .reg 後, 利用 start_se2023.bat 開啟 Solid Edge.
 </p>
 <hr/>
 <p>

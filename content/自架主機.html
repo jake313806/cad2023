@@ -499,6 +499,45 @@ Defaults timestamp_timeout=60</pre>
 </p>
 <p>
  s1511 必須在 /etc/default/stunnel4 中加入 ENABLED=1 並以 sudo /etc/init.d/stunnel4 restart 才能讓 Stunnel 與 server 同步開機時啟動.
+</p>
+<hr/>
+<p>
+ 使用 Python3 刪除 Ubuntu 中的使用者帳號與 home directories:
+</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import subprocess
+
+"""
+/etc/sudoers
+vi /etc/sudoers
+use w! to write the read only file
+add the following to sudoers
+
+# only require a password once every 60 minutes
+Defaults timestamp_timeout=60
+
+use 
+sudo python3 del_users.py
+to delete users and their home directories
+"""
+
+with open("users.txt", "r") as f:
+    data = f.read().splitlines()
+#print(data)
+stud_list = []
+for i in data:
+    stud_num = i.split(":")[0]
+    #print(stud_num)
+    stud_list.append(stud_num)    
+for user in stud_list:
+    try:
+        subprocess.run(["sudo", "userdel", "-r", user], check=True)
+        print(str(user) + " deleted!")
+        subprocess.run(["sudo", "rm", "-rf", f"/home/{user}"], check=True)
+        print(str(user) + " home deleted!")
+    except subprocess.CalledProcessesError:
+        print(str(user) + " is not deleted!")
+</pre>
+<p>
 </p><br />如何維護網站 << <a href='如何維護網站.html'>Previous</a> <a href='Portable USB.html'>Next</a> >> Portable USB</div>
         
     <!-- footer -->

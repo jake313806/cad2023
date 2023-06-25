@@ -171,8 +171,14 @@ autoindex on;
 <p>
  外部 711 - user rwx, group x, other x
 </p>
+<p style="padding-left: 30px;">
+ chmod 711 /home/your_account
+</p>
 <p>
  public_html 755 - user rwx, group rx, other rx
+</p>
+<p style="padding-left: 30px;">
+ chmod 755 ~/public_html
 </p>
 <hr/>
 <p>
@@ -490,6 +496,13 @@ for i in data:
 Defaults timestamp_timeout=60</pre>
 <p>
  可以讓 sudo python3 change_shell.py 執行時無需輸入管理者密碼.
+</p>
+<hr/>
+<p>
+ s1511 必須利用 sudo pip3 install flask flask_cors bs4 lxml markdown pelican pyopenssl waitress 才能讓所有用戶共用模組, 並同時 sudo apt install python3-hupper 安裝 hupper3.
+</p>
+<p>
+ s1511 必須在 /etc/default/stunnel4 中加入 ENABLED=1 並以 sudo /etc/init.d/stunnel4 restart 才能讓 Stunnel 與 server 同步開機時啟動.
 </p>
 <h3>
  Portable USB
@@ -2032,6 +2045,29 @@ finally {
  <a href="https://link.springer.com/book/10.1007/978-3-030-02399-7">
   2019 Advanced CAD Modeling
  </a>
+</p>
+<hr/>
+<p>
+ 編譯 Solvespace:
+</p>
+<p>
+ <a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EUd5wZF9jSdCtrDkLvEfyj4Bq8pkV0b3kKZ1fxeNMhC8qg?e=slvduQ">
+  下載 MSYS2 and Cmake.7z
+ </a>
+ <span>
+  (下載 3.47GB 解開後 12.6GB, for @nfu users only)
+ </span>
+</p>
+<p>
+ <span>
+  配置 MSYS2 與 Cmake, 設定執行搜尋路徑:
+ </span>
+</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">set path_msys2=%Disk%:\msys64_20210419\mingw64\bin;
+set path_cmake=%Disk%:\cmake-3.21.0-windows-x86_64\bin
+REM 將 path_msys2 與 path_cmake 納入系統 path
+path=%Disk%:;%path_python%;%path_msys2%;%path_cmake%;%path_lua%;%path_git%;%path_tcc%;%path_gnuplot%;%path_scite%;%path_miktex%;%path%;</pre>
+<p>
 </p>
 <h2>
  SketchFlat

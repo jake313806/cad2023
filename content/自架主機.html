@@ -486,6 +486,13 @@ for i in data:
 Defaults timestamp_timeout=60</pre>
 <p>
  可以讓 sudo python3 change_shell.py 執行時無需輸入管理者密碼.
+</p>
+<hr/>
+<p>
+ s1511 必須利用 sudo pip3 install flask flask_cors bs4 lxml markdown pelican pyopenssl waitress 才能讓所有用戶共用模組, 並同時 sudo apt install python3-hupper 安裝 hupper3.
+</p>
+<p>
+ s1511 必須在 /etc/default/stunnel4 中加入 ENABLED=1 並以 sudo /etc/init.d/stunnel4 restart 才能讓 Stunnel 與 server 同步開機時啟動.
 </p><br />如何維護網站 << <a href='如何維護網站.html'>Previous</a> <a href='Portable USB.html'>Next</a> >> Portable USB</div>
         
     <!-- footer -->

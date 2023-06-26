@@ -38,6 +38,10 @@
  <a href="https://mde.tw/cad2023">
   https://mde.tw/cad2023
  </a>
+ or
+ <a href="https://cad2.cycu.org/~yen/cad2023">
+  https://cad2.cycu.org/~yen/cad2023
+ </a>
 </p>
 <p>
  行事曆
@@ -166,13 +170,22 @@ autoindex on;
  </a>
 </p>
 <p>
+ Linux 操作系統的檔案與目錄權限, 以 rwx 作為代號, 其中 r 為 read, w 為 write 而 x 則為 execution, 分別代表"讀、寫與執行"等權限. 且每一個檔案或目錄都分為三種身分的設定: u 代表 user, g 代表 group 而 o 則代表 others. 其中又以數字代表"讀、寫與執行"等三種權限.
+</p>
+<p>
  r: 4, w: 2, x: 1
+</p>
+<p>
+ 當某一帳號下的 public_html 目錄希望作為 Nginx 伺服器的公用目錄時, 其 /home/your_home 的權限必須設為 711, 也就是 user 自己擁有全部權限, 而其他同群組與不同群組者, 只能執行.
 </p>
 <p>
  外部 711 - user rwx, group x, other x
 </p>
 <p style="padding-left: 30px;">
  chmod 711 /home/your_account
+</p>
+<p>
+ 作為 Nginx 公用目錄的 public_html 權限則必須設定 user 自己擁有全部權限, 其他同群組與不同群組者, 則必須設為可讀與可執行.
 </p>
 <p>
  public_html 755 - user rwx, group rx, other rx
@@ -182,7 +195,7 @@ autoindex on;
 </p>
 <hr/>
 <p>
- stud2 是一台 Ubuntu server, 讓每一個用戶透過兩個 ports 共享 server  中所設置的外部與內部 ports.
+ stud 是一台 Ubuntu server, 讓每一個用戶透過多個 ports 共享 server  中所設置的外部與內部 ports.
 </p>
 <p>
  其中以 9 開頭的 port 設定為內部 port,  而 8 開頭的 port 則用於外部連線.
@@ -811,7 +824,11 @@ for user in stud_list:
  <a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/Eatd1g4iPyFFoZFlwR66DisBHx-fNimjugQ2svoXQJAWSQ?e=qrEmuR">
   gen_portable_python.py
  </a>
- , 從 Python 官方網站下載基本的 .msi 檔案 (例如
+ (或從 Gist
+ <a href="https://gist.githubusercontent.com/mdecycu/107d8ba0ee55d2f46e613f610d9b1166/raw/5e75188838fb7845ce46b7cbda94b1c379a6281f/gen_portable_python.py">
+  取下 gen_portable_python.py
+ </a>
+ ), 從 Python 官方網站下載基本的 .msi 檔案 (例如
  <a href="https://www.python.org/ftp/python/3.10.2/amd64/">
   3.10.2 版
  </a>
@@ -1039,8 +1056,36 @@ if __name__ == "__main__":
  Projects
 </h2>
 <p>
- 3D Football Game (透明空間地形與移動裝置中的多足球競技 - pin ball 加上 足球車)
+ 我們能夠利用電腦輔助設計流程, 在網際虛擬場景中設計一個酷炫的機電資整合技術下的彈珠檯遊戲環境嗎?
 </p>
+<p>
+ <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/4CuMVrOCjBU" title="YouTube video player" width="560">
+ </iframe>
+</p>
+<p>
+ References:
+</p>
+<p style="padding-left: 30px;">
+ <a href="https://projecthub.arduino.cc/grahamasker/build-a-pinball-machine-720f06">
+  https://projecthub.arduino.cc/grahamasker/build-a-pinball-machine-720f06
+ </a>
+</p>
+<p style="padding-left: 30px;">
+ <a href="https://pinballdesign.com/">
+  https://pinballdesign.com/
+ </a>
+</p>
+<p style="padding-left: 30px;">
+ <a href="https://youtu.be/sUSQb0Bh_M4">
+  https://youtu.be/sUSQb0Bh_M4
+ </a>
+</p>
+<p style="padding-left: 30px;">
+ <a href="https://youtu.be/NWry1RlA08c">
+  https://youtu.be/NWry1RlA08c
+ </a>
+</p>
+<hr/>
 <p>
  <a href="https://link.springer.com/book/10.1007/978-94-007-8552-6">
   2014 The Motor Car

@@ -162,13 +162,22 @@ autoindex on;
  </a>
 </p>
 <p>
+ Linux 操作系統的檔案與目錄權限, 以 rwx 作為代號, 其中 r 為 read, w 為 write 而 x 則為 execution, 分別代表"讀、寫與執行"等權限. 且每一個檔案或目錄都分為三種身分的設定: u 代表 user, g 代表 group 而 o 則代表 others. 其中又以數字代表"讀、寫與執行"等三種權限.
+</p>
+<p>
  r: 4, w: 2, x: 1
+</p>
+<p>
+ 當某一帳號下的 public_html 目錄希望作為 Nginx 伺服器的公用目錄時, 其 /home/your_home 的權限必須設為 711, 也就是 user 自己擁有全部權限, 而其他同群組與不同群組者, 只能執行.
 </p>
 <p>
  外部 711 - user rwx, group x, other x
 </p>
 <p style="padding-left: 30px;">
  chmod 711 /home/your_account
+</p>
+<p>
+ 作為 Nginx 公用目錄的 public_html 權限則必須設定 user 自己擁有全部權限, 其他同群組與不同群組者, 則必須設為可讀與可執行.
 </p>
 <p>
  public_html 755 - user rwx, group rx, other rx
@@ -178,7 +187,7 @@ autoindex on;
 </p>
 <hr/>
 <p>
- stud2 是一台 Ubuntu server, 讓每一個用戶透過兩個 ports 共享 server  中所設置的外部與內部 ports.
+ stud 是一台 Ubuntu server, 讓每一個用戶透過多個 ports 共享 server  中所設置的外部與內部 ports.
 </p>
 <p>
  其中以 9 開頭的 port 設定為內部 port,  而 8 開頭的 port 則用於外部連線.

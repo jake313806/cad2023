@@ -130,7 +130,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li class='has-children'><a href='如何維護網站.html'>如何維護網站</a><ul class='dropdown'><li><a href='自架主機.html'>自架主機</a><li><a href='Portable USB.html'>Portable USB</a></li></ul><li class='has-children'><a href='Projects.html'>Projects</a><ul class='dropdown'><li><a href='Modeling.html'>Modeling</a><li><a href='Simulate.html'>Simulate</a></li></ul><li class='has-children'><a href='機電系統設計與模擬.html'>機電系統設計與模擬</a><ul class='dropdown'><li><a href='Mechanical.html'>Mechanical</a><li><a href='Electronics.html'>Electronics</a></li></ul><li><a href='虛實整合系統設計.html'>虛實整合系統設計</a></li></ul><li class='has-children'><a href='Solid Edge.html'>Solid Edge</a><ul class='dropdown'><li><a href='SE_Tutorial.html'>SE_Tutorial</a></li></ul><li><a href='NX.html'>NX</a><li><a href='Onshape.html'>Onshape</a><li class='has-children'><a href='Solvespace.html'>Solvespace</a><ul class='dropdown'><li><a href='SketchFlat.html'>SketchFlat</a></li></ul><li class='has-children'><a href='CoppeliaSim.html'>CoppeliaSim</a><ul class='dropdown'><li><a href='PICSimLab.html'>PICSimLab</a><li><a href='Models.html'>Models</a><li><a href='Research.html'>Research</a></li></ul><li><a href='Brython.html'>Brython</a></li>
+                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li class='has-children'><a href='如何維護網站.html'>如何維護網站</a><ul class='dropdown'><li><a href='自架主機.html'>自架主機</a><li><a href='Portable USB.html'>Portable USB</a></li></ul><li class='has-children'><a href='Projects.html'>Projects</a><ul class='dropdown'><li><a href='Modeling.html'>Modeling</a><li><a href='Simulate.html'>Simulate</a></li></ul><li class='has-children'><a href='機電系統設計與模擬.html'>機電系統設計與模擬</a><ul class='dropdown'><li><a href='Mechanical.html'>Mechanical</a><li><a href='Electronics.html'>Electronics</a></li></ul><li><a href='虛實整合系統設計.html'>虛實整合系統設計</a><li><a href='深度學習.html'>深度學習</a></li></ul><li class='has-children'><a href='Solid Edge.html'>Solid Edge</a><ul class='dropdown'><li><a href='SE_Tutorial.html'>SE_Tutorial</a></li></ul><li><a href='NX.html'>NX</a><li><a href='Onshape.html'>Onshape</a><li class='has-children'><a href='Solvespace.html'>Solvespace</a><ul class='dropdown'><li><a href='SketchFlat.html'>SketchFlat</a></li></ul><li class='has-children'><a href='CoppeliaSim.html'>CoppeliaSim</a><ul class='dropdown'><li><a href='PICSimLab.html'>PICSimLab</a><li><a href='Models.html'>Models</a><li><a href='Research.html'>Research</a></li></ul><li><a href='Brython.html'>Brython</a></li>
                       </ul>
                 </nav>
               </div>
@@ -141,471 +141,94 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">虛實整合系統設計 << <a href='虛實整合系統設計.html'>Previous</a> <a href='SE_Tutorial.html'>Next</a> >> SE_Tutorial<br /><h1>Solid Edge</h1>
-<p>
-<a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EXmbqg4z5I5LkMSvztvXzG0BvIobTTR_ED5EPmm9vjv2rA?e=BpQqeE">
-  下載
- </a>
- Solid Edge 2023 student 版安裝檔案 (for @nfu users only)
-</p>
-<p>
-<a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EVZctF66LE1BkQCL4mvFEGgBIyM-u2nARksPz8VhUZI1bQ?e=EkdPfh">
-  下載
- </a>
- 放入 USB 隨身碟可在電腦輔助設計室中使用的可攜 Solid Edge 2023 學生版 (for @nfu users only)
-</p>
-<p>
- 為何會製作可攜版本?
-</p>
-<p style="padding-left: 30px;">
- 因為電腦輔助設計室的電腦安裝防寫卡, 且電腦中並未安裝 Solid Edge 2023, 為了在上課時段可以與 Python 可攜程式的使用模式一致, 因此製作了能夠直接放入 USB 隨身碟, 以組態檔案設定及批次檔案啟動的方式執行 Solid Edge.
-</p>
-<p style="padding-left: 30px;">
- 由於啟動組態檔案採虛擬硬碟的方式置入操作系統, 因此直接利用 USB 隨身碟啟動後的 Solid Edge 無法直接從操作系統移除.
-</p>
-<p style="padding-left: 30px;">
- 若希望在一般電腦使用 USB 隨身碟中的 Solid Edge, 正確的移除程序為: 以 start_se2023.bat 執行隨身碟中的 Solid Edge 後退出, 確定 X: 虛擬硬碟已經啟動, 之後將 Solid Edge student 2023 版本的安裝程式放入 C:\se_install 後, 利用安裝程序修復採隨身碟啟動的組態設定後, 再次選擇從控制台移除"安裝"在 X: 中的 Solid Edge, 移除後重新開機.
-</p>
-<p style="padding-left: 30px;">
- 之後若要採用正式安裝版, 只要關閉 X: 虛擬硬碟後, 移除 USB 隨身碟中的可攜 Solid Edge (正式移除安裝後 program/edge.exe 將被刪除), 之後再利用安裝套件進行安裝.
-</p>
-<p style="padding-left: 30px;">
- 若之後仍要採可攜方式啟動 Solid Edge, 則必須重新解開原始的可攜 USB 檔案後, 逐一執行 .reg, 之後再利用 start_se2023.bat 開啟 Solid Edge.
-</p>
+    <div id="tipue_search_content">深度學習 << <a href='深度學習.html'>Previous</a> <a href='SE_Tutorial.html'>Next</a> >> SE_Tutorial<br /><h1>Solid Edge</h1>
+<p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EXmbqg4z5I5LkMSvztvXzG0BvIobTTR_ED5EPmm9vjv2rA?e=BpQqeE"> 下載 </a> Solid Edge 2023 student 版安裝檔案 (for @nfu users only)</p>
+<p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EVZctF66LE1BkQCL4mvFEGgBIyM-u2nARksPz8VhUZI1bQ?e=EkdPfh"> 下載 </a> 放入 USB 隨身碟可在電腦輔助設計室中使用的可攜 Solid Edge 2023 學生版 (for @nfu users only)</p>
+<p>為何會製作可攜版本?</p>
+<p style="padding-left: 30px;">因為電腦輔助設計室的電腦安裝防寫卡, 且電腦中並未安裝 Solid Edge 2023, 為了在上課時段可以與 Python 可攜程式的使用模式一致, 因此製作了能夠直接放入 USB 隨身碟, 以組態檔案設定及批次檔案啟動的方式執行 Solid Edge.</p>
+<p style="padding-left: 30px;">由於啟動組態檔案採虛擬硬碟的方式置入操作系統, 因此直接利用 USB 隨身碟啟動後的 Solid Edge 無法直接從操作系統移除.</p>
+<p style="padding-left: 30px;">若希望在一般電腦使用 USB 隨身碟中的 Solid Edge, 正確的移除程序為: 以 start_se2023.bat 執行隨身碟中的 Solid Edge 後退出, 確定 X: 虛擬硬碟已經啟動, 之後將 Solid Edge student 2023 版本的安裝程式放入 C:\se_install 後, 利用安裝程序修復採隨身碟啟動的組態設定後, 再次選擇從控制台移除"安裝"在 X: 中的 Solid Edge, 移除後重新開機.</p>
+<p style="padding-left: 30px;">之後若要採用正式安裝版, 只要關閉 X: 虛擬硬碟後, 移除 USB 隨身碟中的可攜 Solid Edge (正式移除安裝後 program/edge.exe 將被刪除), 之後再利用安裝套件進行安裝.</p>
+<p style="padding-left: 30px;">若之後仍要採可攜方式啟動 Solid Edge, 則必須重新解開原始的可攜 USB 檔案後, 逐一執行 .reg, 之後再利用 start_se2023.bat 開啟 Solid Edge.</p>
 <hr/>
-<p>
- 採用動機: 可以在不連網的環境下使用, 具備 Synchronous Technology functions.
-</p>
-<p>
-<a href="https://solidedge.siemens.com/en/resource/video/design-a-part-using-synchronous-technology/">
-  https://solidedge.siemens.com/en/resource/video/design-a-part-using-synchronous-technology/
- </a>
-</p>
-<p>
-<a href="https://docs.plm.automation.siemens.com/tdoc/se/2020/se_help">
-  https://docs.plm.automation.siemens.com/tdoc/se/2020/se_help
- </a>
- (根據瀏覽器 Language 自動切換語系)
-</p>
-<p>
-<a href="https://docs.plm.automation.siemens.com/tdoc/se/2020/se_help#uid:xid464417">
-  Solid Edge 上課教材
- </a>
-</p>
+<p>採用動機: 可以在不連網的環境下使用, 具備 Synchronous Technology functions.</p>
+<p><a href="https://solidedge.siemens.com/en/resource/video/design-a-part-using-synchronous-technology/"> https://solidedge.siemens.com/en/resource/video/design-a-part-using-synchronous-technology/ </a></p>
+<p><a href="https://docs.plm.automation.siemens.com/tdoc/se/2020/se_help"> https://docs.plm.automation.siemens.com/tdoc/se/2020/se_help </a> (根據瀏覽器 Language 自動切換語系)</p>
+<p><a href="https://docs.plm.automation.siemens.com/tdoc/se/2020/se_help#uid:xid464417"> Solid Edge 上課教材 </a></p>
 <ol>
-<li>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/xid1012461/index.html?goto=guitour1a.html">
-   使用者介面基礎知識
-  </a>
-  (
-  <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/xid1012461/index.html?goto=guitour1a.html">
-   User interface basics
-  </a>
-  )
-  <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/common/zh_TW/graphics/graphicLibrary/qrc.pdf">
-   快速參照卡
-  </a>
-</li>
-<li>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/xid1012412/index.html?goto=sketching_overview.html">
-   同步繪製草圖概述
-  </a>
-  (
-  <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/xid1012412/index.html?goto=sketching_overview.html">
-   Synchronous sketching overview
-  </a>
-  )
- </li>
-<li>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/xid1012413/index.html?goto=base_features_4.html">
-   建構基本特徵
-  </a>
-  (
-  <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/xid1012413/index.html?goto=base_features_4.html">
-   Constructing base features
-  </a>
-  )
- </li>
-<li>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/xid1012414/index.html?goto=dm_moveRotate.html">
-   移動與旋轉模型面
-  </a>
-  (
-  <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/xid1012414/index.html?goto=dm_moveRotate.html">
-   Moving and rotating faces
-  </a>
-  )
- </li>
-<li>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/xid1012415/index.html?goto=part_constraint.html">
-   處理面關係
-  </a>
-  (
-  <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/xid1012415/index.html?goto=part_constraint.html">
-   Working with face relationships
-  </a>
-  )
- </li>
-<li>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/xid1012416/index.html?goto=treatment_features.html">
-   建構處理特徵
-  </a>
-  (
-  <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/xid1012416/index.html?goto=treatment_features.html">
-   Constructing treatment features
-  </a>
-  )
- </li>
-<li>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/xid1012417/index.html?goto=functional_features.html">
-   建構功能特徵
-  </a>
-  (
-  <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/xid1012417/index.html?goto=functional_features.html">
-   Constructing functional features
-  </a>
-  )
- </li>
-<li>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/xid1012424/index.html?goto=bj_re_intro.html">
-   組立建模
-  </a>
-  (
-  <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/xid1012424/index.html?goto=bj_re_intro.html">
-   Modeling assemblies
-  </a>
-  )
- </li>
-<li>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/xid1012418/index.html?goto=ordered1a_course.html">
-   同步特徵和順序特徵建模
-  </a>
-  (
-  <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/xid1012418/index.html?goto=ordered1a_course.html">
-   Modeling synchronous and ordered features
-  </a>
-  )
- </li>
-<li>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/xid1012430/index.html?goto=drafting_act1.html">
-   建立局部詳圖
-  </a>
-  (
-  <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/xid1012430/index.html?goto=drafting_act1.html">
-   Creating detailed drawings
-  </a>
-  )
- </li>
-<li>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/xid1012433/index.html?goto=ap_introduction.html">
-   專案練習
-  </a>
-  (
-  <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/xid1012433/index.html?goto=ap_introduction.html">
-   Practicing your skills with projects
-  </a>
-  )
- </li>
+<li><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/xid1012461/index.html?goto=guitour1a.html"> 使用者介面基礎知識 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/xid1012461/index.html?goto=guitour1a.html"> User interface basics </a> ) <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/common/zh_TW/graphics/graphicLibrary/qrc.pdf"> 快速參照卡 </a></li>
+<li><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/xid1012412/index.html?goto=sketching_overview.html"> 同步繪製草圖概述 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/xid1012412/index.html?goto=sketching_overview.html"> Synchronous sketching overview </a> )</li>
+<li><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/xid1012413/index.html?goto=base_features_4.html"> 建構基本特徵 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/xid1012413/index.html?goto=base_features_4.html"> Constructing base features </a> )</li>
+<li><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/xid1012414/index.html?goto=dm_moveRotate.html"> 移動與旋轉模型面 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/xid1012414/index.html?goto=dm_moveRotate.html"> Moving and rotating faces </a> )</li>
+<li><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/xid1012415/index.html?goto=part_constraint.html"> 處理面關係 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/xid1012415/index.html?goto=part_constraint.html"> Working with face relationships </a> )</li>
+<li><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/xid1012416/index.html?goto=treatment_features.html"> 建構處理特徵 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/xid1012416/index.html?goto=treatment_features.html"> Constructing treatment features </a> )</li>
+<li><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/xid1012417/index.html?goto=functional_features.html"> 建構功能特徵 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/xid1012417/index.html?goto=functional_features.html"> Constructing functional features </a> )</li>
+<li><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/xid1012424/index.html?goto=bj_re_intro.html"> 組立建模 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/xid1012424/index.html?goto=bj_re_intro.html"> Modeling assemblies </a> )</li>
+<li><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/xid1012418/index.html?goto=ordered1a_course.html"> 同步特徵和順序特徵建模 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/xid1012418/index.html?goto=ordered1a_course.html"> Modeling synchronous and ordered features </a> )</li>
+<li><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/xid1012430/index.html?goto=drafting_act1.html"> 建立局部詳圖 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/xid1012430/index.html?goto=drafting_act1.html"> Creating detailed drawings </a> )</li>
+<li><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/xid1012433/index.html?goto=ap_introduction.html"> 專案練習 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/xid1012433/index.html?goto=ap_introduction.html"> Practicing your skills with projects </a> )</li>
 </ol>
 <hr/>
-<p>
- 使用介面語系變更: 設定 (Settings) -&gt; 選項 (Options) -&gt; 助手 (Helper) -&gt; 語言 (Language)
-</p>
-<p>
- 勾選: 在使用者介面中使用英文, 若不勾選擇使用者介面將會與 Windows 操作系統的語系相同 (即繁體中文介面)
-</p>
+<p>使用介面語系變更: 設定 (Settings) -&gt; 選項 (Options) -&gt; 助手 (Helper) -&gt; 語言 (Language)</p>
+<p>勾選: 在使用者介面中使用英文, 若不勾選擇使用者介面將會與 Windows 操作系統的語系相同 (即繁體中文介面)</p>
 <hr/>
-<p>
- 以下為參考資料:
-</p>
-<p style="padding-left: 30px;">
- The following downloads are for @nfu users only.
-</p>
-<p style="padding-left: 30px;">
-<a href="https://link.springer.com/book/10.1007/978-3-319-05921-1">
-  CAD, 3D Modeling, Engineering Analysis, and Prototype Experimentation
- </a>
-</p>
-<p style="padding-left: 60px;">
- Computer-aided design (CAD), 3D modeling, and engineering analysis can be efficiently applied in many research and industrial fields including aerospace, defense, automobile, consumer product, and many other product development.
- <br/>
-<br/>
- These efficient research and engineering tools apply computer-assisted technology to perform 3D modeling on different products, support geometrical design, make structural analysis, assist optimal product design, create graphic and engineering drawings, and generate production documents.
- <br/>
-<br/>
- This technology helps scientists and technical professionals efficiently import basic geometrical inputs and design information to accelerate the engineering design process, with well-controlled design documents, to support production and manufacturing processes.
- <br/>
-<br/>
- Currently these research and engineering tools have been playing more and more important roles in different businesses and enterprises due to their financial and technical
- <br/>
- importance in business, industrial, engineering, and manufacturing applications.
- <br/>
-<br/>
- The computer-aided modeling and analysis allow more sophisticated, flexible, reliable, and cost-effective manufacturing control.
- <br/>
-<br/>
- Automation and automated production system are to use control system to reduce human labor intervention during manufacturing processes and put strong impact on industries.
- <br/>
-<br/>
- Automation and automated system design not only raise the production rate but also control the product quality. It can effectively keep consistent product quality, reduce production lead time, ease material handling, maintain optimal work flow, and meet the product requirement by controlling the flexible and convertible manufacturing/production processes.
- <br/>
-<br/>
- Computer-aided modeling and engineering design can quickly simulate and model the automated production systems and reduce product development life cycles.
- <br/>
-<br/>
- Computer-aided engineering solution can improve and optimize the industrial integral processes in design, development, engineering analysis, and product manufacturing.
- <br/>
-<br/>
- Also the present and future economic globalization requires cost-effective manufacturing via highly industrial automation, efficient design tooling, and better production control.
- <br/>
-<br/>
- This book describes the technology, types, and general applications of these research and engineering tools through conceptual analysis and real case study in computer-aided design, 3D modeling, and engineering analysis.
- <br/>
-<br/>
- Some new product systems, developed by author, are introduced to help readers understand how to design and develop new product systems by using computer-aided design, engineering analysis, and prototype experiment.
- <br/>
-<br/>
- The case studies include design and development of green/sustainable energy systems (solar still, solar panel, and wind power energy), biomedical and surgical instruments, energy-saving cooling system, automated and high-speed assembly system (highly viscous liquid filling and chemical gas charging), robotic system for industrial/automated manufacturing, magnetic sealing system, and high-speed packaging machinery system.
- <br/>
-<br/>
- Multiple engineering case studies in this book aim at the introduction, study, and analysis by using computer-aided modeling and engineering analysis for industrial and engineering
- <br/>
- applications.
- <br/>
-<br/>
- All these newly developed product systems have also been verified by prototyping and testing to validate the functionality of these new systems.
- <br/>
-<br/>
- Both computer-aided analysis and experimental methodologies introduced in this book show close results that positively show the feasibility and credibility of analytic and experimental methodologies introduced in this book.
-</p>
-<p style="padding-left: 30px;">
-<a href="https://assets-global.website-files.com/5b782089dfe0db977c49f302/5e99e25b241a2f23707118f2_Solid%20Edge%20Webinar%20Series%20Internal%20Links.pdf">
-  Solid Edge Webinar
- </a>
-</p>
-<p style="padding-left: 60px;">
- Tips and Tricks:
- <a href="https://www.youtube.com/watch?v=7Vxong5qjgk">
-  1
- </a>
- ,
- <a href="https://www.youtube.com/watch?v=7Vxong5qjgk">
-  2
- </a>
- ,
- <a href="https://www.youtube.com/watch?v=Doe52QZxCPk">
-  3
- </a>
- ,
- <a href="https://www.youtube.com/watch?v=YiA9DRPkGIQ">
-  4
- </a>
- ,
- <a href="https://www.youtube.com/watch?v=vyzug_D5zeA">
-  5
- </a>
- ,
- <a href="https://www.youtube.com/watch?v=n7s5XhjTpZo">
-  6
- </a>
- ,
- <a href="https://www.youtube.com/watch?v=goBKlTYP8Gk">
-  2D t o3D
- </a>
- ,
-</p>
-<p style="padding-left: 30px;">
-<a href="https://www.themachinedesign.com/category/cad/solid-edge/">
-  https://www.themachinedesign.com/category/cad/solid-edge/
- </a>
-</p>
-<p style="padding-left: 30px;">
-<a href="https://s3.amazonaws.com/s3.mentor.com/plm/solidedge/SolidEdge01-Part_Design-Draft.pdf">
-  https://s3.amazonaws.com/s3.mentor.com/plm/solidedge/SolidEdge01-Part_Design-Draft.pdf
- </a>
-</p>
-<p style="padding-left: 30px;">
-<a href="https://www.themachinedesign.com/solid-edge-tutorial-part-modeling-in-synchronous-mode/">
-  https://www.themachinedesign.com/solid-edge-tutorial-part-modeling-in-synchronous-mode/
- </a>
-</p>
-<p style="padding-left: 30px;">
-<a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/EY8Av9-6sxFMnh7GhY1vegoBttgQH2zRpTI6zlcCTXTKMQ?e=t8p8TL">
-  Solid Edge with synchronous technology Steering a new course in 3D design.pdf
- </a>
-</p>
-<p style="padding-left: 30px;">
-<a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/EamCzpZkMF9Ahd1YTU7yrpkBSXgtvixFZ0KBk7FBysyLfg?e=sGcqYV">
-  What is Synchronous Technology.pdf
- </a>
-</p>
-<p style="padding-left: 30px;">
-<a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/EctazICF3uVLknwMd3BRV_ABUnQoxnYX_9xu3OIau6jdzQ?e=H00H6R">
-  Change your modeling approach for better designs.pdf
- </a>
-</p>
-<p style="padding-left: 30px;">
-<a href="https://solidedge.siemens.com/en/resource/video/design-a-part-using-synchronous-technology/">
-  https://solidedge.siemens.com/en/resource/video/design-a-part-using-synchronous-technology/
- </a>
- (
- <a href="https://www.youtube.com/watch?v=XhoJJzDKFY4">
-  https://www.youtube.com/watch?v=XhoJJzDKFY4
- </a>
- )
-</p>
-<p style="padding-left: 30px;">
-<a href="https://www.solid-edge.com.tw/%E3%80%90%E7%B7%9A%E4%B8%8A%E7%A0%94%E8%A8%8E%E6%9C%83%E3%80%91solid-edge-%E5%90%8C%E6%AD%A5%E5%BB%BA%E6%A8%A1%E6%8A%80%E8%A1%93/">
-  同步建模線上研討會
- </a>
-</p>
-<p style="padding-left: 30px;">
- Synchronous vs Ordered Methods in Solid Edge:
- <a href="https://youtu.be/XD12cfjvXeE">
-  https://youtu.be/XD12cfjvXeE
- </a>
-</p>
-<p style="padding-left: 30px;">
-<a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/Ebu8dDfKDGZGpCir0CIjegEBMgngPvjFDgggem3ERDgGPw?e=9Jp43D">
-  ROI of Solid Edge with Synchronous Technology.pdf
- </a>
-</p>
-<p style="padding-left: 30px;">
-<a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/EXn4Vr1oOD9FnhEnXwCjoPcBLSLuaDYp2cPOcDIuK0UEug?e=LMIHbO">
-  Solid Edge with Synchronous Technology course.pdf
- </a>
-</p>
-<p style="padding-left: 30px;">
-<a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/EaSnCV6hOI1NrLvEkXqarf8B6aKjpADa24Erg4IsWqHNwQ?e=Ld7NqL">
-  Dynamic Designer Motion.pdf
- </a>
-</p>
-<p style="padding-left: 30px;">
-<a href="https://nfuedu-my.sharepoint.com/:f:/g/personal/yen_nfu_edu_tw/EmvQhIXnr7dBk9BuHxmjyJkBIrI8FdFdvTWI6TyI8taX7g?e=SnLCMX">
-  其他 Solid Egde 與 Femap 相關檔案
- </a>
-</p>
-<p>
- Synchronous Technology, a feature exclusive to Siemens' Solid Edge software, offers several capabilities that enhance the design and editing process. Here are some areas where Synchronous Technology can be applied:
-</p>
+<p>以下為參考資料:</p>
+<p style="padding-left: 30px;">The following downloads are for @nfu users only.</p>
+<p style="padding-left: 30px;"><a href="https://link.springer.com/book/10.1007/978-3-319-05921-1"> CAD, 3D Modeling, Engineering Analysis, and Prototype Experimentation </a></p>
+<p style="padding-left: 60px;">Computer-aided design (CAD), 3D modeling, and engineering analysis can be efficiently applied in many research and industrial fields including aerospace, defense, automobile, consumer product, and many other product development. <br/> <br/> These efficient research and engineering tools apply computer-assisted technology to perform 3D modeling on different products, support geometrical design, make structural analysis, assist optimal product design, create graphic and engineering drawings, and generate production documents. <br/> <br/> This technology helps scientists and technical professionals efficiently import basic geometrical inputs and design information to accelerate the engineering design process, with well-controlled design documents, to support production and manufacturing processes. <br/> <br/> Currently these research and engineering tools have been playing more and more important roles in different businesses and enterprises due to their financial and technical <br/> importance in business, industrial, engineering, and manufacturing applications. <br/> <br/> The computer-aided modeling and analysis allow more sophisticated, flexible, reliable, and cost-effective manufacturing control. <br/> <br/> Automation and automated production system are to use control system to reduce human labor intervention during manufacturing processes and put strong impact on industries. <br/> <br/> Automation and automated system design not only raise the production rate but also control the product quality. It can effectively keep consistent product quality, reduce production lead time, ease material handling, maintain optimal work flow, and meet the product requirement by controlling the flexible and convertible manufacturing/production processes. <br/> <br/> Computer-aided modeling and engineering design can quickly simulate and model the automated production systems and reduce product development life cycles. <br/> <br/> Computer-aided engineering solution can improve and optimize the industrial integral processes in design, development, engineering analysis, and product manufacturing. <br/> <br/> Also the present and future economic globalization requires cost-effective manufacturing via highly industrial automation, efficient design tooling, and better production control. <br/> <br/> This book describes the technology, types, and general applications of these research and engineering tools through conceptual analysis and real case study in computer-aided design, 3D modeling, and engineering analysis. <br/> <br/> Some new product systems, developed by author, are introduced to help readers understand how to design and develop new product systems by using computer-aided design, engineering analysis, and prototype experiment. <br/> <br/> The case studies include design and development of green/sustainable energy systems (solar still, solar panel, and wind power energy), biomedical and surgical instruments, energy-saving cooling system, automated and high-speed assembly system (highly viscous liquid filling and chemical gas charging), robotic system for industrial/automated manufacturing, magnetic sealing system, and high-speed packaging machinery system. <br/> <br/> Multiple engineering case studies in this book aim at the introduction, study, and analysis by using computer-aided modeling and engineering analysis for industrial and engineering <br/> applications. <br/> <br/> All these newly developed product systems have also been verified by prototyping and testing to validate the functionality of these new systems. <br/> <br/> Both computer-aided analysis and experimental methodologies introduced in this book show close results that positively show the feasibility and credibility of analytic and experimental methodologies introduced in this book.</p>
+<p style="padding-left: 30px;"><a href="https://assets-global.website-files.com/5b782089dfe0db977c49f302/5e99e25b241a2f23707118f2_Solid%20Edge%20Webinar%20Series%20Internal%20Links.pdf"> Solid Edge Webinar </a></p>
+<p style="padding-left: 60px;">Tips and Tricks: <a href="https://www.youtube.com/watch?v=7Vxong5qjgk"> 1 </a> , <a href="https://www.youtube.com/watch?v=7Vxong5qjgk"> 2 </a> , <a href="https://www.youtube.com/watch?v=Doe52QZxCPk"> 3 </a> , <a href="https://www.youtube.com/watch?v=YiA9DRPkGIQ"> 4 </a> , <a href="https://www.youtube.com/watch?v=vyzug_D5zeA"> 5 </a> , <a href="https://www.youtube.com/watch?v=n7s5XhjTpZo"> 6 </a> , <a href="https://www.youtube.com/watch?v=goBKlTYP8Gk"> 2D t o3D </a> ,</p>
+<p style="padding-left: 30px;"><a href="https://www.themachinedesign.com/category/cad/solid-edge/"> https://www.themachinedesign.com/category/cad/solid-edge/ </a></p>
+<p style="padding-left: 30px;"><a href="https://s3.amazonaws.com/s3.mentor.com/plm/solidedge/SolidEdge01-Part_Design-Draft.pdf"> https://s3.amazonaws.com/s3.mentor.com/plm/solidedge/SolidEdge01-Part_Design-Draft.pdf </a></p>
+<p style="padding-left: 30px;"><a href="https://www.themachinedesign.com/solid-edge-tutorial-part-modeling-in-synchronous-mode/"> https://www.themachinedesign.com/solid-edge-tutorial-part-modeling-in-synchronous-mode/ </a></p>
+<p style="padding-left: 30px;"><a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/EY8Av9-6sxFMnh7GhY1vegoBttgQH2zRpTI6zlcCTXTKMQ?e=t8p8TL"> Solid Edge with synchronous technology Steering a new course in 3D design.pdf </a></p>
+<p style="padding-left: 30px;"><a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/EamCzpZkMF9Ahd1YTU7yrpkBSXgtvixFZ0KBk7FBysyLfg?e=sGcqYV"> What is Synchronous Technology.pdf </a></p>
+<p style="padding-left: 30px;"><a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/EctazICF3uVLknwMd3BRV_ABUnQoxnYX_9xu3OIau6jdzQ?e=H00H6R"> Change your modeling approach for better designs.pdf </a></p>
+<p style="padding-left: 30px;"><a href="https://solidedge.siemens.com/en/resource/video/design-a-part-using-synchronous-technology/"> https://solidedge.siemens.com/en/resource/video/design-a-part-using-synchronous-technology/ </a> ( <a href="https://www.youtube.com/watch?v=XhoJJzDKFY4"> https://www.youtube.com/watch?v=XhoJJzDKFY4 </a> )</p>
+<p style="padding-left: 30px;"><a href="https://www.solid-edge.com.tw/%E3%80%90%E7%B7%9A%E4%B8%8A%E7%A0%94%E8%A8%8E%E6%9C%83%E3%80%91solid-edge-%E5%90%8C%E6%AD%A5%E5%BB%BA%E6%A8%A1%E6%8A%80%E8%A1%93/"> 同步建模線上研討會 </a></p>
+<p style="padding-left: 30px;">Synchronous vs Ordered Methods in Solid Edge: <a href="https://youtu.be/XD12cfjvXeE"> https://youtu.be/XD12cfjvXeE </a></p>
+<p style="padding-left: 30px;"><a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/Ebu8dDfKDGZGpCir0CIjegEBMgngPvjFDgggem3ERDgGPw?e=9Jp43D"> ROI of Solid Edge with Synchronous Technology.pdf </a></p>
+<p style="padding-left: 30px;"><a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/EXn4Vr1oOD9FnhEnXwCjoPcBLSLuaDYp2cPOcDIuK0UEug?e=LMIHbO"> Solid Edge with Synchronous Technology course.pdf </a></p>
+<p style="padding-left: 30px;"><a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/EaSnCV6hOI1NrLvEkXqarf8B6aKjpADa24Erg4IsWqHNwQ?e=Ld7NqL"> Dynamic Designer Motion.pdf </a></p>
+<p style="padding-left: 30px;"><a href="https://nfuedu-my.sharepoint.com/:f:/g/personal/yen_nfu_edu_tw/EmvQhIXnr7dBk9BuHxmjyJkBIrI8FdFdvTWI6TyI8taX7g?e=SnLCMX"> 其他 Solid Egde 與 Femap 相關檔案 </a></p>
+<p>Synchronous Technology, a feature exclusive to Siemens' Solid Edge software, offers several capabilities that enhance the design and editing process. Here are some areas where Synchronous Technology can be applied:</p>
 <ol>
-<li>
-  Direct Editing: Synchronous Technology enables direct editing of 3D CAD models, allowing users to modify geometry without relying on feature history. This feature is particularly useful when working with imported or non-native CAD data.
- </li>
-<li>
-  Live Rules: Synchronous Technology utilizes live rules to maintain design intent while making modifications. These rules automatically adjust related features, dimensions, and relationships as changes are made, ensuring the integrity of the design.
- </li>
-<li>
-  Flexible Design Modifications: Synchronous Technology enables quick and easy design modifications, such as changing dimensions, adding or removing features, and adjusting geometry. These modifications can be made without constraints imposed by the original feature tree.
- </li>
-<li>
-  Hybrid Modeling: With Synchronous Technology, users can seamlessly switch between traditional parametric modeling and direct editing, allowing for a hybrid modeling approach that combines the benefits of both methods.
- </li>
-<li>
-  Working with Imported Data: Synchronous Technology is particularly effective when working with imported CAD data from other software systems. It enables efficient editing and modification of the imported geometry, even without access to the original feature history.
- </li>
-<li>
-  Fast Conceptual Design: Synchronous Technology allows for rapid conceptual design iterations by providing the flexibility to modify geometry on-the-fly. This helps in exploring multiple design alternatives and making quick design changes based on project requirements.
- </li>
-<li>
-  Sheet Metal Design: Synchronous Technology includes specific tools for sheet metal design, enabling users to easily modify and edit sheet metal parts without the need for extensive feature editing or remodelling.
- </li>
-<li>
-  Editability of History-Based Models: Synchronous Technology can be used to edit and modify traditional, history-based models created using parametric design methodologies. It provides a non-destructive editing workflow for making changes to the feature-based history of the model.
- </li>
+<li>Direct Editing: Synchronous Technology enables direct editing of 3D CAD models, allowing users to modify geometry without relying on feature history. This feature is particularly useful when working with imported or non-native CAD data.</li>
+<li>Live Rules: Synchronous Technology utilizes live rules to maintain design intent while making modifications. These rules automatically adjust related features, dimensions, and relationships as changes are made, ensuring the integrity of the design.</li>
+<li>Flexible Design Modifications: Synchronous Technology enables quick and easy design modifications, such as changing dimensions, adding or removing features, and adjusting geometry. These modifications can be made without constraints imposed by the original feature tree.</li>
+<li>Hybrid Modeling: With Synchronous Technology, users can seamlessly switch between traditional parametric modeling and direct editing, allowing for a hybrid modeling approach that combines the benefits of both methods.</li>
+<li>Working with Imported Data: Synchronous Technology is particularly effective when working with imported CAD data from other software systems. It enables efficient editing and modification of the imported geometry, even without access to the original feature history.</li>
+<li>Fast Conceptual Design: Synchronous Technology allows for rapid conceptual design iterations by providing the flexibility to modify geometry on-the-fly. This helps in exploring multiple design alternatives and making quick design changes based on project requirements.</li>
+<li>Sheet Metal Design: Synchronous Technology includes specific tools for sheet metal design, enabling users to easily modify and edit sheet metal parts without the need for extensive feature editing or remodelling.</li>
+<li>Editability of History-Based Models: Synchronous Technology can be used to edit and modify traditional, history-based models created using parametric design methodologies. It provides a non-destructive editing workflow for making changes to the feature-based history of the model.</li>
 </ol>
-<p>
- These are some of the areas where Synchronous Technology in Solid Edge provides unique advantages in terms of design flexibility, speed, and ease of use.
-</p>
-<p>
- Solid Edge community edition:
-</p>
-<p style="padding-left: 30px;">
-<a href="https://www.plm.automation.siemens.com/plmapp/education/solid-edge/zh_tw/free-software/community">
-  https://www.plm.automation.siemens.com/plmapp/education/solid-edge/zh_tw/free-software/community
- </a>
- (下載約 4GB, 安裝後佔約 8GB, 授權使用時段: 06-jul-2021 至 31-dec-2025)
-</p>
-<p style="padding-left: 30px;">
- 需要 Windows 10 Enterprise or Professional (64-bit only) version 20H2 or later, Windows 11 Enterprise or Professional version 21H2 or later,
- <a href="https://developer.microsoft.com/en-us/microsoft-edge/webview2/">
-  https://developer.microsoft.com/en-us/microsoft-edge/webview2/
- </a>
- , MS .Net Framework 4.8, MS Visual C++ 2015-2019 redistributable X64
-</p>
-<p style="padding-left: 30px;">
- 會同時安裝
- <a href="https://www.keyshot.com/">
-  https://www.keyshot.com/
- </a>
- 11 版
-</p>
-<p style="padding-left: 30px;">
- SELicense.lic 位於 Preferences 目錄下
-</p>
-<p style="padding-left: 30px;">
- No Solid Edge Cloud Gateway
-</p>
-<p style="padding-left: 30px;">
- 圖檔同教育版無法與商業版相容
-</p>
-<p style="padding-left: 30px;">
- 所建立的工程圖會有浮水印
-</p>
-<p style="padding-left: 30px;">
-<a href="https://docs.sw.siemens.com/en-US/doc/246738425/PL20211001099989437.user_interface">
-  Solid Edge Documentation
- </a>
-</p>
-<p style="padding-left: 30px;">
-<a href="https://docs.plm.automation.siemens.com/docs/se/2020/api/webframe.html">
-  SE2020 API Documentation
- </a>
-</p>
-<p>
- 與 NX, Onshape 比較:
-</p>
-<p style="padding-left: 30px;">
- 自帶使用授權, 可在不上網情況下使用
-</p>
-<p style="padding-left: 30px;">
- 安裝版 (下載 3.8GB, 安裝後佔 8GB), 適合在自己的電腦或筆電中安裝執行.
-</p>
-<p style="padding-left: 30px;">
- 可攜版 (下載 4.28GB, 解開後佔 9.4GB), 適合在有防寫卡保護的電腦或虛擬主機中使用.
-</p>
-<p style="padding-left: 30px;">
- 功能與 SolidWorks, Onshape 相當, 屬於中級 MCAD
-</p>
-<p>
- Solid Edge Hot keys：
-</p>
+<p>These are some of the areas where Synchronous Technology in Solid Edge provides unique advantages in terms of design flexibility, speed, and ease of use.</p>
+<p>Solid Edge community edition:</p>
+<p style="padding-left: 30px;"><a href="https://www.plm.automation.siemens.com/plmapp/education/solid-edge/zh_tw/free-software/community"> https://www.plm.automation.siemens.com/plmapp/education/solid-edge/zh_tw/free-software/community </a> (下載約 4GB, 安裝後佔約 8GB, 授權使用時段: 06-jul-2021 至 31-dec-2025)</p>
+<p style="padding-left: 30px;">需要 Windows 10 Enterprise or Professional (64-bit only) version 20H2 or later, Windows 11 Enterprise or Professional version 21H2 or later, <a href="https://developer.microsoft.com/en-us/microsoft-edge/webview2/"> https://developer.microsoft.com/en-us/microsoft-edge/webview2/ </a> , MS .Net Framework 4.8, MS Visual C++ 2015-2019 redistributable X64</p>
+<p style="padding-left: 30px;">會同時安裝 <a href="https://www.keyshot.com/"> https://www.keyshot.com/ </a> 11 版</p>
+<p style="padding-left: 30px;">SELicense.lic 位於 Preferences 目錄下</p>
+<p style="padding-left: 30px;">No Solid Edge Cloud Gateway</p>
+<p style="padding-left: 30px;">圖檔同教育版無法與商業版相容</p>
+<p style="padding-left: 30px;">所建立的工程圖會有浮水印</p>
+<p style="padding-left: 30px;"><a href="https://docs.sw.siemens.com/en-US/doc/246738425/PL20211001099989437.user_interface"> Solid Edge Documentation </a></p>
+<p style="padding-left: 30px;"><a href="https://docs.plm.automation.siemens.com/docs/se/2020/api/webframe.html"> SE2020 API Documentation </a></p>
+<p>與 NX, Onshape 比較:</p>
+<p style="padding-left: 30px;">自帶使用授權, 可在不上網情況下使用</p>
+<p style="padding-left: 30px;">安裝版 (下載 3.8GB, 安裝後佔 8GB), 適合在自己的電腦或筆電中安裝執行.</p>
+<p style="padding-left: 30px;">可攜版 (下載 4.28GB, 解開後佔 9.4GB), 適合在有防寫卡保護的電腦或虛擬主機中使用.</p>
+<p style="padding-left: 30px;">功能與 SolidWorks, Onshape 相當, 屬於中級 MCAD</p>
+<p>Solid Edge Hot keys：</p>
 <ol>
-<li>
-  Esc鍵：取消現行指令回到選取狀態
- </li>
-<li>
-  Ctrl + F：前視圖 (Front)
- </li>
-<li>
-  F3 鍵：平面鎖定與解除 Toggle
- </li>
-<li>
-  Ctrl + I：等角圖 (Isometric)
- </li>
-<li>
-  N 鍵：切換尺寸標示方向
- </li>
-<li>
-  Ctrl + R：右側視圖 (Right)
- </li>
-<li>
-  Ctrl + T：上視圖 (Top)
- </li>
+<li>Esc鍵：取消現行指令回到選取狀態</li>
+<li>Ctrl + F：前視圖 (Front)</li>
+<li>F3 鍵：平面鎖定與解除 Toggle</li>
+<li>Ctrl + I：等角圖 (Isometric)</li>
+<li>N 鍵：切換尺寸標示方向</li>
+<li>Ctrl + R：右側視圖 (Right)</li>
+<li>Ctrl + T：上視圖 (Top)</li>
 </ol>
-<p>
-</p>
-<br />虛實整合系統設計 << <a href='虛實整合系統設計.html'>Previous</a> <a href='SE_Tutorial.html'>Next</a> >> SE_Tutorial</div>
+<p></p><br />深度學習 << <a href='深度學習.html'>Previous</a> <a href='SE_Tutorial.html'>Next</a> >> SE_Tutorial</div>
         
     <!-- footer -->
       <div class="container">

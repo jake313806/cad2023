@@ -2,7 +2,7 @@
         <head>
         <title>cad2023</title>
         <meta charset="utf-8">
-<meta property="head" content="H3">
+<meta property="head" content="H1">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -141,9 +141,59 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Mechanical << <a href='Mechanical.html'>Previous</a> <a href='虛實整合系統設計.html'>Next</a> >> 虛實整合系統設計<br /><h1>Electronics</h1>
-<p><a href="https://youtu.be/WlUOr4z3Lbs">https://youtu.be/WlUOr4z3Lbs</a> (Electronics Fundamentals)</p>
-<br />Mechanical << <a href='Mechanical.html'>Previous</a> <a href='虛實整合系統設計.html'>Next</a> >> 虛實整合系統設計</div>
+    <div id="tipue_search_content">Onshape << <a href='Onshape.html'>Previous</a> <a href='SketchFlat.html'>Next</a> >> SketchFlat<br /><h1>Solvespace</h1>
+<p>採用動機: 提供 C++ 原始碼的參數式電腦輔助設計繪圖套件, 檔案可直接放入 USB 隨身碟操作, 且可練習使用 C++ 編譯器自行編譯.</p>
+<p><a href="https://solvespace.com/index.pl"> https://solvespace.com/index.pl </a></p>
+<p><a href="https://github.com/solvespace/solvespace"> https://github.com/solvespace/solvespace </a></p>
+<p><a href="https://www.farwire.net/SolveSpace-LearningGuide.htm"> https://www.farwire.net/SolveSpace-LearningGuide.htm </a></p>
+<p><a href="https://solvespace.readthedocs.io/_/downloads/en/latest/pdf/"> https://solvespace.readthedocs.io/_/downloads/en/latest/pdf/ </a></p>
+<p><a href="https://solvespace.com/forum.pl?action=viewthread&amp;parent=3165&amp;tt=1601980716"> Theory behind Solvespace </a></p>
+<p><a href="https://link.springer.com/book/10.1007/978-3-030-02399-7"> 2019 Advanced CAD Modeling </a></p>
+<hr/>
+<p>編譯 Solvespace:</p>
+<p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EUd5wZF9jSdCtrDkLvEfyj4Bq8pkV0b3kKZ1fxeNMhC8qg?e=slvduQ"> 下載 MSYS2 and Cmake.7z </a> <span> (下載 3.47GB 解開後 12.6GB, for @nfu users only) </span></p>
+<p><span> 配置 MSYS2 與 Cmake, 設定執行搜尋路徑: </span></p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">set path_msys2=%Disk%:\msys64_20210419\mingw64\bin;
+set path_cmake=%Disk%:\cmake-3.21.0-windows-x86_64\bin
+REM 將 path_msys2 與 path_cmake 納入系統 path
+path=%Disk%:;%path_python%;%path_msys2%;%path_cmake%;%path_lua%;%path_git%;%path_tcc%;%path_gnuplot%;%path_scite%;%path_miktex%;%path%;</pre>
+<p>而且必須 rename Y:\msys64_20210419\mingw64\bin\sh.exe 與 Y:\portablegit_2.31.1\bin\sh.exe 換成其他名稱.</p>
+<p>2023.05.12 執行編譯:</p>
+<p>連子模組 (submodule) 一起取下:</p>
+<p>git clone --recurse-submodules <a href="https://github.com/solvespace/solvespace.git"> https://github.com/solvespace/solvespace.git </a> (最新原始碼, 可能因開發中, 導致資料不完整而無法編譯)</p>
+<p>or</p>
+<p><span> git clone --recurse-submodules </span> <a href="https://github.com/solvespace/solvespace.git"> https://github.com/solvespace/solvespace.git </a> <span> -b v3.1 </span></p>
+<p>or</p>
+<p>git clone --recurse-submodules <a href="https://github.com/solvespace/solvespace.git"> https://github.com/solvespace/solvespace.git </a> -b v3.0</p>
+<p>cd solvespace <br/> mkdir build <br/> cd build <br/> cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release <br/> make</p>
+<p>need libwinpthread-1.dll to execute solvespace.exe</p>
+<p><a href="http://wcm.cycu.org:88/github/cd2023/downloads/solvespace_exe_3.0.7z"> solvespace_exe_3.0.7z </a></p>
+<p><a href="http://wcm.cycu.org:88/github/cd2023/downloads/solvespace_exe_3.1.7z"> solvespace_exe_3.1.7z </a></p>
+<p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/ERFXVU8sGoZBq8B302khxfUBY63_TbYu4XiWdRIIug065A?e=SiTcgX"> solvespace 3.0 and 3.1 原始碼與 Leo Editor 開發專案.7z </a> (下載 619MB, 解開後 1GB)</p>
+<p>參考資料:</p>
+<p style="padding-left: 30px;"><a href="https://cq.cx/dl/sketchflat-internals.pdf"> 2007 SketchFlat, A Constraint-Based Drawing Tool </a></p>
+<p style="padding-left: 30px;"><a href="https://librearts.org/2013/08/solvespace-released-under-gpl/"> https://librearts.org/2013/08/solvespace-released-under-gpl/ </a></p>
+<p style="padding-left: 30px;"><a href="https://weekly-geekly.imtqy.com/articles/335962/index.html"> https://weekly-geekly.imtqy.com/articles/335962/index.html </a></p>
+<p style="padding-left: 30px;"><a href="https://adventures.michaelfbryan.com/posts/constraints-part-1-expressions/"> https://adventures.michaelfbryan.com/posts/constraints-part-1-expressions/ </a></p>
+<p style="padding-left: 30px;"><a href="https://link.springer.com/book/10.1007/978-3-540-77974-2"> 2008 Computational Geometry </a> <span> (只能在校網、使用校內代理主機或使用校內 VPN 才能下載) </span></p>
+<p style="padding-left: 30px;"><a href="https://link.springer.com/book/10.1007/978-3-540-89068-3"> 2009 Geometric Algebra with Applications in Engineering </a> <span> (只能在校網、使用校內代理主機或使用校內 VPN 才能下載), <a href="http://wcm.cycu.org:88/github/cd2023/downloads/CLUCalc_4.3.2.7z"> CLUCalc_4.3.2.7z </a> , <a href="http://wcm.cycu.org:88/github/cd2023/downloads/CLUCalcSource_win_3.1.7z"> CLUCalcSource_win_3.1.7z </a> <a href="https://github.com/foobarz/CLUCalcLinux"> https://github.com/foobarz/CLUCalcLinux </a> , <a href="http://web.archive.org/web/20071010093218/http://www.clucalc.info/"> Wayback </a> , <a href="https://mde.tw/wcm2023/downloads/clucalc_doc/"> CLUCalc Documentation </a> . </span></p>
+<p style="padding-left: 30px;"><a href="https://link.springer.com/book/10.1007/978-1-4471-4360-4"> 2013 Geometric Modeling and Reasoning of Human-Centered Freeform Products </a> (只能在校網、使用校內代理主機或使用校內 VPN 才能下載)</p>
+<p style="padding-left: 30px;"><a href="https://link.springer.com/book/10.1007/978-3-642-31794-1"> 2013 Foundations of Geometric Algebra Computing </a> <span> (只能在校網、使用校內代理主機或使用校內 VPN 才能下載) </span></p>
+<p style="padding-left: 30px;"><span> <a href="https://link.springer.com/book/10.1007/978-1-4612-0159-5"> Geometric Algebra with Applications in Science and Engineering </a> <span> (只能在校網、使用校內代理主機或使用校內 VPN 才能下載) </span> </span></p>
+<p style="padding-left: 30px;"><a href="https://www.inf.ed.ac.uk/teaching/courses/cg/Web/intro_to_curves.pdf"> https://www.inf.ed.ac.uk/teaching/courses/cg/Web/intro_to_curves.pdf </a></p>
+<p style="padding-left: 30px;"><a href="http://web.math.ku.dk/noter/filer/geom1.pdf"> Curves and Surfaces </a></p>
+<p style="padding-left: 30px;"><a href="https://arxiv.org/pdf/1405.4465.pdf"> Curvatures at the singular points of algebraic curves and surfaces </a></p>
+<p style="padding-left: 30px;"><a href="http://www.gaalop.de/wp-content/uploads/Masterthesis.pdf"> 2012 Geometric Algebra enhancedPrecompiler for C++ and OpenCL </a></p>
+<p style="padding-left: 30px;"><a href="https://slehar.wordpress.com/2014/03/18/clifford-algebra-a-visual-introduction/"> https://slehar.wordpress.com/2014/03/18/clifford-algebra-a-visual-introduction/ </a></p>
+<p style="padding-left: 30px;"><a href="https://zbmath.org/"> https://zbmath.org/ </a></p>
+<p style="padding-left: 30px;"><a href="http://wcm.cycu.org:88/github/cd2023/downloads/Linkage_3.16.14.7z"> Linkage_3.16.14.7z </a> ( <a href="https://blog.rectorsquid.com/linkage-mechanism-designer-and-simulator/"> 官方網站 </a> , <a href="https://github.com/scrum-1/Linkage"> 3.2 source codes </a> , <a href="https://sites.google.com/a/jbps.ttct.edu.tw/linkage-ji-gou-she-ji/"> 導引 </a> )</p>
+<p style="padding-left: 30px;">C++ 學習資源:</p>
+<p style="padding-left: 60px;"><a href="http://www.icce.rug.nl/documents/cplusplus/"> http://www.icce.rug.nl/documents/cplusplus/ </a></p>
+<p style="padding-left: 60px;"><a href="https://archive.org/details/TICPP2ndEdVolOne"> https://archive.org/details/TICPP2ndEdVolOne </a></p>
+<p style="padding-left: 60px;"><a href="https://en.wikibooks.org/wiki/C%2B%2B_Programming"> C++ Programming </a></p>
+<p style="padding-left: 60px;"><a href="https://www.learncpp.com/"> https://www.learncpp.com/ </a></p>
+<p style="padding-left: 60px;"><a href="https://www.syncfusion.com/succinctly-free-ebooks/cplusplus"> https://www.syncfusion.com/succinctly-free-ebooks/cplusplus </a></p>
+<br />Onshape << <a href='Onshape.html'>Previous</a> <a href='SketchFlat.html'>Next</a> >> SketchFlat</div>
         
     <!-- footer -->
       <div class="container">

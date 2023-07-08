@@ -18,208 +18,65 @@
 <p>MS Teams 代碼: fnueb56</p>
 <p>行事曆</p>
 <p><a href="https://calendar.google.com/calendar/embed?src=mde.nfu.edu.tw_3439313938333136353439%40resource.calendar.google.com&amp;ctz=Asia%2FTaipei&amp;mode=week&amp;src=mde.nfu.edu.tw_35303530373431313438%40resource.calendar.google.com&amp;ctz=Asia%2FTaipei&amp;src=yen%40gm.nfu.edu.tw&amp;ctz=Asia%2FTaipei"> 全頁檢視 </a></p>
-<p><iframe height="600" src="https://calendar.google.com/calendar/embed?src=mde.nfu.edu.tw_3439313938333136353439%40resource.calendar.google.com&amp;ctz=Asia%2FTaipei&amp;mode=week&amp;src=mde.nfu.edu.tw_35303530373431313438%40resource.calendar.google.com&amp;ctz=Asia%2FTaipei&amp;src=yen%40gm.nfu.edu.tw&amp;ctz=Asia%2FTaipei" width="800"></iframe></p><h2>如何維護網站</h2>
-<p>
- 以下的網站以 cmsimde 作為子模組的 Github Pages 網站維護為主:
-</p>
-<p>
- cmsimde 是甚麼?
-</p>
-<p style="padding-left: 30px;">
- cmsimde 是一套
- <span style="background-color: #ffff99;">
-  網際內容管理系統
- </span>
- , 利用
- <span style="background-color: #ffff99;">
-  Python Flask
- </span>
- 建立動態網站, 讓管理者登入後透過
- <span style="background-color: #ffff99;">
-  線上編輯器
- </span>
- 管理大綱式 (Outline-style) 網頁架構, 且
- <span style="background-color: #ffff99;">
-  轉為靜態網站
- </span>
- 時將網站內容關鍵字存為字典, 使用者可在靜態網站中以
- <span style="background-color: #ffff99;">
-  關鍵字搜詢
- </span>
- 網頁內容.
-</p>
-<p style="padding-left: 30px;">
- cmsimde 還整合
- <span style="background-color: #ffff99;">
-  網誌與網際簡報
- </span>
- , 讓使用者可利用時間流程或專欄記事的方式建立網誌, 並能直接在靜態網站中進行專題簡報.
-</p>
-<p>
- 有網路連線時:
-</p>
-<p style="padding-left: 30px;">
- 採用 Replit (使用免費帳號時, 可能因為資源不足造成網站連線不穩定或編輯
- <span style="background-color: #ffff99;">
-  資料丟失
- </span>
- ):
-</p>
-<p style="padding-left: 30px;">
- 在 Github 建立帶有 cmsimde 子模組的倉儲, 設定該倉儲的 Github Pages, 以
- <span style="background-color: #ffff99;">
-  import
- </span>
- 方式指定使用 Python  語言後, 將倉儲輸入 Replit 中, 利用 Shell 指令
- <span style="background-color: #ffff99;">
-  git submodule update --init
- </span>
- 取下子模組內容後 (因為 import 倉儲進入 Replit 並不會自動導入 submodule), 再利用 Shell 指令
- <span style="background-color: #ffff99;">
-  pip install flask flask_cors bs4 lxml markdown pelican pyopenssl gevent
- </span>
- 等模組後, 以 Run 啟動網站後, 更改管理者密碼, 之後只要 main.py 執行便可利用動態網站維護 config/content.htm 中的內容, 完成後再利用 Convert 指令將 content.htm 中的內容轉為 content 目錄中的靜態網站資料.
-</p>
-<p style="padding-left: 30px;">
- 要將 Replit 上的 cmsimde 網站倉儲內容送回 Github 之前, 必須在 .replit 設定檔案中的 [env] 環境變數區, 設定
- <span style="background-color: #ffff99;">
-  GIT_AUTHOR_NAME 與 GIT_AUTHOR_EMAIL
- </span>
- 等變數, 才能在利用 Tools 中的
- <span style="background-color: #ffff99;">
-  Git 頁面工具
- </span>
- 進行 git add 與 git commit -m 指令時綁定使用者身分, 完成改版內容提交後, 可直接在倉儲
- <span style="background-color: #ffff99;">
-  .git/config
- </span>
- 檔案中置入具有維護 Repo 權限的 Token 後, 在 Git 頁面執行 git push, 或利用 Shell 指令執行 git push, 以便將改版的倉儲內容與 Github 保持同步. 每次改版推送結束後, Github Pages 的設定就會針對改版內容進行轉檔為最新的靜態網站內容.
-</p>
-<p style="padding-left: 30px;">
- 採用自架主機:
-</p>
-<p style="padding-left: 30px;">
- 利用一台 Ubuntu server 建構能夠讓多人透過不同 ports 啟動網站編輯, 伺服靜態網頁並將倉儲內容與 Github 保持同步.
-</p>
-<p>
- 無網路連線時:
-</p>
-<p style="padding-left: 30px;">
- 利用近端可攜 Python 程式環境維護網站內容, 可以利用 git add 與 git commit -m 登錄改版內容, 待有網路連線時再將改版提交內容以 git push 推向 Github.
-</p>
+<p><iframe height="600" src="https://calendar.google.com/calendar/embed?src=mde.nfu.edu.tw_3439313938333136353439%40resource.calendar.google.com&amp;ctz=Asia%2FTaipei&amp;mode=week&amp;src=mde.nfu.edu.tw_35303530373431313438%40resource.calendar.google.com&amp;ctz=Asia%2FTaipei&amp;src=yen%40gm.nfu.edu.tw&amp;ctz=Asia%2FTaipei" width="800"></iframe></p>
+<h2>如何維護網站</h2>
+<p>以下的網站以 cmsimde 作為子模組的 Github Pages 網站維護為主:</p>
+<p>cmsimde 是甚麼?</p>
+<p style="padding-left: 30px;">cmsimde 是一套 <span style="background-color: #ffff99;"> 網際內容管理系統 </span> , 利用 <span style="background-color: #ffff99;"> Python Flask </span> 建立動態網站, 讓管理者登入後透過 <span style="background-color: #ffff99;"> 線上編輯器 </span> 管理大綱式 (Outline-style) 網頁架構, 且 <span style="background-color: #ffff99;"> 轉為靜態網站 </span> 時將網站內容關鍵字存為字典, 使用者可在靜態網站中以 <span style="background-color: #ffff99;"> 關鍵字搜詢 </span> 網頁內容.</p>
+<p style="padding-left: 30px;">cmsimde 還整合 <span style="background-color: #ffff99;"> 網誌與網際簡報 </span> , 讓使用者可利用時間流程或專欄記事的方式建立網誌, 並能直接在靜態網站中進行專題簡報.</p>
+<p>有網路連線時:</p>
+<p style="padding-left: 30px;">採用 Replit (使用免費帳號時, 可能因為資源不足造成網站連線不穩定或編輯 <span style="background-color: #ffff99;"> 資料丟失 </span> ):</p>
+<p style="padding-left: 30px;">在 Github 建立帶有 cmsimde 子模組的倉儲, 設定該倉儲的 Github Pages, 以 <span style="background-color: #ffff99;"> import </span> 方式指定使用 Python  語言後, 將倉儲輸入 Replit 中, 利用 Shell 指令 <span style="background-color: #ffff99;"> git submodule update --init </span> 取下子模組內容後 (因為 import 倉儲進入 Replit 並不會自動導入 submodule), 再利用 Shell 指令 <span style="background-color: #ffff99;"> pip install flask flask_cors bs4 lxml markdown pelican pyopenssl gevent </span> 等模組後, 以 Run 啟動網站後, 更改管理者密碼, 之後只要 main.py 執行便可利用動態網站維護 config/content.htm 中的內容, 完成後再利用 Convert 指令將 content.htm 中的內容轉為 content 目錄中的靜態網站資料.</p>
+<p style="padding-left: 30px;">要將 Replit 上的 cmsimde 網站倉儲內容送回 Github 之前, 必須在 .replit 設定檔案中的 [env] 環境變數區, 設定 <span style="background-color: #ffff99;"> GIT_AUTHOR_NAME 與 GIT_AUTHOR_EMAIL </span> 等變數, 才能在利用 Tools 中的 <span style="background-color: #ffff99;"> Git 頁面工具 </span> 進行 git add 與 git commit -m 指令時綁定使用者身分, 完成改版內容提交後, 可直接在倉儲 <span style="background-color: #ffff99;"> .git/config </span> 檔案中置入具有維護 Repo 權限的 Token 後, 在 Git 頁面執行 git push, 或利用 Shell 指令執行 git push, 以便將改版的倉儲內容與 Github 保持同步. 每次改版推送結束後, Github Pages 的設定就會針對改版內容進行轉檔為最新的靜態網站內容.</p>
+<p style="padding-left: 30px;">採用自架主機:</p>
+<p style="padding-left: 30px;">利用一台 Ubuntu server 建構能夠讓多人透過不同 ports 啟動網站編輯, 伺服靜態網頁並將倉儲內容與 Github 保持同步.</p>
+<p>無網路連線時:</p>
+<p style="padding-left: 30px;">利用近端可攜 Python 程式環境維護網站內容, 可以利用 git add 與 git commit -m 登錄改版內容, 待有網路連線時再將改版提交內容以 git push 推向 Github.</p>
 <h3>自架主機</h3>
-<p>
- 如何建立一台能讓多人共用的 Ubuntu server? 透過每人三個 ports (7 字頭用於模擬靜態網站, 8 字頭用於接受動態網站連線, 9 字頭的埠號則用於內部從一般 wsgi http 將資料轉入能接受外部連線的 https 協定資料.
-</p>
+<p>如何建立一台能讓多人共用的 Ubuntu server? 透過每人三個 ports (7 字頭用於模擬靜態網站, 8 字頭用於接受動態網站連線, 9 字頭的埠號則用於內部從一般 wsgi http 將資料轉入能接受外部連線的 https 協定資料.</p>
 <hr/>
-<p>
- 利用 Nginx 建立 Ubuntu 帳號下的公開網頁架構, 其 nginx.conf 相關設定:
-</p>
+<p>利用 Nginx 建立 Ubuntu 帳號下的公開網頁架構, 其 nginx.conf 相關設定:</p>
 <pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">location ~ ^/~(.+?)(/.*)?$ {
 alias /home/$1/public_html$2;
 index index.html index.htm;
 autoindex on;
 }</pre>
-<p>
- 設定 public_html
-</p>
-<p>
-<a href="https://www.server-world.info/en/note?os=Ubuntu_20.04&amp;p=nginx&amp;f=4">
-  https://www.server-world.info/en/note?os=Ubuntu_20.04&amp;p=nginx&amp;f=4
- </a>
-</p>
-<p>
- Linux 操作系統的檔案與目錄權限, 以 rwx 作為代號, 其中 r 為 read, w 為 write 而 x 則為 execution, 分別代表"讀、寫與執行"等權限. 且每一個檔案或目錄都分為三種身分的設定: u 代表 user, g 代表 group 而 o 則代表 others. 其中又以數字代表"讀、寫與執行"等三種權限.
-</p>
-<p>
- r: 4, w: 2, x: 1
-</p>
-<p>
- 當某一帳號下的 public_html 目錄希望作為 Nginx 伺服器的公用目錄時, 其 /home/your_home 的權限必須設為 711, 也就是 user 自己擁有全部權限, 而其他同群組與不同群組者, 只能執行.
-</p>
-<p>
- 外部 711 - user rwx, group x, other x
-</p>
-<p style="padding-left: 30px;">
- chmod 711 /home/your_account
-</p>
-<p>
- 作為 Nginx 公用目錄的 public_html 權限則必須設定 user 自己擁有全部權限, 其他同群組與不同群組者, 則必須設為可讀與可執行.
-</p>
-<p>
- public_html 755 - user rwx, group rx, other rx
-</p>
-<p style="padding-left: 30px;">
- chmod 755 ~/public_html
-</p>
+<p>設定 public_html</p>
+<p><a href="https://www.server-world.info/en/note?os=Ubuntu_20.04&amp;p=nginx&amp;f=4"> https://www.server-world.info/en/note?os=Ubuntu_20.04&amp;p=nginx&amp;f=4 </a></p>
+<p>Linux 操作系統的檔案與目錄權限, 以 rwx 作為代號, 其中 r 為 read, w 為 write 而 x 則為 execution, 分別代表"讀、寫與執行"等權限. 且每一個檔案或目錄都分為三種身分的設定: u 代表 user, g 代表 group 而 o 則代表 others. 其中又以數字代表"讀、寫與執行"等三種權限.</p>
+<p>r: 4, w: 2, x: 1</p>
+<p>當某一帳號下的 public_html 目錄希望作為 Nginx 伺服器的公用目錄時, 其 /home/your_home 的權限必須設為 711, 也就是 user 自己擁有全部權限, 而其他同群組與不同群組者, 只能執行.</p>
+<p>外部 711 - user rwx, group x, other x</p>
+<p style="padding-left: 30px;">chmod 711 /home/your_account</p>
+<p>作為 Nginx 公用目錄的 public_html 權限則必須設定 user 自己擁有全部權限, 其他同群組與不同群組者, 則必須設為可讀與可執行.</p>
+<p>public_html 755 - user rwx, group rx, other rx</p>
+<p style="padding-left: 30px;">chmod 755 ~/public_html</p>
 <hr/>
-<p>
- stud 是一台 Ubuntu server, 讓每一個用戶透過多個 ports 共享 server  中所設置的外部與內部 ports.
-</p>
-<p>
- 其中以 9 開頭的 port 設定為內部 port,  而 8 開頭的 port 則用於外部連線.
-</p>
-<p>
- 當某一用戶誤用所分配的內部 port 時, 管理者就可以透過 lsof 指令找出該用戶, 並即時加以糾正.
-</p>
-<p>
- 又由於 8 開頭的外部 port 統一由管理者以 Stunnel 啟動並加以管控, 因此一般用戶產生誤用的情況只會發生在內部以 9 開頭的 port.
-</p>
-<p>
- getps:
-</p>
+<p>stud 是一台 Ubuntu server, 讓每一個用戶透過多個 ports 共享 server  中所設置的外部與內部 ports.</p>
+<p>其中以 9 開頭的 port 設定為內部 port,  而 8 開頭的 port 則用於外部連線.</p>
+<p>當某一用戶誤用所分配的內部 port 時, 管理者就可以透過 lsof 指令找出該用戶, 並即時加以糾正.</p>
+<p>又由於 8 開頭的外部 port 統一由管理者以 Stunnel 啟動並加以管控, 因此一般用戶產生誤用的情況只會發生在內部以 9 開頭的 port.</p>
+<p>getps:</p>
 <pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">#! /bin/bash
 ps axo pid,comm,user | grep "python3"</pre>
-<p>
- getport:
-</p>
+<p>getport:</p>
 <pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">lsof -i :$1</pre>
-<p>
- getdir:
-</p>
+<p>getdir:</p>
 <pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">pwdx $1</pre>
-<p>
- 列出 Ubuntu 中 port 使用相關資訊: lsof -i :9123
-</p>
-<p>
- lsof: list open files
-</p>
-<p>
- -i: selects the listing of files any of whose Internet address matches the address specified in i.  If no address is specified, this option selects the listing of all Internet and x.25 (HP-UX) network files.
-</p>
+<p>列出 Ubuntu 中 port 使用相關資訊: lsof -i :9123</p>
+<p>lsof: list open files</p>
+<p>-i: selects the listing of files any of whose Internet address matches the address specified in i.  If no address is specified, this option selects the listing of all Internet and x.25 (HP-UX) network files.</p>
 <hr/>
-<p>
- waitress 利用 hupper 自動 reload:
-</p>
-<p>
- 在 Ubuntu 操作系統安裝 python3-hupper
-</p>
-<p style="padding-left: 30px;">
- sudo apt install python3-hupper
-</p>
-<p>
- 進入倉儲目錄後, 利用 hupper3 執行 server.py
-</p>
-<p style="padding-left: 30px;">
- cd cd2023
-</p>
-<p style="padding-left: 30px;">
- hupper3 -m server.py
-</p>
+<p>waitress 利用 hupper 自動 reload:</p>
+<p>在 Ubuntu 操作系統安裝 python3-hupper</p>
+<p style="padding-left: 30px;">sudo apt install python3-hupper</p>
+<p>進入倉儲目錄後, 利用 hupper3 執行 server.py</p>
+<p style="padding-left: 30px;">cd cd2023</p>
+<p style="padding-left: 30px;">hupper3 -m server.py</p>
 <hr/>
-<p>
- 假如要以自己架設的伺服器來取代 Replit, 第一步是如何在 Ubuntu 22.04 Server 上建立每位學員的帳號. 使用
- <a href="https://manpages.ubuntu.com/manpages/xenial/man8/newusers.8.html">
-  newusers
- </a>
- 指令, 配合建立一個包含帳號、密碼、uid、gid、comment、home dir 以及 shell (/bin/bash) 資料的 users.txt, 然後使用 sudo newusers users.txt 就可以完成所有學員帳號的建立. 但必須要先取得初始 uid, 也就是列出現有帳號的所屬 uid, 然後才能設定後續代號的 user id.
-</p>
-<p>
- 列出現有帳號 uid 的指令為: cut -d: -f1,3 /etc/passwd
-</p>
-<p>
- 表示要從 /etc/passwd 檔案, 以 : 符號分割檔案, 然後只取出第一與第三欄位的資料. 假如傳回:
-</p>
+<p>假如要以自己架設的伺服器來取代 Replit, 第一步是如何在 Ubuntu 22.04 Server 上建立每位學員的帳號. 使用 <a href="https://manpages.ubuntu.com/manpages/xenial/man8/newusers.8.html"> newusers </a> 指令, 配合建立一個包含帳號、密碼、uid、gid、comment、home dir 以及 shell (/bin/bash) 資料的 users.txt, 然後使用 sudo newusers users.txt 就可以完成所有學員帳號的建立. 但必須要先取得初始 uid, 也就是列出現有帳號的所屬 uid, 然後才能設定後續代號的 user id.</p>
+<p>列出現有帳號 uid 的指令為: cut -d: -f1,3 /etc/passwd</p>
+<p>表示要從 /etc/passwd 檔案, 以 : 符號分割檔案, 然後只取出第一與第三欄位的資料. 假如傳回:</p>
 <pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">root:0
 daemon:1
 bin:2
@@ -259,110 +116,48 @@ cad2022:1002
 stunnel4:998
 cd1:1002
 cd3:1003</pre>
-<p>
- 表示新建帳號的 uid 與 gid 就可以從 1004 開始, 然後連續增量後配給新的用戶
-</p>
-<p>
- IP 位址或埠號分配
-</p>
-<p>
- 當各學員在一台 Ubuntu 22.04 Server 上擁有帳號 (最理想的情況是用 Email 通知其主機資訊與帳號密碼) 之後, 隨即可以利用 ssh 進行遠端登入.
-</p>
-<p>
- 進入 Ubuntu 操作系統後, 就能夠利用 git clone 取下課程倉儲, 然後利用 python3 cmsimde/wsgi.py 執行動態網頁, 若各學員能夠從 port 8000 - 9000 之間進行分配區隔, 只要各學員配合修改 init.py 中的 IP 與 port 設定後, 就可以分別以自架主機取代 Replit.
-</p>
-<p>
- waitress
-</p>
-<p>
- 直接利用 Python3 執行 wsgi.py 儘管可以讓使用者登入編輯動態網站, 但效率並沒有 wsgi 模式高, 因此若能採用
- <a href="https://docs.pylonsproject.org/projects/waitress/en/stable/index.html">
-  waitress
- </a>
- 的方式啟用動態網頁, 應該是較好的做法. 但 https 對外連線仍需透過 Stunnel 或 Nginx 銜接完成.
-</p>
-<p>
- 這時, 只要在倉儲根目錄建立 waitress_server.py
-</p>
+<p>表示新建帳號的 uid 與 gid 就可以從 1004 開始, 然後連續增量後配給新的用戶</p>
+<p>IP 位址或埠號分配</p>
+<p>當各學員在一台 Ubuntu 22.04 Server 上擁有帳號 (最理想的情況是用 Email 通知其主機資訊與帳號密碼) 之後, 隨即可以利用 ssh 進行遠端登入.</p>
+<p>進入 Ubuntu 操作系統後, 就能夠利用 git clone 取下課程倉儲, 然後利用 python3 cmsimde/wsgi.py 執行動態網頁, 若各學員能夠從 port 8000 - 9000 之間進行分配區隔, 只要各學員配合修改 init.py 中的 IP 與 port 設定後, 就可以分別以自架主機取代 Replit.</p>
+<p>waitress</p>
+<p>直接利用 Python3 執行 wsgi.py 儘管可以讓使用者登入編輯動態網站, 但效率並沒有 wsgi 模式高, 因此若能採用 <a href="https://docs.pylonsproject.org/projects/waitress/en/stable/index.html"> waitress </a> 的方式啟用動態網頁, 應該是較好的做法. 但 https 對外連線仍需透過 Stunnel 或 Nginx 銜接完成.</p>
+<p>這時, 只要在倉儲根目錄建立 waitress_server.py</p>
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">from waitress import serve
 from cmsimde import flaskapp
  
 serve(flaskapp.app, listen="127.0.0.1:9443")</pre>
-<p>
- 然後 stunnel.conf 搭配設定:
-</p>
+<p>然後 stunnel.conf 搭配設定:</p>
 <pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">[https]
 accept = stud.cycu.org:443
 connect = 127.0.0.1:9443
 cert = fullchain.pem
 key = privkey.pem
 TIMEOUTclose = 0</pre>
-<p>
- 就可以在 python3 waitress_server.py 執行下, 讓外部以 https://stud.cycu.org 連結到對應的動態網頁.
-</p>
-<p>
- 在此的問題是, waitress_server.py 如何以 service 啟動, stunnel 如何搭配執行. 最簡單的情況是 Stunnel 先以 service 執行, 但事先納入所有學員的規劃 port, 其中包括內容 port 以及外部 port, 並且讓學員在需要編輯動態網頁的時候, 自行啟動各自的 waitress_server.py
-</p>
-<p>
- 利用 Python 取 IPv6 網路位址:
-</p>
+<p>就可以在 python3 waitress_server.py 執行下, 讓外部以 https://stud.cycu.org 連結到對應的動態網頁.</p>
+<p>在此的問題是, waitress_server.py 如何以 service 啟動, stunnel 如何搭配執行. 最簡單的情況是 Stunnel 先以 service 執行, 但事先納入所有學員的規劃 port, 其中包括內容 port 以及外部 port, 並且讓學員在需要編輯動態網頁的時候, 自行啟動各自的 waitress_server.py</p>
+<p>利用 Python 取 IPv6 網路位址:</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import socket
 ip = socket.getaddrinfo("stud.cycu.org", 0, socket.AF_INET6)[0][4][0]
 print(ip)</pre>
-<p>
- Virtualbox 虛擬主機
-</p>
-<p>
- 利用一台 16 核 80 GB 記憶體的虛擬主機, 建立約 250 個用戶後, 看能否透過 Stunnel 與 wsgi 啟動各自的 cmsimde 動態網站.
-</p>
-<p>
- 為了建立多用戶帳號, 可以利用 newusers 指令, 配合 users.txt 檔案:
-</p>
-<p>
- users.txt 檔案格式, 分別是: 使用者帳號, 預計使用 cad 加上學號, 或者是 cp 加上學號, 而密碼可以採用亂數產生, 至於 uid 與 gid 則需先使用
-</p>
-<p>
- cut -d: -f1,3 /etc/passwd
-</p>
-<p>
- 查詢現有帳號的對應 id 後, 再逐一利用迴圈增量. 至於 comment 欄位, 可以直接採用 cad 或 cp 加上學號, 而 shell 欄位則選用 /bin/bash
-</p>
-<p>
- user_1:password_2:1002:1002:user_1:/home/user_1:/bin/bash
-</p>
-<p>
- sudo newusers users.txt
-</p>
-<p>
- 依照上述流程建立帳號後, 可以保留使用者學號、帳號與對應密碼, 然後利用 Gmail 將此訊息郵寄給各用戶.
-</p>
-<p>
- 至於透過程式方法必須完成下列事項:
-</p>
+<p>Virtualbox 虛擬主機</p>
+<p>利用一台 16 核 80 GB 記憶體的虛擬主機, 建立約 250 個用戶後, 看能否透過 Stunnel 與 wsgi 啟動各自的 cmsimde 動態網站.</p>
+<p>為了建立多用戶帳號, 可以利用 newusers 指令, 配合 users.txt 檔案:</p>
+<p>users.txt 檔案格式, 分別是: 使用者帳號, 預計使用 cad 加上學號, 或者是 cp 加上學號, 而密碼可以採用亂數產生, 至於 uid 與 gid 則需先使用</p>
+<p>cut -d: -f1,3 /etc/passwd</p>
+<p>查詢現有帳號的對應 id 後, 再逐一利用迴圈增量. 至於 comment 欄位, 可以直接採用 cad 或 cp 加上學號, 而 shell 欄位則選用 /bin/bash</p>
+<p>user_1:password_2:1002:1002:user_1:/home/user_1:/bin/bash</p>
+<p>sudo newusers users.txt</p>
+<p>依照上述流程建立帳號後, 可以保留使用者學號、帳號與對應密碼, 然後利用 Gmail 將此訊息郵寄給各用戶.</p>
+<p>至於透過程式方法必須完成下列事項:</p>
 <ol>
-<li>
-  建立 users.txt, 然後傳送至虛擬主機
- </li>
-<li>
-  利用 sudo newuser users.txt 建立各用戶帳號與 home directory
- </li>
-<li>
-  建立 users_account.txt, 包含與 users.txt 各用戶帳號與密碼資訊
- </li>
-<li>
-  利用 Gmail 逐一將 users_account.txt 的帳號與密碼資訊寄給用戶
- </li>
+<li>建立 users.txt, 然後傳送至虛擬主機</li>
+<li>利用 sudo newuser users.txt 建立各用戶帳號與 home directory</li>
+<li>建立 users_account.txt, 包含與 users.txt 各用戶帳號與密碼資訊</li>
+<li>利用 Gmail 逐一將 users_account.txt 的帳號與密碼資訊寄給用戶</li>
 </ol>
-<p>
- password generator
-</p>
-<p>
- Brython 版
- <a href="https://mde.tw/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/2c6323eff49b496d1bafd210f3ec9707/raw/8864b4178c8ec64f60d30014d3ab743499d51be4/password_generator.py">
-  password generator
- </a>
- .
-</p>
+<p>password generator</p>
+<p>Brython 版 <a href="https://mde.tw/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/2c6323eff49b496d1bafd210f3ec9707/raw/8864b4178c8ec64f60d30014d3ab743499d51be4/password_generator.py"> password generator </a> .</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import random
 import string
  
@@ -375,9 +170,7 @@ def password_generator(size=4, chars=string.ascii_lowercase + string.digits):
 pass_string = "abcdefghkmnpqrstuwxyz123456789"
 for i in range(10):
     print(password_generator(4, pass_string))</pre>
-<p>
- 首先要建立各課程對應的 Ubuntu 帳號與密碼檔案:
-</p>
+<p>首先要建立各課程對應的 Ubuntu 帳號與密碼檔案:</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 導入亂數模組
 import random
 # 導入字串模組
@@ -409,12 +202,8 @@ def gen_acc_pass(course, course_num):
         print(stud_num + "\t" + account + "\t" + password)
 gen_acc_pass("cp", cp_num)
 gen_acc_pass("cad", cad_num)</pre>
-<p>
- Windows 與 Ubuntu 格式差異
-</p>
-<p>
- create_users_txt.py
-</p>
+<p>Windows 與 Ubuntu 格式差異</p>
+<p>create_users_txt.py</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">with open("2022_fall_ubuntu_account_pass.txt") as f:
     data = f.readlines()
 # newusers format:  
@@ -445,15 +234,9 @@ with open("users.txt", "w", encoding="utf-8", newline='\n') as f:
  
 with open("send.txt", "w", encoding="utf-8", newline='\n') as f:
         f.write(send)</pre>
-<p>
- 假如沒有採用 newline='\n', 在 Windows 寫檔案所使用的跳行符號, 以 sftp 傳到 Ubuntu 時將會因為 shell 並非 /bin/bash 而是加上 ^M$ 的錯誤 shell 資料, 導入用戶無法 login.
-</p>
-<p>
- 若要修正跳行符號錯誤, 可以採用:
-</p>
-<p>
- change_shell.py
-</p>
+<p>假如沒有採用 newline='\n', 在 Windows 寫檔案所使用的跳行符號, 以 sftp 傳到 Ubuntu 時將會因為 shell 並非 /bin/bash 而是加上 ^M$ 的錯誤 shell 資料, 導入用戶無法 login.</p>
+<p>若要修正跳行符號錯誤, 可以採用:</p>
+<p>change_shell.py</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import os
 with open("users.txt", "r", encoding="UTF-8") as f:
     data = f.read().splitlines()
@@ -461,25 +244,15 @@ for i in data:
     account = i.split(":")[0]
     print(account)
     os.system("sudo chsh -s /bin/bash " + account)</pre>
-<p>
- 當執行上列程式時, 為避免在程式中列出管理者密碼, 可以編輯 /etc/sudoers 並加入:
-</p>
+<p>當執行上列程式時, 為避免在程式中列出管理者密碼, 可以編輯 /etc/sudoers 並加入:</p>
 <pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false"># only require a password once every 60 minutes
 Defaults timestamp_timeout=60</pre>
-<p>
- 可以讓 sudo python3 change_shell.py 執行時無需輸入管理者密碼.
-</p>
+<p>可以讓 sudo python3 change_shell.py 執行時無需輸入管理者密碼.</p>
 <hr/>
-<p>
- s1511 必須利用 sudo pip3 install flask flask_cors bs4 lxml markdown pelican pyopenssl waitress 才能讓所有用戶共用模組, 並同時 sudo apt install python3-hupper 安裝 hupper3.
-</p>
-<p>
- s1511 必須在 /etc/default/stunnel4 中加入 ENABLED=1 並以 sudo /etc/init.d/stunnel4 restart 才能讓 Stunnel 與 server 同步開機時啟動.
-</p>
+<p>s1511 必須利用 sudo pip3 install flask flask_cors bs4 lxml markdown pelican pyopenssl waitress 才能讓所有用戶共用模組, 並同時 sudo apt install python3-hupper 安裝 hupper3.</p>
+<p>s1511 必須在 /etc/default/stunnel4 中加入 ENABLED=1 並以 sudo /etc/init.d/stunnel4 restart 才能讓 Stunnel 與 server 同步開機時啟動.</p>
 <hr/>
-<p>
- 使用 Python3 刪除 Ubuntu 中的使用者帳號與 home directories:
-</p>
+<p>使用 Python3 刪除 Ubuntu 中的使用者帳號與 home directories:</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import subprocess
 
 """
@@ -513,8 +286,7 @@ for user in stud_list:
     except subprocess.CalledProcessesError:
         print(str(user) + " is not deleted!")
 </pre>
-<p>
-</p>
+<p></p>
 <h3>Portable USB</h3>
 <p>這裡所指的可攜套件是包含 Python 與 Git 等能讓使用者在近端執行 cmsimde 動態網站, 並對網站改版內容進行 git add, git commit -m 與 git push 的 USB 隨身碟程式套件.</p>
 <p>截至 2023.06 最新版本 <a href="https://www.python.org/downloads/">CPython</a> 為 3.11.4 版.</p>
@@ -639,7 +411,8 @@ if __name__ == "__main__":
     port = 443
     app.run(host=ip, port=port, debug=True, ssl_context="adhoc")
     #app.run()</pre>
-<p></p><h2>Projects</h2>
+<p></p>
+<h2>Projects</h2>
 <p>1. <span style="background-color: #ffff99;">鋼球廻路運動系統</span>設計與模擬:</p>
 <p style="padding-left: 30px;">零組件設計繪圖、感測器、電磁場控制系統.</p>
 <p style="padding-left: 30px;"><a href="https://www.geekymine.com/products/perpetual-motion-machine-balancing-gadget">https://www.geekymine.com/products/perpetual-motion-machine-balancing-gadget</a> </p>
@@ -716,7 +489,8 @@ if __name__ == "__main__":
 <p>Reference:</p>
 <p style="padding-left: 30px;"><a href="https://www.instructables.com/Make-a-4WD-RC-car/"> https://www.instructables.com/Make-a-4WD-RC-car/ </a></p>
 <p style="padding-left: 30px;"><a href="https://youtu.be/PHdtGIrSu4o"> https://youtu.be/PHdtGIrSu4o </a></p>
-<p style="padding-left: 30px;"><a href="https://youtu.be/ZFEtGOIzGvo"> https://youtu.be/ZFEtGOIzGvo </a></p><h3>Modeling</h3>
+<p style="padding-left: 30px;"><a href="https://youtu.be/ZFEtGOIzGvo"> https://youtu.be/ZFEtGOIzGvo </a></p>
+<h3>Modeling</h3>
 <p><a href="https://www.sciencedirect.com/science/article/pii/S0307904X08001819"> 2009 Dynamic modelling of an intermittent slider–crank mechanism </a></p>
 <p style="padding-left: 30px;">This paper investigates kinematic and dynamic analyses of a novel intermittent slider– <br/> crank mechanism, which consists of four parts: a crank, a connecting rod associated with <br/> a pneumatic cylinder, a slider and two stops at both ends of a stroke. When the crank <br/> rotates continuously, the slider will contact with the stops and the pneumatic cylinder is <br/> compressed or extended. One periodic motion of the intermittent slider–crank mechanism <br/> driven by a permanent magnetic (PM) synchronous servomotor could be divided into three <br/> stages. Three governing equations are formulated by Hamilton’s principle. A spring model <br/> instead of the pneumatic cylinder is also used for comparison. Finally, the transient ampli- <br/> tudes obtained by using Runge–Kutta method are compared with those of the conventional <br/> slider–crank mechanism.</p>
 <h3>Simulate</h3>
@@ -724,7 +498,8 @@ if __name__ == "__main__":
 <p><a href="https://apps.apple.com/us/app/williams-pinball/id1406370101">Classic pinball perfection on App Store</a></p>
 <p><a href="https://github.com/CoppeliaRobotics/models/blob/master/examples/spring-damper.ttm">Spring</a> (<a href="https://forum.coppeliarobotics.com/viewtopic.php?t=5832">throgh API</a>)</p>
 <p><a href="https://forum.coppeliarobotics.com/viewtopic.php?t=1501">Electromagnetic</a> (<a href="https://ece.mst.edu/media/academic/ece/documents/coursenotes/ee3501electromechanics-new/EE3501_04__Solenoid__Simulink_.pdf">mathematical model</a>) </p>
-<p style="padding-left: 30px;"><a href="https://www.researchgate.net/publication/329332784_Modelling_and_Simulation_of_a_Controlled_Solenoid">https://www.researchgate.net/publication/329332784_Modelling_and_Simulation_of_a_Controlled_Solenoid</a> </p><h2>機電系統設計與模擬</h2>
+<p style="padding-left: 30px;"><a href="https://www.researchgate.net/publication/329332784_Modelling_and_Simulation_of_a_Controlled_Solenoid">https://www.researchgate.net/publication/329332784_Modelling_and_Simulation_of_a_Controlled_Solenoid</a></p>
+<h2>機電系統設計與模擬</h2>
 <h4>Mechatronic system design and simulation</h4>
 <p style="padding-left: 30px;"><a href="https://pressbooks.bccampus.ca/engineeringsystems/chapter/introduction/">https://pressbooks.bccampus.ca/engineeringsystems/chapter/introduction/</a> </p>
 <p style="padding-left: 60px;"><img alt="" height="201" src="/images/mordern_design_process.png" width="400"/></p>
@@ -782,8 +557,10 @@ if __name__ == "__main__":
 <p><a href="https://github.com/DarioArzaba/PythonStandalonePrograms">https://github.com/DarioArzaba/PythonStandalonePrograms </a></p>
 <p><a href="https://github.com/RCmags/FourBarSimulation">https://github.com/RCmags/FourBarSimulation </a></p>
 <h4>Dynamics</h4>
-<p><a href="https://moorepants.github.io/learn-multibody-dynamics/index.html">https://moorepants.github.io/learn-multibody-dynamics/index.html </a> (<a href="https://moorepants.github.io/learn-multibody-dynamics/learnmultibodydynamics.pdf">pdf</a>)</p><h3>Electronics</h3>
-<p><a href="https://youtu.be/WlUOr4z3Lbs">https://youtu.be/WlUOr4z3Lbs</a> (Electronics Fundamentals)</p><h2>虛實整合系統設計</h2>
+<p><a href="https://moorepants.github.io/learn-multibody-dynamics/index.html">https://moorepants.github.io/learn-multibody-dynamics/index.html </a> (<a href="https://moorepants.github.io/learn-multibody-dynamics/learnmultibodydynamics.pdf">pdf</a>)</p>
+<h3>Electronics</h3>
+<p><a href="https://youtu.be/WlUOr4z3Lbs">https://youtu.be/WlUOr4z3Lbs</a> (Electronics Fundamentals)</p>
+<h2>虛實整合系統設計</h2>
 <p>Cyber-physical integration system design</p>
 <p><a href="https://www.geeksforgeeks.org/introduction-to-cyber-physical-system/">https://www.geeksforgeeks.org/introduction-to-cyber-physical-system/</a></p>
 <p><a href="https://youtu.be/7pLoepM6i2s">The Challenges of Cyber-Physical Systems</a> (<a href="https://www.anii.org.uy/workshopuruguay/presentations/Kumar-PR.pdf">pdf</a>)</p>
@@ -833,11 +610,14 @@ if __name__ == "__main__":
 <p style="padding-left: 30px;"><a href="https://openplcproject.com/">https://openplcproject.com/</a></p>
 <p style="padding-left: 30px;"><a href="http://hades.mech.northwestern.edu/images/e/e3/EmbeddedComputingMechatronicsSampleChapters.pdf">http://hades.mech.northwestern.edu/images/e/e3/EmbeddedComputingMechatronicsSampleChapters.pdf</a></p>
 <p style="padding-left: 30px;"><a href="https://espace2.etsmtl.ca/id/eprint/25420/1/St-Onge-D-2022-25420--978-981-19-1983-1.pdf">Foundations of Robotics: A Multidisciplinary Approach with Python and ROS</a></p>
-<p></p><h2>深度學習</h2>
+<p></p>
+<h2>深度學習</h2>
 <p><a href="https://zh.d2l.ai/">https://zh.d2l.ai/</a> (簡體中文版)</p>
 <p><a href="https://d2l.ai/">https://d2l.ai/</a> (英文版)</p>
-<p><a href="https://github.com/SachaIZADI/Seven-Segment-OCR">https://github.com/SachaIZADI/Seven-Segment-OCR</a> </p>
-<p><a href="https://github.com/ultralytics/yolov5">https://github.com/ultralytics/yolov5</a> </p><h1>Solid Edge</h1>
+<p><a href="https://github.com/SachaIZADI/Seven-Segment-OCR">https://github.com/SachaIZADI/Seven-Segment-OCR</a></p>
+<p><a href="https://github.com/ultralytics/yolov5">https://github.com/ultralytics/yolov5</a></p>
+<p></p>
+<h1>Solid Edge</h1>
 <p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EXmbqg4z5I5LkMSvztvXzG0BvIobTTR_ED5EPmm9vjv2rA?e=BpQqeE"> 下載 </a> Solid Edge 2023 student 版安裝檔案 (for @nfu users only)</p>
 <p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EVZctF66LE1BkQCL4mvFEGgBIyM-u2nARksPz8VhUZI1bQ?e=EkdPfh"> 下載 </a> 放入 USB 隨身碟可在電腦輔助設計室中使用的可攜 Solid Edge 2023 學生版 (for @nfu users only)</p>
 <p>為何會製作可攜版本?</p>
@@ -924,250 +704,502 @@ if __name__ == "__main__":
 <li>Ctrl + R：右側視圖 (Right)</li>
 <li>Ctrl + T：上視圖 (Top)</li>
 </ol>
-<p></p><h2>SE_Tutorial</h2>
+<p></p>
+<h2>SE_Tutorial</h2>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/stopamm/index.html"> 建立零件 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/stopamm/index.html"> Create a part </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/stoabmm/index.html"> 建立組立件 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/stoabmm/index.html"> Create an assembly </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/stodcmm/index.html"> 局部詳圖簡介 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/stodcmm/index.html"> Introduction to detailed drawings </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/xid1685423/index.html"> Solid Edge 模擬簡介 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/xid1685423/index.html"> Introduction to Solid Edge Simulation </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/stppabg/index.html"> 同步特徵建模簡介 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/stppabg/index.html"> Introduction to modeling synchronous features </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/stppbac/index.html"> 以同步特徵對中間零件建模 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/stppbac/index.html"> Intermediate part modeling with synchronous features </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/seppabj/index.html"> 順序特徵零件建模簡介 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/seppabj/index.html"> Introduction to modeling parts with ordered features </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/seaaasl/index.html"> 建構滑塊組立件 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/seaaasl/index.html"> Building a slider assembly </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/staaask/index.html"> 建構滾輪組立件 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/staaask/index.html"> Building a roller assembly </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/seaacfa/index.html"> 建構組立件家族 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/seaacfa/index.html"> Building a family of assemblies </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/sbddaan/index.html"> 局部放大圖紙 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/sbddaan/index.html"> Detailing a drawing </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/sbddadr/index.html"> 建立 2D 圖紙 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/sbddadr/index.html"> Creating 2D drawings </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/seddbht/index.html"> 在圖紙上建立孔參數表 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/seddbht/index.html"> Creating a hole table on a drawing </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/seppas3/index.html"> 同步特徵和順序特徵零件建模 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/seppas3/index.html"> Modeling parts with synchronous and ordered features </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/stssash/index.html"> 同步鈑金建模簡介 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/stssash/index.html"> Introduction to sheet metal parts with synchronous features </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/sessash/index.html"> 順序鈑金建模簡介 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/sessash/index.html"> Introduction to ordered sheet metal modeling </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/sesscmc/index.html"> 順序輪廓彎邊建模 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/sesscmc/index.html"> Constructing a contour flange </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/seppcfp/index.html"> 建立零件家族 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/seppcfp/index.html"> Creating a family of parts </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/seppcpl/index.html"> 模具部件建模 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/seppcpl/index.html"> Modeling molded parts </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/seppcsw/index.html"> 掃掠特徵建模 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/seppcsw/index.html"> Modeling swept features </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/seppcvt/index.html"> 在零件模型中使用變數 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/seppcvt/index.html"> Using variables in part model </a> s)</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/stddb3d/index.html"> 從圖紙視圖對零件建模 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/stddb3d/index.html"> Modeling parts from drawing views </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/sesscfl/index.html"> 建立特徵庫 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/sesscfl/index.html"> Creating a feature library </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/seaabtb/index.html"> 使用管路設計建立管件 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/seaabtb/index.html"> Creating a tube part with XpresRoute </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/seaabwd/index.html"> 建構銲接 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/seaabwd/index.html"> Constructing a weldment </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/seddasc/index.html"> 建立示意圖 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/seddasc/index.html"> Creating schematic diagrams </a> )</p>
+<p><a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/seddbgs/index.html"> 使用工程計算工具 </a> ( <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/seddbgs/index.html"> Using engineering calculation tools </a> )</p>
+<p><a href="https://nfuedu-my.sharepoint.com/:f:/g/personal/yen_nfu_edu_tw/ElplrD9SFypJgED4WenMCFUBrx3Ve2S67z2Xa3Zz2vQqcw?e=TmqdUK"> Solid Edge 中英文手冊 </a> (for @nfu users only)</p>
+<hr/>
+<p><a href="https://solidedge.siemens.com/en/resources/tutorials/"> https://solidedge.siemens.com/en/resources/tutorials/ </a></p>
+<p><a href="https://docs.plm.automation.siemens.com/tdoc/se/latest/se_help/#uid:index_xid618399:xid486886"> Solid Edge Tutorial </a></p>
+<p><a href="https://www.gearupu.com/students.html"> SE for Student </a></p>
+<p><a href="https://solidedge.siemens.com/en/solutions/users/educators/#project-tutorials"> Project Tutorial </a></p>
+<p><a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/EVlrCyH8aDFOlJNhRC1DVSQBffjuzI97QCpqJTC_WldKtA?e=TiGTws"> Test drive Solid Edge.pdf </a></p>
+<p>在安裝過程利用 regshot 紀錄套件所新增的 .reg, 或可直接將套件放入 USB, 並提供所需的 registry, 就有機會在安裝防寫卡的電腦上直接執行.</p>
+<p>Delete installed registries:</p>
+<p>Powershell commond file: delete_key.ps1</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false"># Specify the registry keys and values to delete
+$keysToDelete = @(
+    "HKEY_CURRENT_USER\Path\To\Key1",
+    "HKEY_LOCAL_MACHINE\Path\To\Key2",
+    "HKEY_CURRENT_USER\Path\To\Key3"
+)
+
+# Delete the specified keys and values
+foreach ($key in $keysToDelete) {
+    Write-Host "Deleting key: $key"
+    Remove-Item -Path "Registry::$key" -Recurse -Force
+}
+</pre>
+<p>or read the installed .reg and delete keys by reading .reg file:</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false"># Define the path to the .reg file
+$regFilePath = "C:\path\to\your\file.reg"
+
+# Read the content of the .reg file
+$regContent = Get-Content -Path $regFilePath -Raw
+
+# Delete the registry entries
+try {
+    # Disable registry redirection to avoid issues with 32-bit and 64-bit keys
+    if ([Environment]::Is64BitProcess) {
+        Set-ItemProperty -Path "HKLM:\Software\Microsoft\Wow6432Node\Microsoft.PowerShell\Registry::HKCU" -Name "DisableRedirection" -Value 1
+    } else {
+        Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer" -Name "NoChangeStartMenu" -Value 1
+    }
+    
+    # Import the .reg file to delete the registry entries
+    $null = Invoke-Expression -Command $regContent
+}
+finally {
+    # Re-enable registry redirection
+    if ([Environment]::Is64BitProcess) {
+        Remove-ItemProperty -Path "HKLM:\Software\Microsoft\Wow6432Node\Microsoft.PowerShell\Registry::HKCU" -Name "DisableRedirection" -ErrorAction SilentlyContinue
+    } else {
+        Remove-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer" -Name "NoChangeStartMenu" -ErrorAction SilentlyContinue
+    }
+}
+</pre>
+<p><a href="https://sourceforge.net/projects/regshot/"> https://sourceforge.net/projects/regshot/ </a></p>
+<p style="padding-left: 30px;">Regshot is an open-source (LGPL) registry compare utility that allows you to quickly take a snapshot of your registry and then compare it with a second one - done after doing system changes or installing a new software product.</p>
+<h1>NX</h1>
+<p>採用動機: CAD/CAE/CAM 功能完整的高階電腦輔助機械設計套件</p>
+<p><a href="https://nfuedu.sharepoint.com/:u:/s/cad2022/EclS-NMhqJ9JvCa-pIQ_jMsBQB1tipr_Zgc8kT8ha1kMtg?e=RvnCpR"> NX2027.3401_lite_cad2022.7z </a> for @nfu users only</p>
+<p><a href="https://docs.plm.automation.siemens.com/tdoc/nx/1899/nx_help/#uid:index"> NX_help for 1899 </a></p>
+<h1>Onshape</h1>
+<p>採用動機: 全雲端中階電腦輔助機械設計套件, 近端電腦無需安裝套件, 可在手機與平板中的 Onshape App 中使用.</p>
+<p><a href="https://www.onshape.com/en/education/"> https://www.onshape.com/en/education/ </a></p>
+<h1>Solvespace</h1>
+<p>採用動機: 提供 C++ 原始碼的參數式電腦輔助設計繪圖套件, 檔案可直接放入 USB 隨身碟操作, 且可練習使用 C++ 編譯器自行編譯.</p>
+<p><a href="https://solvespace.com/index.pl"> https://solvespace.com/index.pl </a></p>
+<p><a href="https://github.com/solvespace/solvespace"> https://github.com/solvespace/solvespace </a></p>
+<p><a href="https://www.farwire.net/SolveSpace-LearningGuide.htm"> https://www.farwire.net/SolveSpace-LearningGuide.htm </a></p>
+<p><a href="https://solvespace.readthedocs.io/_/downloads/en/latest/pdf/"> https://solvespace.readthedocs.io/_/downloads/en/latest/pdf/ </a></p>
+<p><a href="https://solvespace.com/forum.pl?action=viewthread&amp;parent=3165&amp;tt=1601980716"> Theory behind Solvespace </a></p>
+<p><a href="https://link.springer.com/book/10.1007/978-3-030-02399-7"> 2019 Advanced CAD Modeling </a></p>
+<hr/>
+<p>編譯 Solvespace:</p>
+<p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EUd5wZF9jSdCtrDkLvEfyj4Bq8pkV0b3kKZ1fxeNMhC8qg?e=slvduQ"> 下載 MSYS2 and Cmake.7z </a> <span> (下載 3.47GB 解開後 12.6GB, for @nfu users only) </span></p>
+<p><span> 配置 MSYS2 與 Cmake, 設定執行搜尋路徑: </span></p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">set path_msys2=%Disk%:\msys64_20210419\mingw64\bin;
+set path_cmake=%Disk%:\cmake-3.21.0-windows-x86_64\bin
+REM 將 path_msys2 與 path_cmake 納入系統 path
+path=%Disk%:;%path_python%;%path_msys2%;%path_cmake%;%path_lua%;%path_git%;%path_tcc%;%path_gnuplot%;%path_scite%;%path_miktex%;%path%;</pre>
+<p>而且必須 rename Y:\msys64_20210419\mingw64\bin\sh.exe 與 Y:\portablegit_2.31.1\bin\sh.exe 換成其他名稱.</p>
+<p>2023.05.12 執行編譯:</p>
+<p>連子模組 (submodule) 一起取下:</p>
+<p>git clone --recurse-submodules <a href="https://github.com/solvespace/solvespace.git"> https://github.com/solvespace/solvespace.git </a> (最新原始碼, 可能因開發中, 導致資料不完整而無法編譯)</p>
+<p>or</p>
+<p><span> git clone --recurse-submodules </span> <a href="https://github.com/solvespace/solvespace.git"> https://github.com/solvespace/solvespace.git </a> <span> -b v3.1 </span></p>
+<p>or</p>
+<p>git clone --recurse-submodules <a href="https://github.com/solvespace/solvespace.git"> https://github.com/solvespace/solvespace.git </a> -b v3.0</p>
+<p>cd solvespace <br/> mkdir build <br/> cd build <br/> cmake .. -G "MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release <br/> make</p>
+<p>need libwinpthread-1.dll to execute solvespace.exe</p>
+<p><a href="http://wcm.cycu.org:88/github/cd2023/downloads/solvespace_exe_3.0.7z"> solvespace_exe_3.0.7z </a></p>
+<p><a href="http://wcm.cycu.org:88/github/cd2023/downloads/solvespace_exe_3.1.7z"> solvespace_exe_3.1.7z </a></p>
+<p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/ERFXVU8sGoZBq8B302khxfUBY63_TbYu4XiWdRIIug065A?e=SiTcgX"> solvespace 3.0 and 3.1 原始碼與 Leo Editor 開發專案.7z </a> (下載 619MB, 解開後 1GB)</p>
+<p>參考資料:</p>
+<p style="padding-left: 30px;"><a href="https://cq.cx/dl/sketchflat-internals.pdf"> 2007 SketchFlat, A Constraint-Based Drawing Tool </a></p>
+<p style="padding-left: 30px;"><a href="https://librearts.org/2013/08/solvespace-released-under-gpl/"> https://librearts.org/2013/08/solvespace-released-under-gpl/ </a></p>
+<p style="padding-left: 30px;"><a href="https://weekly-geekly.imtqy.com/articles/335962/index.html"> https://weekly-geekly.imtqy.com/articles/335962/index.html </a></p>
+<p style="padding-left: 30px;"><a href="https://adventures.michaelfbryan.com/posts/constraints-part-1-expressions/"> https://adventures.michaelfbryan.com/posts/constraints-part-1-expressions/ </a></p>
+<p style="padding-left: 30px;"><a href="https://link.springer.com/book/10.1007/978-3-540-77974-2"> 2008 Computational Geometry </a> <span> (只能在校網、使用校內代理主機或使用校內 VPN 才能下載) </span></p>
+<p style="padding-left: 30px;"><a href="https://link.springer.com/book/10.1007/978-3-540-89068-3"> 2009 Geometric Algebra with Applications in Engineering </a> <span> (只能在校網、使用校內代理主機或使用校內 VPN 才能下載), <a href="http://wcm.cycu.org:88/github/cd2023/downloads/CLUCalc_4.3.2.7z"> CLUCalc_4.3.2.7z </a> , <a href="http://wcm.cycu.org:88/github/cd2023/downloads/CLUCalcSource_win_3.1.7z"> CLUCalcSource_win_3.1.7z </a> <a href="https://github.com/foobarz/CLUCalcLinux"> https://github.com/foobarz/CLUCalcLinux </a> , <a href="http://web.archive.org/web/20071010093218/http://www.clucalc.info/"> Wayback </a> , <a href="https://mde.tw/wcm2023/downloads/clucalc_doc/"> CLUCalc Documentation </a> . </span></p>
+<p style="padding-left: 30px;"><a href="https://link.springer.com/book/10.1007/978-1-4471-4360-4"> 2013 Geometric Modeling and Reasoning of Human-Centered Freeform Products </a> (只能在校網、使用校內代理主機或使用校內 VPN 才能下載)</p>
+<p style="padding-left: 30px;"><a href="https://link.springer.com/book/10.1007/978-3-642-31794-1"> 2013 Foundations of Geometric Algebra Computing </a> <span> (只能在校網、使用校內代理主機或使用校內 VPN 才能下載) </span></p>
+<p style="padding-left: 30px;"><span> <a href="https://link.springer.com/book/10.1007/978-1-4612-0159-5"> Geometric Algebra with Applications in Science and Engineering </a> <span> (只能在校網、使用校內代理主機或使用校內 VPN 才能下載) </span> </span></p>
+<p style="padding-left: 30px;"><a href="https://www.inf.ed.ac.uk/teaching/courses/cg/Web/intro_to_curves.pdf"> https://www.inf.ed.ac.uk/teaching/courses/cg/Web/intro_to_curves.pdf </a></p>
+<p style="padding-left: 30px;"><a href="http://web.math.ku.dk/noter/filer/geom1.pdf"> Curves and Surfaces </a></p>
+<p style="padding-left: 30px;"><a href="https://arxiv.org/pdf/1405.4465.pdf"> Curvatures at the singular points of algebraic curves and surfaces </a></p>
+<p style="padding-left: 30px;"><a href="http://www.gaalop.de/wp-content/uploads/Masterthesis.pdf"> 2012 Geometric Algebra enhancedPrecompiler for C++ and OpenCL </a></p>
+<p style="padding-left: 30px;"><a href="https://slehar.wordpress.com/2014/03/18/clifford-algebra-a-visual-introduction/"> https://slehar.wordpress.com/2014/03/18/clifford-algebra-a-visual-introduction/ </a></p>
+<p style="padding-left: 30px;"><a href="https://zbmath.org/"> https://zbmath.org/ </a></p>
+<p style="padding-left: 30px;"><a href="http://wcm.cycu.org:88/github/cd2023/downloads/Linkage_3.16.14.7z"> Linkage_3.16.14.7z </a> ( <a href="https://blog.rectorsquid.com/linkage-mechanism-designer-and-simulator/"> 官方網站 </a> , <a href="https://github.com/scrum-1/Linkage"> 3.2 source codes </a> , <a href="https://sites.google.com/a/jbps.ttct.edu.tw/linkage-ji-gou-she-ji/"> 導引 </a> )</p>
+<p style="padding-left: 30px;">C++ 學習資源:</p>
+<p style="padding-left: 60px;"><a href="http://www.icce.rug.nl/documents/cplusplus/"> http://www.icce.rug.nl/documents/cplusplus/ </a></p>
+<p style="padding-left: 60px;"><a href="https://archive.org/details/TICPP2ndEdVolOne"> https://archive.org/details/TICPP2ndEdVolOne </a></p>
+<p style="padding-left: 60px;"><a href="https://en.wikibooks.org/wiki/C%2B%2B_Programming"> C++ Programming </a></p>
+<p style="padding-left: 60px;"><a href="https://www.learncpp.com/"> https://www.learncpp.com/ </a></p>
+<p style="padding-left: 60px;"><a href="https://www.syncfusion.com/succinctly-free-ebooks/cplusplus"> https://www.syncfusion.com/succinctly-free-ebooks/cplusplus </a></p>
+<h2>SketchFlat</h2>
+<p><a href="https://cq.cx/sketchflat.pl"> https://cq.cx/sketchflat.pl </a> ( <a href="https://cq.cx/index.pl"> https://cq.cx/index.pl </a> )</p>
+<p><a href="https://github.com/scrum-1/SketchFlat2019"> https://github.com/scrum-1/SketchFlat2019 </a></p>
+<p><a href="/downloads/sketchflat_source_and_exe.7z"> sketchflat_source_and_exe.7z </a></p>
+<h1>CoppeliaSim</h1>
+<p>採用動機: 提供 C++ 原始碼, 可與 MCAD 結合建立機電資虛實整合模擬系統.</p>
+<p><a href="https://www.coppeliarobotics.com/"> https://www.coppeliarobotics.com/ </a></p>
+<p><a href="https://github.com/CoppeliaRobotics"> https://github.com/CoppeliaRobotics </a></p>
+<p><a href="https://mde.tw/pjcopsim"> https://mde.tw/pjcopsim </a></p>
+<p><a href="https://pubmed.ncbi.nlm.nih.gov/36015783/"> Modeling and Control of a Spherical Robot in the CoppeliaSim Simulator </a></p>
+<p>編譯 CoppeliaSim 需要 <a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EUd5wZF9jSdCtrDkLvEfyj4Bq8pkV0b3kKZ1fxeNMhC8qg?e=slvduQ"> 下載 MSYS2 and Cmake.7z <span> </span> </a> <span> </span> <span> (下載 3.47GB 解開後 12.6GB, for @nfu users only) </span></p>
+<p><a href="https://mde.tw/blog/compile-coppeliasim-4.3.0-rev12.html"> https://mde.tw/blog/compile-coppeliasim-4.3.0-rev12.html </a></p>
+<h2>PICSimLab</h2>
+<p><a href="https://www.youtube.com/watch?v=be96Ds8umig"> https://www.youtube.com/watch?v=be96Ds8umig </a></p>
+<h4>Arduino</h4>
+<p><a href="https://github.com/lcgamboa/picsimlab"> https://github.com/lcgamboa/picsimlab </a> Programmable IC Simulator Laboratory</p>
+<p><a href="https://www.arduino.cc/en/software"> https://www.arduino.cc/en/software </a> Arduino IDE</p>
+<p><a href="https://com0com.sourceforge.net/"> https://com0com.sourceforge.net/ </a> Null-modem Emulator</p>
+<p>PICSimLab 模擬 Arduino Uno (COM6) 與 Stepper Motor:</p>
+<p><img alt="" height="270" src="/images/picsimlab_arduino_uno.gif" width="400"/></p>
+<p><img caption="false" height="400" src="/images/picsimlab_stepper_motor.gif" width="249"/></p>
+<p>透過 PICSimLab Pin Viewer, 將 PB0/8, PB1/~9, PB2/~10 與 PB3/~11 與 Stepper Motor 接線.</p>
+<p><img alt="" height="232" src="/images/picsimlab_pin_viewer.gif" width="400"/></p>
+<p>透過 com0com 模擬 COM6 &lt;-&gt; COM4 連線.</p>
+<p><img alt="" height="327" src="/images/com0com_setup.png" width="400"/></p>
+<p>Arduino IDE 將 Stepper Motor 控制程式編譯後透過 COM4 經由 com0com 將程式經由 COM6 上傳到 Virtual Arduino Uno board.</p>
+<p><img alt="" height="302" src="/images/arduino_ide.png" width="400"/></p>
+<p>接著希望可以利用 CoppeliaSim zmqRemoteAPI Python 讀取 PICSimLab 控制 Stepper Motor 的資料, 用來同步控制位於 CoppeliaSim 場景中的 Virtual Stepper Motor.</p>
+<p>Reference:</p>
+<p style="padding-left: 30px;"><a href="https://link.springer.com/chapter/10.1007/978-3-030-82544-7_24"> HoRoSim, a Holistic Robot Simulator: Arduino Code, Electronic Circuits and Physics </a> ( <a href="https://link.springer.com/content/pdf/10.1007/978-3-030-82544-7_24.pdf"> pdf </a> )</p>
+<p style="padding-left: 30px;"><a href="https://github.com/scrum-1/horosim"> scrum-1/horosim (github.com) </a></p>
+<h2>Models</h2>
+<p><a href="https://github.com/CoppeliaRobotics/models"> https://github.com/CoppeliaRobotics/models </a></p>
+<p><a href="https://github.com/mdecourse/V-REP-demo"> https://github.com/mdecourse/V-REP-demo </a></p>
+<p><a href="https://github.com/mdecycu/Active-Perception"> https://github.com/mdecycu/Active-Perception </a></p>
+<p><a href="https://github.com/mdecourse-org/V-Rep"> https://github.com/mdecourse-org/V-Rep </a></p>
+<p><a href="https://github.com/mdecourse-org/vrep-volleyball"> https://github.com/mdecourse-org/vrep-volleyball </a></p>
+<p><a href="https://github.com/mdecourse/Autonomous-car-simulation"> https://github.com/mdecourse/Autonomous-car-simulation </a></p>
+<p><a href="https://github.com/mdecourse/First_Project"> https://github.com/mdecourse/First_Project </a></p>
+<p><a href="https://github.com/mdecourse/Ball-Tracking-Mobile-Robots"> https://github.com/mdecourse/Ball-Tracking-Mobile-Robots </a></p>
+<p><a href="https://github.com/mdecourse/Ball-Balancing-Machine"> https://github.com/mdecourse/Ball-Balancing-Machine </a></p>
+<p><a href="https://github.com/mdecourse/CoppeliaSim-Blender-Tools"> https://github.com/mdecourse/CoppeliaSim-Blender-Tools </a></p>
+<p><a href="https://github.com/mdecourse/Vision_Project_M1"> https://github.com/mdecourse/Vision_Project_M1 </a></p>
+<p><a href="https://github.com/mdecourse/self-driving-car-simulation"> https://github.com/mdecourse/self-driving-car-simulation </a></p>
+<p><a href="https://github.com/mdecourse-org/PID_wall_following"> https://github.com/mdecourse-org/PID_wall_following </a></p>
+<p><a href="https://github.com/mdecourse-org/coppelia_gui_robot_control_python"> https://github.com/mdecourse-org/coppelia_gui_robot_control_python </a></p>
+<h2>Research</h2>
+<p>類比電腦與磁浮控制系統設計</p>
+<p>Analog computer and magnetic levitation control system design</p>
+<p><a href="https://people.eecs.berkeley.edu/~shah//docs/dpac.pdf"> DPAC: Digitally Programmable Analog Computer </a></p>
+<p><a href="https://upcommons.upc.edu/bitstream/handle/2117/388470/tfm-mariamercade.pdf"> Construction and control of a magnetic levitation system </a></p>
+<p><a href="https://thl.okstate.edu/Handout_MagLevNeural.pdf"> Magnetic Levitation System </a></p>
+<p><a href="https://scholarworks.iupui.edu/bitstream/handle/1805/32677/MagLev_CapstoneReport_05052021.pdf?sequence=1"> Magnetic Levitation System: Senior Project Report </a></p>
+<p><a href="https://www.ece.ucf.edu/seniordesign/su2013fa2013/g02/docs/final_doc.pdf"> MagLev </a></p>
+<p><a href="https://scholar.ppu.edu/bitstream/handle/123456789/137/MainThesis.pdf?sequence=2&amp;isAllowed=y"> Control of a Ball and Plate System Using Model-Based Controllers </a></p>
+<p><a href="https://scholarworks.uark.edu/cgi/viewcontent.cgi?article=4858&amp;context=etd"> Motor Control Systems Analysis, Design, and Optimization Strategies for a Lightweight Excavation RobotStrategies for a Lightweight Excavation Robot </a></p>
+<p><a href="https://scholarscompass.vcu.edu/cgi/viewcontent.cgi?article=5737&amp;context=etd"> Understanding and Design of an Arduino-based PID Controller </a></p>
+<p><a href="https://github.com/mdecourse/Ball-Balancing-Machine"> https://github.com/mdecourse/Ball-Balancing-Machine </a></p>
+<p><a href="https://stackoverflow.com/questions/54191098/how-can-i-detect-if-a-object-ballbeing-tracked-using-opencv-passed-through-a-g"> https://stackoverflow.com/questions/54191098/how-can-i-detect-if-a-object-ballbeing-tracked-using-opencv-passed-through-a-g </a></p>
+<p><a href="https://github.com/mdecourse/TableSoccerCV"> https://github.com/mdecourse/TableSoccerCV </a></p>
+<p><a href="https://kananvyas.medium.com/player-and-football-detection-using-opencv-python-in-fifa-match-6fd2e4e373f0"> https://kananvyas.medium.com/player-and-football-detection-using-opencv-python-in-fifa-match-6fd2e4e373f0 </a></p>
+<hr/>
+<p>Study of the ball balance platform in the cyber-physical integration environment <br/> <br/> 虛實整合環境中的圓球平衡台研究</p>
+<p><a href="https://github.com/mdecourse/Ball-Balancing-Machine"> https://github.com/mdecourse/Ball-Balancing-Machine </a></p>
+<p><a href="https://www.diva-portal.org/smash/get/diva2:1373784/FULLTEXT01.pdf"> 2019 Construction and theoretical study of a ball balancing platform </a></p>
+<p><a href="https://www.mdpi.com/2079-9292/8/2/248"> 2019 Cyber-Physical System Framework for Measurement and Analysis of Physical Activities </a></p>
+<p><a href="https://www.researchgate.net/publication/277918242_A_Cyber_Physical_Interface_for_Automation_Systems-Methodology_and_Examples"> A Cyber Physical Interface for Automation Systems—Methodology and Examples </a></p>
+<p><a href="https://journals.sagepub.com/doi/epub/10.1177/16878132221109969"> A review of component-in-the-loop: Cyber-physical experiments for rapid system development and integration </a></p>
+<p><a href="https://core.ac.uk/download/pdf/216056118.pdf"> An Analysis-Driven Rapid Design Process for Cyber-Physical Systems </a></p>
+<p><a href="https://www.ics.uci.edu/~givargis/pubs/C61.pdf"> From the Browser to the Remote Physical Lab: Programming Cyber-physical Systems </a></p>
+<h1>Brython</h1>
+<p><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">https://en.wikipedia.org/wiki/Python_(programming_language)</a></p>
+<h4>Examples:</h4>
+<p style="padding-left: 30px;"><a href="https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d">https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d</a></p>
+<p style="padding-left: 30px;"><a href="https://www.geeksforgeeks.org/python-programming-examples/">https://www.geeksforgeeks.org/python-programming-examples/</a></p>
+<p style="padding-left: 30px;"><a href="https://www.programiz.com/python-programming/examples">https://www.programiz.com/python-programming/examples</a></p>
+<p style="padding-left: 30px;"><a href="https://www.freecodecamp.org/news/python-code-examples-sample-script-coding-tutorial-for-beginners/">https://www.freecodecamp.org/news/python-code-examples-sample-script-coding-tutorial-for-beginners/</a></p>
+<h4>Python Tutorial:</h4>
+<p style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/">https://docs.python.org/3/tutorial/</a></p>
+<p style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/introduction.html">An informal introduction to Python</a></p>
+<h4>Indentation (Python 採 4 個 Spaces 縮排, 以界定執行範圍)</h4>
+<h4>Variables (<a href="https://github.com/python/cpython/blob/3.11/Lib/keyword.py">Python Keywords</a>)</h4>
+<h4>Comments (# 單行註解, 三個單引號或三個雙引號標註多行註解)</h4>
+<h4><a href="https://docs.python.org/3/tutorial/introduction.html#numbers">Numbers</a> (整數 int(), 浮點數 float())</h4>
+<h4><a href="https://docs.python.org/3/tutorial/introduction.html#strings">Strings</a> (字串)</h4>
+<h4>print (Python 內建函式, <a href="https://docs.python.org/3/library/functions.html#print">print()</a> 函式)</h4>
+<p><a href="https://docs.python.org/3/tutorial/controlflow.html">Python control flow tools</a></p>
+<h4 style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/controlflow.html#for-statements">for</a></h4>
+<h4 style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/controlflow.html#if-statements">if</a></h4>
+<h4 style="padding-left: 30px;"><a href="https://docs.python.org/3/tutorial/controlflow.html#the-range-function">range</a></h4>
+<h4>open</h4>
+<h4>read</h4>
+<h4><a href="https://docs.python.org/3/tutorial/introduction.html#lists">lists</a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences">tuples</a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/datastructures.html#dictionaries">dictionaries</a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/controlflow.html#defining-functions">functions</a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/errors.html#exceptions">try ... except</a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops">break</a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/controlflow.html#pass-statements">pass</a></h4>
+<h4><a href="https://docs.python.org/3/tutorial/classes.html?highlight=classes">classes</a></h4>
+<p>這個頁面 demo 如何在同一頁面下納入多個線上 Ace 編輯器與執行按鈕 (<a href="/downloads/practice_html.txt">practice_html.txt</a> 動態頁面超文件).</p>
+<p><a href="/downloads/practice_html.txt">practice_html.txt</a> 動態頁面超文件應該可以在啟動 Brython 時, 設定將 .py 檔案放入 downloads/py 目錄中引用.</p>
+<p>亦即將所有對應的 html 也使用 Brython 產生, 然後寫為 <a href="https://docs.python.org/3/tutorial/classes.html">class</a> 後, 在範例導入時透過 <a href="https://docs.python.org/3/tutorial/classes.html#instance-objects">instance</a> 引用.</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;!-- 啟動 Brython --&gt;
+&lt;script&gt;
+window.onload=function(){
+brython({debug:1, pythonpath:['/static/','./../downloads/py/']});
+}
+&lt;/script&gt;</pre>
+<p>從 1 累加到 100:</p>
+<p><button id="add1to100">1 add to 100</button></p>
+<p>將 iterable 與 iterator <a href="https://home.gamer.com.tw/creationDetail.php?sn=4337438">相關說明</a>, 利用 Brython 與 Ace Editor 整理在這個頁面.</p>
+<!-- 導入 brython 程式庫 -->
 <p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/stopamm/index.html">
-  建立零件
- </a>
- (
- <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/stopamm/index.html">
-  Create a part
- </a>
- )
+<script src="/static/brython.js"></script>
+<script src="/static/brython_stdlib.js"></script>
+</p>
+<!-- 啟動 Brython -->
+<p>
+<script>
+window.onload=function(){
+brython({debug:1, pythonpath:['/static/','./../downloads/py/']});
+}
+</script>
+</p>
+<p><!-- 導入 FileSaver 與 filereader --></p>
+<p>
+<script src="/static/ace/FileSaver.min.js" type="text/javascript"></script>
+<script src="/static/ace/filereader.js" type="text/javascript"></script>
+</p>
+<p><!-- 導入 ace --></p>
+<p>
+<script src="/static/ace/ace.js" type="text/javascript"></script>
+<script src="/static/ace/ext-language_tools.js" type="text/javascript"></script>
+<script src="/static/ace/mode-python3.js" type="text/javascript"></script>
+<script src="/static/ace/snippets/python.js" type="text/javascript"></script>
+</p>
+<p><!-- 導入 gearUtils-0.9.js Cango 齒輪繪圖程式庫 -->
+<script src="/static/Cango-24v03-min.js"></script>
+<script src="/static/gearUtils-09.js"></script>
+<script src="/static/SVGpathUtils-6v03-min.js"></script>
+<script src="/static/sylvester.js"></script>
+<script src="/static/PrairieDraw.js"></script>
+</p>
+<p><!-- 請注意, 這裡使用 Javascript 將 localStorage["kw_py_src1"] 中存在近端瀏覽器的程式碼, 由使用者決定存檔名稱--></p>
+<p>
+<script type="text/javascript">
+function doSave(storage_id, filename){
+    var blob = new Blob([localStorage[storage_id]], {type: "text/plain;charset=utf-8"});
+    filename = document.getElementById(filename).value
+    saveAs(blob, filename+".py");
+}
+</script>
 </p>
 <p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/stoabmm/index.html">
-  建立組立件
- </a>
- (
- <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/stoabmm/index.html">
-  Create an assembly
- </a>
- )
+<script type="text/python3">
+from browser import document as doc
+import ace
+# 清除畫布
+def clear_bd1(ev):
+    bd = doc["brython_div1"]
+    bd.clear()
+Ace1 = ace.Editor(editor_id="kw_editor1", console_id="kw_console1", container_id="kw__container1", storage_id="kw_py_src1" )
+# 從 gist 取出程式碼後, 放入 editor 作為 default 程式
+def run1():
+    # 利用 get 取下 src 變數值
+    try:
+        url = doc.query["src"]
+    except:
+        url = "https://gist.githubusercontent.com/mdecourse/0229a8a017091476a79700b8a190f185/raw/c3a6deaf717f8f2739a4b1392a5ab10936e9693a/from_1_add_to_10_1.py"
+    prog = open(url).read()
+
+    # 將程式載入編輯區
+    Ace1.editor.setValue(prog)
+    Ace1.editor.scrollToRow(0)
+    Ace1.editor.gotoLine(0)
+    # 直接執行程式
+    #ns = {'__name__':'__main__'}
+    #exec(prog, ns)
+    # 按下 run 按鈕
+    Ace1.run()
+
+# 執行程式, 顯示輸出結果與清除輸出結果及對應按鈕綁定
+doc['kw_run1'].bind('click', Ace1.run)
+doc['kw_show_console1'].bind('click', Ace1.show_console)
+doc['kw_clear_console1'].bind('click', Ace1.clear_console)
+doc['clear_bd1'].bind('click', clear_bd1)
+# 呼叫函式執行
+run1()
+</script>
 </p>
-<p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/stodcmm/index.html">
-  局部詳圖簡介
- </a>
- (
- <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/stodcmm/index.html">
-  Introduction to detailed drawings
- </a>
- )
+<p><!-- add 1 to 100 開始 -->
+<script type="text/python3">
+from browser import document as doc
+import ace
+
+# 清除畫布
+def clear_bd1(ev):
+    bd = doc["brython_div1"]
+    bd.clear()
+
+# 利用 ace 中的 Editor 建立 Ace2 物件, 其中的輸入變數分別對應到頁面中的編輯區物件
+Ace2 = ace.Editor(editor_id="kw_editor1", console_id="kw_console1", container_id="kw__container1", storage_id="kw_py_src1" )
+
+add1to100_url = "https://gist.githubusercontent.com/mdecourse/0229a8a017091476a79700b8a190f185/raw/c48e37714f055c3a0027cbfef59e442a6ef659b9/from_1_add_to_100_1.py"
+
+# 從 gist 取得程式碼
+add_src = open(add1to100_url).read()
+def add(ev):
+    Ace2.editor.setValue(add_src)
+    Ace2.editor.scrollToRow(0)
+    Ace2.editor.gotoLine(0)
+    Ace2.run()
+
+# id 為 "add1to100" 的按鈕點按時, 執行 add 方法
+doc["add1to100"].bind('click', add)
+</script>
 </p>
+<p><!-- add 1 to 100 結束--></p>
+<!-- editor1 開始 -->
+<p><!-- 用來顯示程式碼的 editor 區域 --></p>
+<div id="kw_editor1" style="width: 600px; height: 300px;"></div>
+<p><!-- 以下的表單與按鈕與前面的 Javascript doSave 函式以及 FileSaver.min.js 互相配合 --></p>
+<p><!-- 存擋表單開始 --></p>
+<form><label>Filename: <input id="kw_filename" placeholder="input file name" type="text"/>.py</label> <input onclick="doSave('kw_py_src1', 'kw_filename1');" type="submit" value="Save"/></form>
+<p><!-- 存擋表單結束 --></p>
+<p></p>
+<p><!-- 執行與清除按鈕開始 --></p>
+<p><button id="kw_run1">Run</button> <button id="kw_show_console1">Output</button> <button id="kw_clear_console1">清除輸出區</button><button id="clear_bd1">清除繪圖區</button><button onclick="window.location.reload()">Reload</button></p>
+<p><!-- 執行與清除按鈕結束 --></p>
+<p></p>
+<p><!-- 程式執行 ouput 區 --></p>
+<div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console1"></textarea></div>
+<p><!-- Brython 程式執行的結果, 都以 brython_div1 作為切入位置 --></p>
+<div id="brython_div1"></div>
+<!-- editor1 結束 --><hr/><!-- ########################################## -->
+<p>從 1 累加到 100 part2:</p>
+<p><button id="add1to100part2">1 add to 100</button><button id="cango_three_gears">cango_three_gears</button><button id="bsnake">BSnake</button><button id="aitetris">AI Tetris</button><button id="threejsblock">Rotating Block</button></p>
+<p><!-- 請注意, 這裡使用 Javascript 將 localStorage["kw_py_src2"] 中存在近端瀏覽器的程式碼, 由使用者決定存檔名稱--></p>
 <p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/xid1685423/index.html">
-  Solid Edge 模擬簡介
- </a>
- (
- <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/xid1685423/index.html">
-  Introduction to Solid Edge Simulation
- </a>
- )
+<script type="text/python3">
+from browser import document as doc
+import ace
+# 清除畫布
+def clear_bd2(ev):
+    bd = doc["brython_div2"]
+    bd.clear()
+Ace3 = ace.Editor(editor_id="kw_editor2", console_id="kw_console2", container_id="kw__container2", storage_id="kw_py_src2" )
+# 從 gist 取出程式碼後, 放入 editor 作為 default 程式
+def run2():
+    # 利用 get 取下 src 變數值
+    try:
+        url = doc.query["src2"]
+    except:
+        url = "https://gist.githubusercontent.com/mdecourse/0229a8a017091476a79700b8a190f185/raw/c3a6deaf717f8f2739a4b1392a5ab10936e9693a/from_1_add_to_10_1.py"
+    prog = open(url).read()
+
+    # 將程式載入編輯區
+    Ace3.editor.setValue(prog)
+    Ace3.editor.scrollToRow(0)
+    Ace3.editor.gotoLine(0)
+    # 直接執行程式
+    #ns = {'__name__':'__main__'}
+    #exec(prog, ns)
+    # 按下 run 按鈕
+    Ace3.run()
+
+# 執行程式, 顯示輸出結果與清除輸出結果及對應按鈕綁定
+doc['kw_run2'].bind('click', Ace3.run)
+doc['kw_show_console2'].bind('click', Ace3.show_console)
+doc['kw_clear_console2'].bind('click', Ace3.clear_console)
+doc['clear_bd2'].bind('click', clear_bd2)
+# 呼叫函式執行
+run2()
+</script>
 </p>
-<p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/stppabg/index.html">
-  同步特徵建模簡介
- </a>
- (
- <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/stppabg/index.html">
-  Introduction to modeling synchronous features
- </a>
- )
+<p><!-- add 1 to 100 part2 開始 -->
+<script type="text/python3">
+from browser import document as doc
+import ace
+
+# 清除畫布
+def clear_bd2(ev):
+    bd = doc["brython_div2"]
+    bd.clear()
+
+# 利用 ace 中的 Editor 建立 Ace2 物件, 其中的輸入變數分別對應到頁面中的編輯區物件
+Ace4 = ace.Editor(editor_id="kw_editor2", console_id="kw_console2", container_id="kw__container2", storage_id="kw_py_src2" )
+
+# 透過 Ace4 以類別建立一個通用的 button2, 可以在多個案例中將 gist 程導入編輯區
+
+class button2:
+    def __init__(self, url):
+        self.url = url
+
+    # 記得加入 event 輸入變數
+    def do(self,ev):
+        Ace4.editor.setValue(open(self.url).read())
+        Ace4.editor.scrollToRow(0)
+        Ace4.editor.gotoLine(0)
+        Ace4.run()
+
+add1to100_url = "https://gist.githubusercontent.com/mdecourse/0229a8a017091476a79700b8a190f185/raw/c48e37714f055c3a0027cbfef59e442a6ef659b9/from_1_add_to_100_1.py"
+
+# 從 gist 取得程式碼
+add_src = open(add1to100_url).read()
+def add2(ev):
+    Ace4.editor.setValue(add_src)
+    Ace4.editor.scrollToRow(0)
+    Ace4.editor.gotoLine(0)
+    Ace4.run()
+
+# id 為 "add1to100part2" 的按鈕點按時, 執行 add 方法
+doc["add1to100part2"].bind('click', add2)
+# 以下為運用 button2 class 的通用 gist 程式導入區
+################################## cango_three_gears start
+cango_three_gears_url = "https://gist.githubusercontent.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d/raw/f7a85d737d6723d5e34c526d5daee990ed92c32b/cango_three_gears_brython_div2.py"
+cango_three_gears = button2(cango_three_gears_url)
+doc["cango_three_gears"].bind("click", cango_three_gears.do)
+################################## cango_three_gears end
+################################## bsnake start
+bsnake_url = "https://gist.githubusercontent.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d/raw/f7a85d737d6723d5e34c526d5daee990ed92c32b/kmol_snakey.py"
+bsnake = button2(bsnake_url)
+doc["bsnake"].bind("click", bsnake.do)
+################################## bsnake end
+################################## aitetris start
+aitetris_url = "https://gist.githubusercontent.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d/raw/f7a85d737d6723d5e34c526d5daee990ed92c32b/pygame_to_brython_tetris_ai.py"
+aitetris = button2(aitetris_url)
+doc["aitetris"].bind("click", aitetris.do)
+################################## aitetris end
+################################## threejsblock start
+threejsblock_url = "https://gist.githubusercontent.com/mdecycu/2c6323eff49b496d1bafd210f3ec9707/raw/df37802f9e8a386b6424f7945af622b1cd0a9ca5/threejs_rotating_block.py"
+threejsblock = button2(threejsblock_url)
+doc["threejsblock"].bind("click", threejsblock.do)
+################################## threejsblock end
+</script>
 </p>
+<p><!-- add 1 to 100 part2 結束--></p>
+<!-- editor2 開始 -->
+<p><!-- 用來顯示程式碼的 editor 區域 --></p>
+<div id="kw_editor2" style="width: 600px; height: 300px;"></div>
+<p><!-- 以下的表單與按鈕與前面的 Javascript doSave 函式以及 FileSaver.min.js 互相配合 --></p>
+<p><!-- 存擋表單開始 --></p>
+<form><label>Filename: <input id="kw_filename2" placeholder="input file name" type="text"/>.py</label> <input onclick="doSave('kw_py_src2', 'kw_filename2');" type="submit" value="Save"/></form>
+<p><!-- 存擋表單結束 --></p>
+<p></p>
+<p><!-- 執行與清除按鈕開始 --></p>
+<p><button id="kw_run2">Run</button> <button id="kw_show_console2">Output</button> <button id="kw_clear_console2">清除輸出區</button><button id="clear_bd2">清除繪圖區</button><button onclick="window.location.reload()">Reload</button></p>
+<p><!-- 執行與清除按鈕結束 --></p>
+<p></p>
+<p><!-- 程式執行 ouput 區 --></p>
+<div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console2"></textarea></div>
+<p><!-- Brython 程式執行的結果, 都以 brython_div1 作為切入位置 --></p>
+<div id="brython_div2"></div>
+<!-- editor2 結束 --><hr/>
 <p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/stppbac/index.html">
-  以同步特徵對中間零件建模
- </a>
- (
- <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/stppbac/index.html">
-  Intermediate part modeling with synchronous features
- </a>
- )
+<script src="https://unpkg.com/three@0.144.0/build/three.js" type="text/javascript"></script>
 </p>
-<p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/seppabj/index.html">
-  順序特徵零件建模簡介
- </a>
- (
- <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/seppabj/index.html">
-  Introduction to modeling parts with ordered features
- </a>
- )
-</p>
-<p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/seaaasl/index.html">
-  建構滑塊組立件
- </a>
- (
- <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/seaaasl/index.html">
-  Building a slider assembly
- </a>
- )
-</p>
-<p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/staaask/index.html">
-  建構滾輪組立件
- </a>
- (
- <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/staaask/index.html">
-  Building a roller assembly
- </a>
- )
-</p>
-<p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/seaacfa/index.html">
-  建構組立件家族
- </a>
- (
- <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/seaacfa/index.html">
-  Building a family of assemblies
- </a>
- )
-</p>
-<p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/sbddaan/index.html">
-  局部放大圖紙
- </a>
- (
- <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/sbddaan/index.html">
-  Detailing a drawing
- </a>
- )
-</p>
-<p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/sbddadr/index.html">
-  建立 2D 圖紙
- </a>
- (
- <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/sbddadr/index.html">
-  Creating 2D drawings
- </a>
- )
-</p>
-<p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/seddbht/index.html">
-  在圖紙上建立孔參數表
- </a>
- (
- <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/seddbht/index.html">
-  Creating a hole table on a drawing
- </a>
- )
-</p>
-<p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/seppas3/index.html">
-  同步特徵和順序特徵零件建模
- </a>
- (
- <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/seppas3/index.html">
-  Modeling parts with synchronous and ordered features
- </a>
- )
-</p>
-<p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/stssash/index.html">
-  同步鈑金建模簡介
- </a>
- (
- <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/stssash/index.html">
-  Introduction to sheet metal parts with synchronous features
- </a>
- )
-</p>
-<p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/sessash/index.html">
-  順序鈑金建模簡介
- </a>
- (
- <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/sessash/index.html">
-  Introduction to ordered sheet metal modeling
- </a>
- )
-</p>
-<p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/sesscmc/index.html">
-  順序輪廓彎邊建模
- </a>
- (
- <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/sesscmc/index.html">
-  Constructing a contour flange
- </a>
- )
-</p>
-<p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/seppcfp/index.html">
-  建立零件家族
- </a>
- (
- <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/seppcfp/index.html">
-  Creating a family of parts
- </a>
- )
-</p>
-<p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/seppcpl/index.html">
-  模具部件建模
- </a>
- (
- <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/seppcpl/index.html">
-  Modeling molded parts
- </a>
- )
-</p>
-<p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/seppcsw/index.html">
-  掃掠特徵建模
- </a>
- (
- <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/seppcsw/index.html">
-  Modeling swept features
- </a>
- )
-</p>
-<p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/seppcvt/index.html">
-  在零件模型中使用變數
- </a>
- (
- <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/seppcvt/index.html">
-  Using variables in part model
- </a>
- s)
-</p>
-<p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/stddb3d/index.html">
-  從圖紙視圖對零件建模
- </a>
- (
- <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/stddb3d/index.html">
-  Modeling parts from drawing views
- </a>
- )
-</p>
-<p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/sesscfl/index.html">
-  建立特徵庫
- </a>
- (
- <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/sesscfl/index.html">
-  Creating a feature library
- </a>
- )
-</p>
-<p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/seaabtb/index.html">
-  使用管路設計建立管件
- </a>
- (
- <a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/en_US/seaabtb/index.html">
-  Creating a tube part with XpresRoute
- </a>
- )
-</p>
-<p>
-<a href="https://docs.plm.automation.siemens.com/data_services/resources/se/2020/se_help/training/zh_TW/seaabwd/index.html">
-  建構銲接
- </a>
- (
- &lt;a href="https://docs.plm.automation.siemens.co</p>

@@ -1,5 +1,5 @@
 <h1>About</h1>
-<p><span style="background-color: #ffff99;"> 請各學員自行準備一副有線耳機, 若使用手機觀看影片, 則可以準備手機適用的有線或無線耳機 </span> .</p>
+<p><span style="background-color: #ffff99;"> 請各學員自行準備一副有線耳機, 若使用手機觀看影片, 則可以準備手機適用的有線或無線耳機</span>.</p>
 <p>本課程為機械設計工程系大二的電腦輔助設計與實習課程, 課程目標在教導學員如何利用電腦輔助機械設計套件建立零組件模型 (機械元件設計領域, using <a href="https://docs.plm.automation.siemens.com/tdoc/se/2020/se_help#uid:xid464417">Solid Edge</a>), 並能轉入機電模擬系統 (using <a href="https://www.coppeliarobotics.com/">CoppeliaSim</a>) 中配置致動器與感測器後進行控制系統設計 (電機與電子元件設計領域, using <a href="https://www.youtube.com/playlist?list=PLj6E8qlqmkFsk7Cyj1ZNLfDjZ_Yh4iySU">自動控制</a> and <a href="https://www.youtube.com/playlist?list=PLj6E8qlqmkFvgtKB960mOuUSDmc7YqaUI">控制系統設計</a>), 目的是能透過 Web-based 程式系統的整合 (資訊設計領域, using <a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/Eb5YGRIxqdRCl08DycazEOEBAfrHt9Nr0jSN7QzqSyCBpw?e=BSdYMC">Javascript</a> and <a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EZH1murW5yhMvANBKr8Gj9EB11oreG96bSo2M2Gl4YiHCA?e=k85yHF">Python</a>), 在隨後的協同產品設計實習課程中加以應用.</p>
 <hr/>
 <p>利用全雲端環境上課:</p>
@@ -21,8 +21,7 @@
 <p>MS Teams 代碼: fnueb56</p>
 <p>行事曆</p>
 <p><a href="https://calendar.google.com/calendar/embed?src=mde.nfu.edu.tw_3439313938333136353439%40resource.calendar.google.com&amp;ctz=Asia%2FTaipei&amp;mode=week&amp;src=mde.nfu.edu.tw_35303530373431313438%40resource.calendar.google.com&amp;ctz=Asia%2FTaipei&amp;src=yen%40gm.nfu.edu.tw&amp;ctz=Asia%2FTaipei"> 全頁檢視 </a></p>
-<p><iframe height="600" src="https://calendar.google.com/calendar/embed?src=mde.nfu.edu.tw_3439313938333136353439%40resource.calendar.google.com&amp;ctz=Asia%2FTaipei&amp;mode=week&amp;src=mde.nfu.edu.tw_35303530373431313438%40resource.calendar.google.com&amp;ctz=Asia%2FTaipei&amp;src=yen%40gm.nfu.edu.tw&amp;ctz=Asia%2FTaipei" width="800"></iframe></p>
-<h2>如何維護網站</h2>
+<p><iframe height="600" src="https://calendar.google.com/calendar/embed?src=mde.nfu.edu.tw_3439313938333136353439%40resource.calendar.google.com&amp;ctz=Asia%2FTaipei&amp;mode=week&amp;src=mde.nfu.edu.tw_35303530373431313438%40resource.calendar.google.com&amp;ctz=Asia%2FTaipei&amp;src=yen%40gm.nfu.edu.tw&amp;ctz=Asia%2FTaipei" width="800"></iframe></p><h2>如何維護網站</h2>
 <p>以下的網站以 cmsimde 作為子模組的 Github Pages 網站維護為主:</p>
 <p>cmsimde 是甚麼?</p>
 <p style="padding-left: 30px;">cmsimde 是一套 <span style="background-color: #ffff99;"> 網際內容管理系統 </span> , 利用 <span style="background-color: #ffff99;"> Python Flask </span> 建立動態網站, 讓管理者登入後透過 <span style="background-color: #ffff99;"> 線上編輯器 </span> 管理大綱式 (Outline-style) 網頁架構, 且 <span style="background-color: #ffff99;"> 轉為靜態網站 </span> 時將網站內容關鍵字存為字典, 使用者可在靜態網站中以 <span style="background-color: #ffff99;"> 關鍵字搜詢 </span> 網頁內容.</p>
@@ -767,8 +766,66 @@ while True:
 <p><a href="https://d2l.ai/">https://d2l.ai/</a> (英文版)</p>
 <p><a href="https://github.com/SachaIZADI/Seven-Segment-OCR">https://github.com/SachaIZADI/Seven-Segment-OCR</a></p>
 <p><a href="https://github.com/ultralytics/yolov5">https://github.com/ultralytics/yolov5</a></p>
-<p></p>
-<h1>Solid Edge</h1>
+<h2>TCExam</h2>
+<p>已經配合 TCExam 安裝完成的空白 PostgreSQL 資料庫目錄 data 壓縮檔案為:</p>
+<p>data_postgresql_for_tcexam.7z</p>
+<p>此檔案位於 pgsql 目錄中, 解開壓縮檔案可以得到 pgsql\data 目錄, 只要再利用 pgsql\start.bat 就可以啟動資料庫伺服器.</p>
+<p>其次 nginx 與 php 服務啟動後就可以正常登入 TCExam.</p>
+<p>nginx http 伺服器的設定:</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">    server {
+       # orig
+       # listen       [::]:80 default ipv6only=on;
+	listen 80;
+	listen [::]:80;
+        server_name  exam.cycu.org;
+        #return       301 https://$server_name$request_uri;
+        
+        allow 2001:288:6004:17::0/32;
+        #deny all;
+	allow 140.130.17.0/24;
+	deny all;
+	
+	return 302 https://exam.cycu.org;
+        
+        #location /{
+            #root C:/tcexam/downloads;
+            #auth_basic "For Authorized Users Only!";
+            #auth_basic_user_file C:/tcexam/nginx-1.20.1/.htpasswd;
+        #}
+    }</pre>
+<p>其中只允許特定 IP 範圍的電腦連線, 且透過 return 302 直接轉向 https</p>
+<p>而 nginx https 伺服器設定:</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">server { 
+    # orig
+    #listen    [::]:443 default ssl ipv6only=on;
+    listen 443 default ssl;
+    listen [::]:443 default ssl;
+    
+    root C:/tcexam/tcexam;
+
+    server_name    exam.cycu.org;
+    ssl_certificate    C:/tcexam/fullchain.pem;
+    ssl_certificate_key    C:/tcexam/privkey.pem;
+    ssl_protocols    TLSv1 TLSv1.1 TLSv1.2;
+    ssl_ciphers    HIGH:!aNULL:!MD5;
+    
+    allow 2001:288:6004:17::0/32;
+    #deny all;
+    allow 140.130.17.0/24;
+    deny all;
+    
+    location /{ 
+        index index.html index.php;
+    }
+    
+    location ~ \.php$ {
+        fastcgi_pass   127.0.0.1:9123;
+        fastcgi_index  index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include        fastcgi_params;
+    }
+}</pre>
+<p>其中除了使用制式數位簽章外, 同時透過 fastcgi 啟動 執行 php 程式, 而 fastcgi 伺服器則以 php 服務名稱啟動.</p><h1>Solid Edge</h1>
 <p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EXmbqg4z5I5LkMSvztvXzG0BvIobTTR_ED5EPmm9vjv2rA?e=BpQqeE"> 下載 </a> Solid Edge 2023 student 版安裝檔案 (for @nfu users only)</p>
 <p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EVZctF66LE1BkQCL4mvFEGgBIyM-u2nARksPz8VhUZI1bQ?e=EkdPfh"> 下載 </a> 放入 USB 隨身碟可在電腦輔助設計室中使用的可攜 Solid Edge 2023 學生版 (for @nfu users only)</p>
 <p>為何會製作可攜版本?</p>

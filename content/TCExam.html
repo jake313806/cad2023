@@ -2,7 +2,7 @@
         <head>
         <title>cad2023</title>
         <meta charset="utf-8">
-<meta property="head" content="H3">
+<meta property="head" content="H2">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -141,101 +141,68 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Loop the loop << <a href='Loop the loop.html'>Previous</a> <a href='Virtual pinball.html'>Next</a> >> Virtual pinball<br /><h1>Ball balancing</h1>
-<p>Project background:</p>
-<p style="padding-left: 30px;"><img alt="" height="179" src="./../images/altair-acrome-ball-balancing-table.jpg" width="400"/></p>
-<p style="padding-left: 30px;">(<a href="https://www.embeddedindia.com/ess-mechatronics-solutions.html">above image file source</a>) - <a href="https://altairengineering-my.sharepoint.com/personal/rahulp_asiapac_altair_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Frahulp%5Fasiapac%5Faltair%5Fcom%2FDocuments%2F220117%5FBBT%5FCourseware%2Ezip&amp;parent=%2Fpersonal%2Frahulp%5Fasiapac%5Faltair%5Fcom%2FDocuments&amp;ga=1">download courseware.zip</a> (or from <a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EXbXtcAT8aNHvbGuJibjuIIBrsAc-5uJqGEQMd3bMyM5_Q?e=Qpfn6R">@nfu onedrive</a>)</p>
-<p style="padding-left: 30px;"><a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/ETPsbGYMXCNGk-evmd0TEyABL0_DSCSNJ3iQhzcZUGtxPg?e=iQ3aBA">ball_balance_table_courseware.pdf</a></p>
-<p>實習專案二: <span style="background-color: #ffff99;">鋼球平衡系統</span>設計與模擬：</p>
-<p style="padding-left: 30px;">設計一套可讓使用者利用瀏覽器選擇觀測位置與方位, 以及鋼球位於平台上特定座標點的鋼球平衡系統.</p>
-<p style="padding-left: 30px;">實習內容: 零組件設計繪圖、感測器配置、影像辨識系統設計、PID 控制系統設計 (<a href="https://www.youtube.com/playlist?list=PLj6E8qlqmkFsk7Cyj1ZNLfDjZ_Yh4iySU">自動控制</a>、<a href="https://www.youtube.com/playlist?list=PLj6E8qlqmkFvgtKB960mOuUSDmc7YqaUI">控制系統設計</a>).</p>
-<p style="padding-left: 30px;">使用工具: 自選 MCAD 套件、CoppeliaSim 4.5.1 rev4、OpenCV、Python zmq Remote API.</p>
-<p style="padding-left: 30px;">交付內容: Github Pages 設計歷程、MCAD 零組件檔案、CoppeliaSim 場景、Python 控制與影像辨識程式、pdf 格式專案報告、Reveal.js 簡報.</p>
-<p>1D 系統可行性分析:</p>
-<p style="padding-left: 30px;"><a href="https://github.com/JFBarryLi/PID_BallBalancer">https://github.com/JFBarryLi/PID_BallBalancer</a> (1D)</p>
-<p style="padding-left: 60px;"><a href="https://danielkhashabi.com/files/2011_LinearControl/16.pdf">Modelling and Control of Ball-Plate System</a></p>
-<p style="padding-left: 60px;"><a href="https://www.sciencedirect.com/science/article/pii/S0957415801000629">Mechatronic design of a ball-on-plate balancing system</a></p>
-<p style="padding-left: 60px;"><a href="https://github.com/mdecycu/eyrc2020-2021">https://github.com/mdecycu/eyrc2020-2021</a></p>
-<p style="padding-left: 60px;"><a href="./../downloads/1d_ball_balancing_table.7z">1d_ball_balancing_table.7z</a></p>
-<p style="padding-left: 60px;"><img alt="" height="352" src="./../images/1d_ball_balancing_platform.png" width="400"/></p>
-<p style="padding-left: 60px;"><a href="./../downloads/ball_beam_balancing_coppeliasim.7z">ball_beam_balancing_coppeliasim.7z</a> (利用 Python zmqRemoteAPI 測量球與左方感測器的距離)</p>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># pip install pyzmq cbor keyboard
-# zmqRemoteApi_IPv6 為將 zmq 通訊協定修改為 IPv4 與 IPv6 相容
-from zmqRemoteApi_IPv6 import RemoteAPIClient
-import keyboard
+    <div id="tipue_search_content">深度學習 << <a href='深度學習.html'>Previous</a> <a href='Solid Edge.html'>Next</a> >> Solid Edge<br /><h1>TCExam</h1>
+<p>已經配合 TCExam 安裝完成的空白 PostgreSQL 資料庫目錄 data 壓縮檔案為:</p>
+<p>data_postgresql_for_tcexam.7z</p>
+<p>此檔案位於 pgsql 目錄中, 解開壓縮檔案可以得到 pgsql\data 目錄, 只要再利用 pgsql\start.bat 就可以啟動資料庫伺服器.</p>
+<p>其次 nginx 與 php 服務啟動後就可以正常登入 TCExam.</p>
+<p>nginx http 伺服器的設定:</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">    server {
+       # orig
+       # listen       [::]:80 default ipv6only=on;
+	listen 80;
+	listen [::]:80;
+        server_name  exam.cycu.org;
+        #return       301 https://$server_name$request_uri;
+        
+        allow 2001:288:6004:17::0/32;
+        #deny all;
+	allow 140.130.17.0/24;
+	deny all;
+	
+	return 302 https://exam.cycu.org;
+        
+        #location /{
+            #root C:/tcexam/downloads;
+            #auth_basic "For Authorized Users Only!";
+            #auth_basic_user_file C:/tcexam/nginx-1.20.1/.htpasswd;
+        #}
+    }</pre>
+<p>其中只允許特定 IP 範圍的電腦連線, 且透過 return 302 直接轉向 https</p>
+<p>而 nginx https 伺服器設定:</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">server { 
+    # orig
+    #listen    [::]:443 default ssl ipv6only=on;
+    listen 443 default ssl;
+    listen [::]:443 default ssl;
+    
+    root C:/tcexam/tcexam;
 
-# 利用 zmqRemoteAPI 以 23000 對場景伺服器進行連線
-client = RemoteAPIClient('localhost', 23000)
-
-print('Program started')
-sim = client.getObject('sim')
-
-# Get the handle of the proximity sensor and the ball
-laser_handle = sim.getObject('/laser')
-# Set the ball object in the property common tab to be detectable
-ball_handle = sim.getObject('/ball')
-
-sim.startSimulation()
-print('Simulation started')
-
-# Function to get the distance between the laser and the ball
-def getDistance():
-    result, distance, _, _, _ = sim.readProximitySensor(laser_handle, ball_handle)
-    if result == 1:
-        return round(distance, 4)
-    else:
-        return None
-
-while True:
-    if keyboard.is_pressed('q'):
-        # Stop simulation
-        sim.stopSimulation()
-        break
-    # Get and print the distance between the laser and the ball
-    distance = getDistance()
-    if distance is not None:
-        print('Distance:', distance)
-    else:
-        print('No object detected')
-
-# 終止模擬
-#sim.stopSimulation()
-</pre>
-<p style="padding-left: 60px;"><img alt="" height="401" src="./../images/ball_beam_add_proximity_sensor.png" width="400"/></p>
-<p style="padding-left: 60px;"><a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/EZMruNx-CR1CjEsnppm4Z_wBkNy8Q0f1ZzUaYNktlK_dMA?e=5rymEA">9_ball_and_beam.pdf</a></p>
-<p style="padding-left: 60px;"><img alt="" height="351" src="./../images/1d_ball_and_beam_linkages.png" width="400"/></p>
-<p style="padding-left: 60px;">AB is the link of the servo motor, CD is on beam, which ABCD is a typical four-bar linkage.</p>
-<p style="padding-left: 60px;"><a href="https://peer.asee.org/a-new-method-for-teaching-the-fourbar-linkage-and-its-application-to-other-linkages.pdf">A New Method for Teaching The Fourbar Linkage and its Application to Other Linkages</a></p>
-<p style="padding-left: 30px;"><img alt="" height="344" src="./../images/ball_beam_setpoint_0.3.gif" width="400"/></p>
-<p style="padding-left: 30px;">(Above simulation: Ball Beam Balance PID control - setpoint 0.3 m)</p>
-<p style="padding-left: 30px;"><img alt="" height="356" src="./../images/ball_beam_setpoint_0.9.gif" width="400"/></p>
-<p style="padding-left: 30px;">(Above simulation: Ball Beam Balance PID control - setpoint 0.9 m)</p>
-<p style="padding-left: 30px;"><img src="http://mde.tw/images/ball_beam_setpoint_0.9_with_disturbance.gif" width="400"/></p>
-<p style="padding-left: 30px;">(Above simulation: Ball Beam Balance PID control - setpoint 0.9 m with disturbance)</p>
-<p>2D 系統可行性分析:</p>
-<p style="padding-left: 30px;"><img alt="" height="299" src="./../images/2d_ball_platform_balancing.png" width="400"/></p>
-<p style="padding-left: 30px;"><a href="./../downloads/Solvespace_ball_platform_model _2d.7z">Solvespace_ball_platform_model _2d.7z</a></p>
-<p style="padding-left: 30px;"><img src="http://mde.tw/images/2d_ball_platform_setpoint_0.3_0.3m.gif" width="400"/></p>
-<p style="padding-left: 30px;">(setpoint to 0.3 m, 0.3 m)</p>
-<p style="padding-left: 30px;"><img src="http://mde.tw/images/2d_ball_platform_balance_0.9_0.3m_PID_control.gif" width="400"/></p>
-<p style="padding-left: 30px;">(setpoint to 0.9 m, 0.3 m)</p>
-<p>延伸討論:</p>
-<p style="padding-left: 30px;"><span style="background-color: #ffff99;">Can Above PID control system further integrated with <a href="https://www.researchgate.net/publication/353631238_HoRoSim_a_Holistic_Robot_Simulator_Arduino_Code_Electronic_Circuits_and_Physics" style="background-color: #ffff99;">HoRoSim</a>?</span></p>
-<p style="padding-left: 30px;"><a href="https://github.com/mdecycu/horosim">HoRoSim</a> 是一套能夠利用實體 Arduino 控制板對 CoppeliaSim 虛擬場景系統進行控制的虛實整合系統套件.</p>
-<p>References:<span style="background-color: #ffff99;"><br/></span></p>
-<p style="padding-left: 30px;"><a href="http://www.diva-portal.org/smash/get/diva2:1373784/FULLTEXT01.pdf">Construction and theoretical study of a ball balancing platform</a></p>
-<p style="padding-left: 30px;"><a href="https://www.instructables.com/PID-Controlled-Ball-Balancing-Stewart-Platform/">https://www.instructables.com/PID-Controlled-Ball-Balancing-Stewart-Platform/</a></p>
-<p style="padding-left: 30px;"><a href="https://acrome.net/post/the-basics-of-the-ball-balancing-table">https://acrome.net/post/the-basics-of-the-ball-balancing-table</a> </p>
-<p style="padding-left: 30px;"><a href="https://youtu.be/nlHNWV8WBXA">https://youtu.be/nlHNWV8WBXA</a> (Getting Started to Controlling a Ball Balancing Table)</p>
-<p style="padding-left: 60px;"><a href="https://web.altair.com/system-dynamics-and-controls-using-altair-compose">https://web.altair.com/system-dynamics-and-controls-using-altair-compose</a></p>
-<p style="padding-left: 60px;"><a href="https://www.embeddedindia.com/download/Ball_Balancing_Table_Datasheet.pdf">https://www.embeddedindia.com/download/Ball_Balancing_Table_Datasheet.pdf</a> </p>
-<p style="padding-left: 60px;"><a href="https://altair.com/students/">https://altair.com/students/</a> (Compose studen edition)</p>
-<p style="padding-left: 30px;"><a href="https://forum.coppeliarobotics.com/viewtopic.php?t=8177">Joint callback function for customed controller</a></p>
-<p style="padding-left: 30px;"><a href="https://github.com/mdecycu/Ball-Balancing-Machine">https://github.com/mdecycu/Ball-Balancing-Machine</a></p>
-<p style="padding-left: 30px;"><a href="https://github.com/mdecycu/Ball-and-Plate-System">https://github.com/mdecycu/Ball-and-Plate-System</a></p>
-<p style="padding-left: 30px;"><a href="https://github.com/Chandan-nyk/Plane-Balancing-System-with-2-DOF">https://github.com/Chandan-nyk/Plane-Balancing-System-with-2-DOF</a></p>
-<p style="padding-left: 30px;"><a href="https://github.com/giusenso/Ball-Balancing-PID-System">https://github.com/giusenso/Ball-Balancing-PID-System</a></p>
-<p style="padding-left: 30px;"><a href="https://github.com/JohanLink/Ball-Balancing-PID-System">https://github.com/JohanLink/Ball-Balancing-PID-System</a></p><br />Loop the loop << <a href='Loop the loop.html'>Previous</a> <a href='Virtual pinball.html'>Next</a> >> Virtual pinball</div>
+    server_name    exam.cycu.org;
+    ssl_certificate    C:/tcexam/fullchain.pem;
+    ssl_certificate_key    C:/tcexam/privkey.pem;
+    ssl_protocols    TLSv1 TLSv1.1 TLSv1.2;
+    ssl_ciphers    HIGH:!aNULL:!MD5;
+    
+    allow 2001:288:6004:17::0/32;
+    #deny all;
+    allow 140.130.17.0/24;
+    deny all;
+    
+    location /{ 
+        index index.html index.php;
+    }
+    
+    location ~ \.php$ {
+        fastcgi_pass   127.0.0.1:9123;
+        fastcgi_index  index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include        fastcgi_params;
+    }
+}</pre>
+<p>其中除了使用制式數位簽章外, 同時透過 fastcgi 啟動 執行 php 程式, 而 fastcgi 伺服器則以 php 作為服務名稱啟動.</p>
+<p>名稱命名為 php 的服務指令: C:\tcexam\php8.1.7\php-cgi.exe -b 127.0.0.1:9123</p>
+<p>表示啟動後, 將以近端 localhost 埠號 9123 啟動.</p><br />深度學習 << <a href='深度學習.html'>Previous</a> <a href='Solid Edge.html'>Next</a> >> Solid Edge</div>
         
     <!-- footer -->
       <div class="container">

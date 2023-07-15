@@ -141,69 +141,11 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">深度學習 << <a href='深度學習.html'>Previous</a> <a href='Shotcut.html'>Next</a> >> Shotcut<br /><h1>TCExam</h1>
-<p>已經配合 TCExam 安裝完成的空白 PostgreSQL 資料庫目錄 data 壓縮檔案為:</p>
-<p>data_postgresql_for_tcexam.7z</p>
-<p>此檔案位於 pgsql 目錄中, 解開壓縮檔案可以得到 pgsql\data 目錄, 只要再利用 pgsql\start.bat 就可以啟動資料庫伺服器.</p>
-<p>其次 nginx 與 php 服務啟動後就可以正常登入 TCExam.</p>
-<p>nginx http 伺服器的設定:</p>
-<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">    server {
-       # orig
-       # listen       [::]:80 default ipv6only=on;
-	listen 80;
-	listen [::]:80;
-        server_name  exam.cycu.org;
-        #return       301 https://$server_name$request_uri;
-        
-        allow 2001:288:6004:17::0/32;
-        #deny all;
-	allow 140.130.17.0/24;
-	deny all;
-	
-	return 302 https://exam.cycu.org;
-        
-        #location /{
-            #root C:/tcexam/downloads;
-            #auth_basic "For Authorized Users Only!";
-            #auth_basic_user_file C:/tcexam/nginx-1.20.1/.htpasswd;
-        #}
-    }</pre>
-<p>其中只允許特定 IP 範圍的電腦連線, 且透過 return 302 直接轉向 https</p>
-<p>而 nginx https 伺服器設定:</p>
-<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">server { 
-    # orig
-    #listen    [::]:443 default ssl ipv6only=on;
-    listen 443 default ssl;
-    listen [::]:443 default ssl;
-    
-    root C:/tcexam/tcexam;
-
-    server_name    exam.cycu.org;
-    ssl_certificate    C:/tcexam/fullchain.pem;
-    ssl_certificate_key    C:/tcexam/privkey.pem;
-    ssl_protocols    TLSv1 TLSv1.1 TLSv1.2;
-    ssl_ciphers    HIGH:!aNULL:!MD5;
-    
-    allow 2001:288:6004:17::0/32;
-    #deny all;
-    allow 140.130.17.0/24;
-    deny all;
-    
-    location /{ 
-        index index.html index.php;
-    }
-    
-    location ~ \.php$ {
-        fastcgi_pass   127.0.0.1:9123;
-        fastcgi_index  index.php;
-        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
-        include        fastcgi_params;
-    }
-}</pre>
-<p>其中除了使用制式數位簽章外, 同時透過 fastcgi 啟動 執行 php 程式, 而 fastcgi 伺服器則以 php 作為服務名稱啟動.</p>
-<p>名稱命名為 php 的服務指令: C:\tcexam\php8.1.7\php-cgi.exe -b 127.0.0.1:9123</p>
-<p>表示啟動後, 將以近端 localhost 埠號 9123 啟動.</p>
-<br />深度學習 << <a href='深度學習.html'>Previous</a> <a href='Shotcut.html'>Next</a> >> Shotcut</div>
+    <div id="tipue_search_content">TCExam << <a href='TCExam.html'>Previous</a> <a href='Solid Edge.html'>Next</a> >> Solid Edge<br /><h1>Shotcut</h1>
+<p>利用 Shotcut 編輯電腦輔助設計操作過程所儲存的 mp4 影片檔案.</p>
+<p><a href="https://github.com/mltframework/shotcut">https://github.com/mltframework/shotcut</a></p>
+<p><a href="https://documents.manchester.ac.uk/display.aspx?DocID=50713">Shotcut user guide 2022.pdf</a></p>
+<p><a href="https://s3.amazonaws.com/external_clips/2717461/Introduction_To_Video_Editing_with_Shotcut.pdf">2018 INTRODUCTION TO VIDEO EDITING WITH SHOTCUT.pdf</a></p><br />TCExam << <a href='TCExam.html'>Previous</a> <a href='Solid Edge.html'>Next</a> >> Solid Edge</div>
         
     <!-- footer -->
       <div class="container">

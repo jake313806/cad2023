@@ -150,7 +150,73 @@ img.add_border {
 <p><a href="https://pubmed.ncbi.nlm.nih.gov/36015783/"> Modeling and Control of a Spherical Robot in the CoppeliaSim Simulator </a></p>
 <p>編譯 CoppeliaSim 需要 <a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EUd5wZF9jSdCtrDkLvEfyj4Bq8pkV0b3kKZ1fxeNMhC8qg?e=slvduQ"> 下載 MSYS2 and Cmake.7z <span> </span> </a> <span> </span> <span> (下載 3.47GB 解開後 12.6GB, for @nfu users only) </span></p>
 <p><a href="https://mde.tw/blog/compile-coppeliasim-4.3.0-rev12.html"> https://mde.tw/blog/compile-coppeliasim-4.3.0-rev12.html </a></p>
-<br />SketchFlat << <a href='SketchFlat.html'>Previous</a> <a href='PICSimLab.html'>Next</a> >> PICSimLab</div>
+<hr/>
+<p>CoppeliaSim 從 4.5.1 版之後終於提供 Windows 操作系統下的可攜版本, 但是 zmqRemote API 仍然只支援 IPv4 網路協定, 為了在純 IPv6 環境下仍可利用 Python zmqRemote API 對 CoppeliaSim 的場景進行控制, 必須修改官方版本 addOns 目錄下的　simAddOnZMQ remote API server.lua 檔案.</p>
+<p>第一部分的修改是針對原始官方版本的 zmqRemote API server 內建為未開啟, 在此修改令 CoppeliaSim 啟動後, 其 zmqRemote API 伺服器隨即啟動, 此點針對採 headless 啟動的 CoppeliaSim 尤其重要, 因為在許多強化學習的應用流程中, No GUI 的 Headless 啟動模式需要第一時間場景便支援 zmqRemote API.</p>
+<p>將 CoppeliaSim 執行便啟動 zmqRemote API 的修改如下:</p>
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">-- simAddOnZMQ remote API server.lua 檔案改為執行即啟動 zmqRemote API 伺服器
+function zmqRemoteApi.verbose()
+    -- return sim.getNamedInt32Param('zmqRemoteApi.verbose') or 0
+    -- autoStart
+	return sim.getNamedInt32Param('zmqRemoteApi.verbose') or 1
+end</pre>
+<p>至於要讓 CoppeliaSim 的 zmqRemote API 伺服器支援 IPv6 網路協定, 其背景為 ZMQ 程式庫的 IPv4ONLY 設定內建為 true, 而 IPv6 設定則為 false, 因此必須修改 simAddOnZMQ remote API server.lua 檔案中的 sysCall_init() 函式, 將 IPv4ONLY 改為 false, 並將支援 IPv6 的設定改為 true.</p>
+<p>修改後 CoppeliaSim 必須重新啟動, 設定才能生效.</p>
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">-- simAddOnZMQ remote API server.lua 檔案改為支援 IPv6 網路協定
+
+function sysCall_init()
+    if not simZMQ then
+        sim.addLog(sim.verbosity_errors,'zmqRemoteApi: the ZMQ plugin is not available')
+        return {cmd='cleanup'}
+    end
+    simZMQ.__raiseErrors(true) -- so we don't need to check retval with every call
+    rpcPort=sim.getNamedInt32Param('zmqRemoteApi.rpcPort') or 23000
+    cntPort=sim.getNamedInt32Param('zmqRemoteApi.cntPort') or (rpcPort+1)
+    maxTimeSlot=sim.getNamedFloatParam('zmqRemoteApi.maxTimeSlot') or 0.005
+    if zmqRemoteApi.verbose()&gt;0 then
+        sim.addLog(sim.verbosity_scriptinfos,string.format('ZeroMQ Remote API server starting (rpcPort=%d, cntPort=%d)...',rpcPort,cntPort))
+    end
+    -- cbor=require 'cbor' -- encodes strings as buffers, always. DO NOT USE!!
+    cbor=require'org.conman.cbor'
+    context=simZMQ.ctx_new()
+    rpcSocket=simZMQ.socket(context,simZMQ.REP)
+    -- enable IPv6 for ZMQ, default is false to IPv6
+	simZMQ.setsockopt(rpcSocket,simZMQ.IPV6,sim.packUInt32Table{1})
+	-- ZMQ IPv4ONLY default is true: http://api.zeromq.org/4-2:zmq-setsockopt
+	simZMQ.setsockopt(rpcSocket,simZMQ.IPV4ONLY,sim.packUInt32Table{0})
+    
+    -- original IPv4 setup
+    simZMQ.bind(rpcSocket,string.format('tcp://*:%d',rpcPort))
+    cntSocket=simZMQ.socket(context,simZMQ.PUB)
+    simZMQ.setsockopt(cntSocket,simZMQ.CONFLATE,sim.packUInt32Table{1})
+    simZMQ.bind(cntSocket,string.format('tcp://*:%d',cntPort))
+    if zmqRemoteApi.verbose()&gt;0 then
+        sim.addLog(sim.verbosity_scriptinfos,'ZeroMQ Remote API server started')
+    end
+    simulationTimeStepCount=0
+    steppingClients={}
+    steppedClients={}
+end
+</pre>
+<p>以上是針對 CoppeliaSim zmqRemote API server 支援 IPv6 的設定修改, 至於使用 Python 控制時, 則必須針對 client 端的 Python 程式模組加以修改如下, 也就是必須將 zmq 網路封包傳遞的 zmq.IPv6 設為 1 :</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">class RemoteAPIClient:
+    """Client to connect to CoppeliaSim's ZMQ Remote API."""
+
+    def __init__(self, host='localhost', port=23000, cntport=None, *, verbose=None):
+        """Create client and connect to the ZMQ Remote API server."""
+        self.verbose = int(os.environ.get('VERBOSE', '0')) if verbose is None else verbose
+        self.context = zmq.Context()
+        self.socket = self.context.socket(zmq.REQ)
+        # Enable IPv6 on the socket
+        self.socket.setsockopt(zmq.IPV6, 1)
+        self.cntsocket = self.context.socket(zmq.SUB)
+        self.socket.connect(f'tcp://{host}:{port}')
+        self.cntsocket.setsockopt(zmq.SUBSCRIBE, b'')
+        self.cntsocket.setsockopt(zmq.CONFLATE, 1)
+        self.cntsocket.connect(f'tcp://{host}:{cntport if cntport else port+1}')
+        self.uuid = str(uuid.uuid4())
+        self.threadLocLevel = 0</pre>
+<p></p><br />SketchFlat << <a href='SketchFlat.html'>Previous</a> <a href='PICSimLab.html'>Next</a> >> PICSimLab</div>
         
     <!-- footer -->
       <div class="container">

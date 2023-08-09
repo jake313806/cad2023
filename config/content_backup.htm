@@ -1047,12 +1047,26 @@ finally {
 <p style="padding-left: 30px;">Regshot is an open-source (LGPL) registry compare utility that allows you to quickly take a snapshot of your registry and then compare it with a second one - done after doing system changes or installing a new software product.</p>
 <h1>NX</h1>
 <p>採用動機: CAD/CAE/CAM 功能完整的高階電腦輔助機械設計套件</p>
-<p><a href="https://nfuedu.sharepoint.com/:u:/s/cad2022/EclS-NMhqJ9JvCa-pIQ_jMsBQB1tipr_Zgc8kT8ha1kMtg?e=RvnCpR"> NX2027.3401_lite_cad2022.7z </a> for @nfu users only</p>
-<p><a href="https://docs.plm.automation.siemens.com/tdoc/nx/1899/nx_help/#uid:index"> NX_help for 1899 </a></p>
-<h1>Onshape</h1>
+<p><a href="https://nfuedu.sharepoint.com/:u:/s/cad2022/EclS-NMhqJ9JvCa-pIQ_jMsBQB1tipr_Zgc8kT8ha1kMtg?e=RvnCpR"> NX2027.3401_lite_cad2022.7z </a> for @nfu users only (下載 2GB, 解開後約 8GB)</p>
+<p>NX 可攜版的 user default 設定將配合啟動批次檔案中的 set UGII_LOCAL_USER_DEFAULTS=%cd%\NX_user.dpv 將設定資料存入.</p>
+<p>因此有關是否參與 Siemens Product Excellence Program 可以經由下列流程進行設定:</p>
+<p>File - Utilities - Customer Defaults - Gateway - General - Miscellaneous - Product Excellence Program</p>
+<p>選擇是否參加後, 若可攜套件中無前述批次檔案中的 NX_user.dpv 則可透過 Manage current settings 以 Export 將設定存入 NX_user.dpv.</p>
+<p><a href="https://docs.plm.automation.siemens.com/tdoc/nx/1899/nx_help/#uid:index"> NX_help for 1899 </a></p><h2>NX_tutorial</h2>
+<p><a href="https://www.youtube.com/watch?v=aMDKGXV-XFo&amp;list=PLpfdJLK2qQLYoF69nzQGh2rR6a9Bc318E">NX tutorial for beginners</a> (NX8, NX10 and NX12)</p>
+<p><a href="https://youtu.be/DHqWI_HX4N8">NX2206 tutorial</a></p><h1>Onshape</h1>
 <p>採用動機: 全雲端中階電腦輔助機械設計套件, 近端電腦無需安裝套件, 可在手機與平板中的 Onshape App 中使用.</p>
 <p><a href="https://www.onshape.com/en/education/"> https://www.onshape.com/en/education/ </a></p>
-<h1>Solvespace</h1>
+<p><a href="https://www.pollen-robotics.com/">https://www.pollen-robotics.com/</a></p>
+<p style="padding-left: 30px;"><a href="https://github.com/pollen-robotics">https://github.com/pollen-robotics</a> (Open hardware)</p>
+<p style="padding-left: 30px;"><a href="https://forum.pollen-robotics.com/t/3d-cad-models-release/90">https://forum.pollen-robotics.com/t/3d-cad-models-release/90</a></p>
+<p style="padding-left: 60px;"><a href="https://cad.onshape.com/documents/30234238cada8c3f07e5d016/w/f7d0a5020824b55ba76d3fb5/e/0ef20ae9ac03d2e663ef6242?renderMode=0&amp;uiState=64d05ea461891b217bc8d938">Reachy check module</a></p>
+<p style="padding-left: 60px;"><a href="https://cad.onshape.com/documents/db203e72f002b78d0c4042d8/w/fa984c7a2416399e08be1bd7/e/b26000a3fd3a7d819c48e7da?renderMode=0&amp;uiState=64d05fe31775912f2de5914e">Reachy head module</a></p>
+<p style="padding-left: 60px;"><a href="https://cad.onshape.com/documents/e2159e62db62d462c2bac1bd/w/12afad7585c14a52e8fe8d53/e/93a782761c8122930acd1e66?renderMode=0&amp;uiState=64d060361775912f2de59242">Reachy arm module</a></p>
+<h2>On_tutorial</h2>
+<p><a href="https://www.youtube.com/watch?v=pMWnsHpDlQE&amp;list=PLxmrkna-ixrIQmsPR3MITi4Ru1bnMH4-l">Beginner tutorial from CADSessions</a></p>
+<p><a href="https://www.youtube.com/watch?v=GkwO161QMNs&amp;list=PLxmrkna-ixrK_we-IXeDtAjoPpJcXXw3o">Onshape feature basics</a></p>
+<p></p><h1>Solvespace</h1>
 <p>採用動機: 提供 C++ 原始碼的參數式電腦輔助設計繪圖套件, 檔案可直接放入 USB 隨身碟操作, 且可練習使用 C++ 編譯器自行編譯.</p>
 <p><a href="https://solvespace.com/index.pl"> https://solvespace.com/index.pl </a></p>
 <p><a href="https://github.com/solvespace/solvespace"> https://github.com/solvespace/solvespace </a></p>
@@ -1165,6 +1179,24 @@ function sysCall_init()
     steppedClients={}
 end
 </pre>
+<p>以上是針對 CoppeliaSim zmqRemote API server 支援 IPv6 的設定修改, 至於使用 Python 控制時, 則必須針對 client 端的 Python 程式模組加以修改如下, 也就是必須將 zmq 網路封包傳遞的 zmq.IPv6 設為 1 :</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">class RemoteAPIClient:
+    """Client to connect to CoppeliaSim's ZMQ Remote API."""
+
+    def __init__(self, host='localhost', port=23000, cntport=None, *, verbose=None):
+        """Create client and connect to the ZMQ Remote API server."""
+        self.verbose = int(os.environ.get('VERBOSE', '0')) if verbose is None else verbose
+        self.context = zmq.Context()
+        self.socket = self.context.socket(zmq.REQ)
+        # Enable IPv6 on the socket
+        self.socket.setsockopt(zmq.IPV6, 1)
+        self.cntsocket = self.context.socket(zmq.SUB)
+        self.socket.connect(f'tcp://{host}:{port}')
+        self.cntsocket.setsockopt(zmq.SUBSCRIBE, b'')
+        self.cntsocket.setsockopt(zmq.CONFLATE, 1)
+        self.cntsocket.connect(f'tcp://{host}:{cntport if cntport else port+1}')
+        self.uuid = str(uuid.uuid4())
+        self.threadLocLevel = 0</pre>
 <p></p><h2>PICSimLab</h2>
 <p><a href="https://www.youtube.com/watch?v=be96Ds8umig"> https://www.youtube.com/watch?v=be96Ds8umig </a></p>
 <h4>Arduino</h4>
@@ -1199,7 +1231,36 @@ end
 <p><a href="https://github.com/mdecourse/self-driving-car-simulation"> https://github.com/mdecourse/self-driving-car-simulation </a></p>
 <p><a href="https://github.com/mdecourse-org/PID_wall_following"> https://github.com/mdecourse-org/PID_wall_following </a></p>
 <p><a href="https://github.com/mdecourse-org/coppelia_gui_robot_control_python"> https://github.com/mdecourse-org/coppelia_gui_robot_control_python </a></p>
-<h2>Research</h2>
+<h2>Webots</h2>
+<p><a href="https://cyberbotics.com/doc/guide/tutorial-1-your-first-simulation-in-webots?version=R2023a">https://cyberbotics.com/doc/guide/tutorial-1-your-first-simulation-in-webots?version=R2023a</a></p>
+<h4>Origins of Webots</h4>
+<p>Webots is developed by Cyberbotics Ltd. which was founded in 1998 as a spin-off company from the <a href="https://www.epfl.ch/en/">Swiss Federal Institute of Technology in Lausanne</a> (EPFL).</p>
+<h4>Need for simulation</h4>
+<p>Although the final aim of the robotic simulation is for real robots, it is often very useful to perform simulations prior to investigations with real robots. This is because simulations are <span style="background-color: #ffff99;">easier to setup</span>, <span style="background-color: #ffff99;">less expensive</span>, <span style="background-color: #ffff99;">faster</span> and <span style="background-color: #ffff99;">more convenient to use</span> (flexible).</p>
+<h4>VRML</h4>
+<p>The Virtual Reality Modeling Language (VRML) is the tool for creating 3D virtual worlds on the World Wide Web.</p>
+<p>The origins of the VRML date back to the middle of 1994, to European Web conference in which Tim Berners Lee (father of the WWW and HTML) was talking about the need for a 3D Web standard. He coined the name VRML (Virtual Reality markup Language) as an acronym to HTML (HyperText markup Language). The name has quickly changed to Virtual Reality Modeling Language. VRML was based on the Inventor file format form Silicon Graphic Incorporated. It was VRML 1.0.</p>
+<p>SGI and their engineer Gavin Bell, responsible for introducing the VRML community to Inventor, conceived of three requirements for VRML 2:</p>
+<ol>
+<li>Composability</li>
+<li>Scalability</li>
+<li>Extensibility</li>
+</ol>
+<p>Composability allows an author to create a city. Scale it down and place it on the table like a model. This table can be placed in a building and building on a planet.</p>
+<p>Scalability allows worlds of arbitrary size to be created. You can be able to see a galaxy, zoom in on one planet, then a city, a statue and a bird sitting on head of this statue. This is difficult due to limits in the precision of computer hardware.</p>
+<p>Extensibility allows author to extend the capability of the language for special purposes. Author can create some new geometric object or multiusers worlds.</p>
+<p>The release of VRML 2 specification was announced at Siggraph ‘96</p>
+<p>After seven months of intense effort by the VRML community, the Moving Worlds proposal evolved to become the final VRML 2.0 specification, released in August 1996. The new specification redesigned the VRML syntax and added an extensive set of new features for shape building, animation, interaction, sound, fog, backgrounds, and language extensions.</p>
+<p>Beta versions of VRML 2.0 browser plug-ins have been available since VRML 97 September 1997 late 1997. However, as of this writing (May 1997) there are still no fully-compliant, complete VRML 2.0 browsers available on the market.</p>
+<p>In early 1997, efforts got under way to present the VRML 2.0 specification to the International Standards Organization (ISO) which oversees most of the major language specifications in use in the<br/>computing community. The ISO version of VRML 2.0 was reviewed and the specification significantly rewritten to clarify issues. A few minor changes to the language were also made. The final ISO VRML<br/>was dubbed VRML 97. The VRML 97 specification features finalized in March 1997, while the specification's text finalized in September 1997.</p>
+<p>One beta version of a VRML 97 browser plug-in is available as of this writing: Silicon Graphics Cosmo Player for SG! platforms. More VRML 97 compliant browsers are expected within the next few months.<br/>VRML 1.0 and VRML 2.0 differ radically in syntax and features. A VRML 1.0 browser cannot display VRML 2.0 worlds. Most VRML 2.0 browsers, however, can display VRML 1.0 worlds.</p>
+<p><a href="https://www.web3d.org/x3d/content/examples/Vrml2.0Sourcebook/">https://www.web3d.org/x3d/content/examples/Vrml2.0Sourcebook/</a></p>
+<p><a href="https://en.wikipedia.org/wiki/X3D">https://en.wikipedia.org/wiki/X3D</a></p>
+<p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EYHdtSBolX1Ij29YDrlrmQMBYoMbOcoZawYidZVx9xC5Uw?e=L1L6LS">webots_cad2023.7z</a></p>
+<p><a href="https://webots.cloud">https://webots.cloud</a></p>
+<h3>wbt1</h3>
+<p><a href="https://cyberbotics.com/doc/guide/tutorial-1-your-first-simulation-in-webots?version=R2023a">https://cyberbotics.com/doc/guide/tutorial-1-your-first-simulation-in-webots?version=R2023a</a> </p>
+<p>A World is a file containing information like where the objects are, what they look like, how they interact with each other, what is the color of the sky, how is defined the gravity, friction, masses of the objects, etc. It defines the initial state of a simulation. The different objects are called Nodes and are organized hierarchically in a Scene Tree. Therefore, a node may contain sub-nodes. A world is stored in a file having the .wbt extension. The file format is derived from the VRML97 language, and is human readable. The world files must be stored directly in a directory called worlds.</p><h2>Research</h2>
 <p>類比電腦與磁浮控制系統設計</p>
 <p>Analog computer and magnetic levitation control system design</p>
 <p><a href="https://people.eecs.berkeley.edu/~shah//docs/dpac.pdf"> DPAC: Digitally Programmable Analog Computer </a></p>
@@ -1222,8 +1283,7 @@ end
 <p><a href="https://www.researchgate.net/publication/277918242_A_Cyber_Physical_Interface_for_Automation_Systems-Methodology_and_Examples"> A Cyber Physical Interface for Automation Systems—Methodology and Examples </a></p>
 <p><a href="https://journals.sagepub.com/doi/epub/10.1177/16878132221109969"> A review of component-in-the-loop: Cyber-physical experiments for rapid system development and integration </a></p>
 <p><a href="https://core.ac.uk/download/pdf/216056118.pdf"> An Analysis-Driven Rapid Design Process for Cyber-Physical Systems </a></p>
-<p><a href="https://www.ics.uci.edu/~givargis/pubs/C61.pdf"> From the Browser to the Remote Physical Lab: Programming Cyber-physical Systems </a></p>
-<h1>Brython</h1>
+<p><a href="https://www.ics.uci.edu/~givargis/pubs/C61.pdf"> From the Browser to the Remote Physical Lab: Programming Cyber-physical Systems </a></p><h1>Brython</h1>
 <p><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">https://en.wikipedia.org/wiki/Python_(programming_language)</a></p>
 <h4>Examples:</h4>
 <p style="padding-left: 30px;"><a href="https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d">https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d</a></p>

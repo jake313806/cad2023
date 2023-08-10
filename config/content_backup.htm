@@ -3,6 +3,8 @@
 <p>本課程為機械設計工程系大二的電腦輔助設計與實習課程, 課程目標在教導學員如何利用電腦輔助機械設計套件建立零組件模型 (機械元件設計領域, using <a href="https://docs.plm.automation.siemens.com/tdoc/se/2020/se_help#uid:xid464417">Solid Edge</a>), 並能轉入機電模擬系統 (using <a href="https://www.coppeliarobotics.com/">CoppeliaSim</a>) 中配置致動器與感測器後進行控制系統設計 (電機與電子元件設計領域, using <a href="https://www.youtube.com/playlist?list=PLj6E8qlqmkFsk7Cyj1ZNLfDjZ_Yh4iySU">自動控制</a> and <a href="https://www.youtube.com/playlist?list=PLj6E8qlqmkFvgtKB960mOuUSDmc7YqaUI">控制系統設計</a>), 目的是能透過 Web-based 程式系統的整合 (資訊設計領域, using <a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/Eb5YGRIxqdRCl08DycazEOEBAfrHt9Nr0jSN7QzqSyCBpw?e=BSdYMC">Javascript</a> and <a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EZH1murW5yhMvANBKr8Gj9EB11oreG96bSo2M2Gl4YiHCA?e=k85yHF">Python</a>), 在隨後的協同產品設計實習課程中加以應用.</p>
 <p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EbxsXK5kkU1ImhJ_HcYPnTcB9MboGQcfs6FuojXRPlhInA?e=wzLQFt">basic_portable_python.7z</a> (下載 15MB, 解開後 55MB)</p>
 <p>下載 <a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EQTW-mq62DpFtw5It9ao-PIBPXW7z5z8oVsW5gd8zbDXOQ?e=q6gHgf">Portable_2023_fall_1.3g_5g.7z</a> (需要下載密碼)</p>
+<p style="padding-left: 30px;"><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EUZ_uIwmjT5DpHJBExniApcBBC2arkk5nNFP9dix8d59hA?e=OfU4MG">extra_dlls.7z</a> (需要下載密碼)</p>
+<p><a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/ERAYeXKdW2RIqBlb7bpVKiUBFJoOuvD2eWHmpop0uqjovQ?e=FSaLlx">Introdution to Computer Aided Design and Analysis</a> (需要下載密碼)</p>
 <hr/>
 <p>利用全雲端環境上課:</p>
 <p style="padding-left: 30px;">Ubuntu server、Replit、Github、Onedrive 與 Onshape 上進行電腦輔助設計與實習.</p>
@@ -880,6 +882,7 @@ while True:
 <p>最終 archive 課程網頁之前, 必須將 config/content.htm 中的 <a href="https://mde.tw/images">https://mde.tw/images</a> 轉換為 /images, 而 <a href="https://mde.tw/downloads">https://mde.tw/downloads</a> 則必須轉換為 /downloads.</p><h1>Solid Edge</h1>
 <p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EXmbqg4z5I5LkMSvztvXzG0BvIobTTR_ED5EPmm9vjv2rA?e=BpQqeE"> 下載 </a> Solid Edge 2023 student 版安裝檔案 (for @nfu users only)</p>
 <p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EVZctF66LE1BkQCL4mvFEGgBIyM-u2nARksPz8VhUZI1bQ?e=EkdPfh"> 下載 </a> 放入 USB 隨身碟可在電腦輔助設計室中使用的可攜 Solid Edge 2023 學生版 (for @nfu users only)</p>
+<p><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EQycV1747cNDuhO18cVkU4cBIOcqNs051awndph1GwG00A?e=ZUJ7RD">Autodesk_invnetor_api.7z</a> (需要下載密碼)</p>
 <p>為何會製作可攜版本?</p>
 <p style="padding-left: 30px;">因為電腦輔助設計室的電腦安裝防寫卡, 且電腦中並未安裝 Solid Edge 2023, 為了在上課時段可以與 Python 可攜程式的使用模式一致, 因此製作了能夠直接放入 USB 隨身碟, 以組態檔案設定及批次檔案啟動的方式執行 Solid Edge.</p>
 <p style="padding-left: 30px;">由於啟動組態檔案採虛擬硬碟的方式置入操作系統, 因此直接利用 USB 隨身碟啟動後的 Solid Edge 無法直接從操作系統移除.</p>
@@ -1050,20 +1053,21 @@ finally {
 <p><a href="https://nfuedu.sharepoint.com/:u:/s/cad2022/EclS-NMhqJ9JvCa-pIQ_jMsBQB1tipr_Zgc8kT8ha1kMtg?e=RvnCpR"> NX2027.3401_lite_cad2022.7z </a> for @nfu users only (下載 2GB, 解開後約 8GB)</p>
 <p>NX 可攜版的 user default 設定將配合啟動批次檔案中的 set UGII_LOCAL_USER_DEFAULTS=%cd%\NX_user.dpv 將設定資料存入.</p>
 <p>因此有關是否參與 Siemens Product Excellence Program 可以經由下列流程進行設定:</p>
-<p>File - Utilities - Customer Defaults - Gateway - General - Miscellaneous - Product Excellence Program</p>
-<p>選擇是否參加後, 若可攜套件中無前述批次檔案中的 NX_user.dpv 則可透過 Manage current settings 以 Export 將設定存入 NX_user.dpv.</p>
-<p><a href="https://docs.plm.automation.siemens.com/tdoc/nx/1899/nx_help/#uid:index"> NX_help for 1899 </a></p><h2>NX_tutorial</h2>
+<p style="padding-left: 30px;">File - Utilities - Customer Defaults - Gateway - General - Miscellaneous - Product Excellence Program</p>
+<p style="padding-left: 30px;">選擇是否參加後, 若可攜套件中無前述批次檔案中的 NX_user.dpv 則可透過 Manage current settings 以 Export 將設定存入 NX_user.dpv.</p>
+<p>可攜 NX 啟動批次檔案中有超過四百個啟動環境變數設定, 使用者可針對實際需求進行修改後重新啟動.</p>
+<p><a href="https://docs.plm.automation.siemens.com/tdoc/nx/1899/nx_help/#uid:index">NX_help for 1899 </a></p><h2>NX_tutorial</h2>
 <p><a href="https://www.youtube.com/watch?v=aMDKGXV-XFo&amp;list=PLpfdJLK2qQLYoF69nzQGh2rR6a9Bc318E">NX tutorial for beginners</a> (NX8, NX10 and NX12)</p>
 <p><a href="https://youtu.be/DHqWI_HX4N8">NX2206 tutorial</a></p><h1>Onshape</h1>
 <p>採用動機: 全雲端中階電腦輔助機械設計套件, 近端電腦無需安裝套件, 可在手機與平板中的 Onshape App 中使用.</p>
-<p><a href="https://www.onshape.com/en/education/"> https://www.onshape.com/en/education/ </a></p>
+<p><a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/Ef9JHe-leHJGvCjJNRD-Ef4BezldjOjGN884fYBl9lbAWg?e=Lhq15G">Onshape Help</a> (需要下載密碼)</p>
+<p><a href="https://www.onshape.com/en/education/">https://www.onshape.com/en/education/ </a></p>
 <p><a href="https://www.pollen-robotics.com/">https://www.pollen-robotics.com/</a></p>
 <p style="padding-left: 30px;"><a href="https://github.com/pollen-robotics">https://github.com/pollen-robotics</a> (Open hardware)</p>
 <p style="padding-left: 30px;"><a href="https://forum.pollen-robotics.com/t/3d-cad-models-release/90">https://forum.pollen-robotics.com/t/3d-cad-models-release/90</a></p>
 <p style="padding-left: 60px;"><a href="https://cad.onshape.com/documents/30234238cada8c3f07e5d016/w/f7d0a5020824b55ba76d3fb5/e/0ef20ae9ac03d2e663ef6242?renderMode=0&amp;uiState=64d05ea461891b217bc8d938">Reachy check module</a></p>
 <p style="padding-left: 60px;"><a href="https://cad.onshape.com/documents/db203e72f002b78d0c4042d8/w/fa984c7a2416399e08be1bd7/e/b26000a3fd3a7d819c48e7da?renderMode=0&amp;uiState=64d05fe31775912f2de5914e">Reachy head module</a></p>
-<p style="padding-left: 60px;"><a href="https://cad.onshape.com/documents/e2159e62db62d462c2bac1bd/w/12afad7585c14a52e8fe8d53/e/93a782761c8122930acd1e66?renderMode=0&amp;uiState=64d060361775912f2de59242">Reachy arm module</a></p>
-<h2>On_tutorial</h2>
+<p style="padding-left: 60px;"><a href="https://cad.onshape.com/documents/e2159e62db62d462c2bac1bd/w/12afad7585c14a52e8fe8d53/e/93a782761c8122930acd1e66?renderMode=0&amp;uiState=64d060361775912f2de59242">Reachy arm module</a></p><h2>On_tutorial</h2>
 <p><a href="https://www.youtube.com/watch?v=pMWnsHpDlQE&amp;list=PLxmrkna-ixrIQmsPR3MITi4Ru1bnMH4-l">Beginner tutorial from CADSessions</a></p>
 <p><a href="https://www.youtube.com/watch?v=GkwO161QMNs&amp;list=PLxmrkna-ixrK_we-IXeDtAjoPpJcXXw3o">Onshape feature basics</a></p>
 <p></p><h1>Solvespace</h1>
@@ -1122,10 +1126,11 @@ path=%Disk%:;%path_python%;%path_msys2%;%path_cmake%;%path_lua%;%path_git%;%path
 <p><a href="https://cq.cx/sketchflat.pl"> https://cq.cx/sketchflat.pl </a> ( <a href="https://cq.cx/index.pl"> https://cq.cx/index.pl </a> )</p>
 <p><a href="https://github.com/scrum-1/SketchFlat2019"> https://github.com/scrum-1/SketchFlat2019 </a></p>
 <p><a href="/downloads/sketchflat_source_and_exe.7z"> sketchflat_source_and_exe.7z </a></p>
-<h1>CoppeliaSim</h1>
+<p><a href="https://nfuedu-my.sharepoint.com/:b:/g/personal/yen_nfu_edu_tw/EchE98QdlqhNgveGOzb9nqUBCBtAk4_ufKrOg2AQ3XvV_Q?e=sOncDq">SketchFlat Internals.pdf</a> (需要下載密碼)</p><h1>CoppeliaSim</h1>
 <p>採用動機: 提供 C++ 原始碼, 可與 MCAD 結合建立機電資虛實整合模擬系統.</p>
 <p><a href="https://www.coppeliarobotics.com/"> https://www.coppeliarobotics.com/ </a></p>
 <p style="padding-left: 30px;"><a href="https://www.coppeliarobotics.com/downloads?flavor=edu">下載 CoppeliaSim 教育版</a></p>
+<p style="padding-left: 30px;"><a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/Efn8gTqPHkBEheIkLef93KgBeni3YIF4gfyGFh-i8tO1ig?e=oVS0cb">CoppeliaSim_ex.7z</a> (需要下載密碼)</p>
 <p><a href="https://github.com/CoppeliaRobotics"> https://github.com/CoppeliaRobotics </a></p>
 <p><a href="https://mde.tw/pjcopsim"> https://mde.tw/pjcopsim </a></p>
 <p><a href="https://pubmed.ncbi.nlm.nih.gov/36015783/"> Modeling and Control of a Spherical Robot in the CoppeliaSim Simulator </a></p>
